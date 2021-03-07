@@ -59,8 +59,7 @@ ul a li:hover {
     overflow: hidden;
 }
 
-ul a:last-child li {
-    align-self: inherit;
+ul a div {
     color: rgb(12, 12, 61);
     background-color: white;
     height: 25px;
@@ -94,7 +93,7 @@ ul a:last-child li {
 }
 
 .button {
-    margin-left: 270px;
+    margin-left: 45%;
 }
 
 nav div:last-child {
@@ -164,3 +163,67 @@ footer ul li:nth-child(n+3) {
 footer ul li:nth-child(n+4) {
     background-color: green;
 }
+
+@media(max-width:1300px) {
+    #sayfa {
+        background-color: white;
+        width: 80%;
+        margin-left: 10%;
+    }
+    header ul a li {
+        padding: 0px;
+        margin-left: 0px;
+    }
+    .header-image {
+        height: 100px;
+        line-height: 95px;
+    }
+    main div .content {
+        width: 50%;
+    }
+    main div :not(:first-child) {
+        margin-left: 1%;
+    }
+    main div ul li {
+        display: inline-block;
+        color: black;
+        padding: 5px 2px;
+    }
+    .tanitim {
+        overflow-y: scroll;
+    }
+    main div ul li:hover {
+        background-color: red;
+    }
+    footer ul {
+        margin-left: 10%;
+    }
+    footer ul li {
+        margin-top: 10px;
+        display: inline-block;
+        padding: 10px;
+        margin-left: 0%;
+    }
+    footer div {
+        width: 100%;
+        height: 15px;
+        overflow: hidden;
+    }
+}
+
+@media(max-width:300px) {
+    footer {
+        margin-bottom: -30px;
+        position: relative;
+    }
+    footer ul li {
+        margin: 0%;
+        padding: 0px 5px;
+        bottom: 0px;
+    }
+}
+
+
+/* @media(max-width:1335){
+
+} */
