@@ -1,0 +1,22 @@
+ header ul,
+ header div,
+ header li {
+     display: inline-block;
+     overflow: hidden;
+     list-style-type: none;
+     text-decoration: none;
+ }
+ 
+ ul,
+ li {
+     text-decoration: none;
+     list-style-type: none;
+ }
+ 
+ main div {
+     background-color: rgb(154, 180, 228);
+ }
+ 
+ .bg-primary {
+     border-radius: 50px;
+ }
