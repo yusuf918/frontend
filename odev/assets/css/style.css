@@ -1,4 +1,7 @@
-body {}
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .sayfa {
     width: 100%;
@@ -6,12 +9,23 @@ body {}
     display: flex;
 }
 
-header ul,
-header li {
+ul,
+li {
     display: inline-block;
     overflow: hidden;
     height: 10vh;
+    margin: 0%;
+    padding: 0px 0px 5px 5px;
+    list-style-type: none;
     line-height: 10vh;
+}
+
+.fixed-top {
+    position: absolute;
+}
+
+.container-fluid {
+    padding: 0%;
 }
 
 .rounded-circle {
