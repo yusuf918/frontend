@@ -1,38 +1,36 @@
-.rounded-circle {
-    height: 20px;
-    margin-left: 2px;
+ul,
+li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0%;
 }
 
-a {
-    text-decoration: none !important;
-}
-
-.kutu {
-    border-style: solid;
-    border-width: 0px 0px 4px 0px;
-    border-color: white;
+.row ul li a {
+    padding: 2px;
 }
 
 a:hover {
-    border-style: solid;
-    background-color: purple;
+    background-color: aqua;
 }
 
-.daire {
-    width: 20px;
-    height: 20px;
-    background-color: blueviolet;
-    border-radius: 8px;
+main div ul li a {
+    display: inline-block;
+    height: 35px;
+    width: 110px;
+    padding: 5px;
 }
 
-.container {
-    background-image: url("https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?cs=srgb&dl=pexels-pixabay-260689.jpg&fm=jpg")
+main div ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-right: solid gray 1px;
 }
 
-.bg-warning {
-    overflow: hidden;
+.col-4 {
+    background-color: saddlebrown;
 }
 
-.button {
-    border-radius: 50px;
+footer div div {
+    margin-left: 2px;
 }
