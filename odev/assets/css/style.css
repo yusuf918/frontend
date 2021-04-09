@@ -6,25 +6,12 @@ li {
     margin: 0%;
 }
 
-.row ul li a {
-    padding: 2px;
-}
-
 a:hover {
     background-color: aqua;
 }
 
 main div ul li a {
     display: inline-block;
-    height: 35px;
-    width: 110px;
-    padding: 5px;
-}
-
-main div ul li {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-right: solid gray 1px;
 }
 
 .col-4 {

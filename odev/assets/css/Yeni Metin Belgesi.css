@@ -1,0 +1,12 @@
+.capraz_kenarlık {
+    background-color: darkblue;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.main_capraz_kenarlık {
+    clip-path: polygon(0% 0%, 60% 0%, 100% 100%, 0% 100%);
+}
+
+footer div {
+    margin-right: 10px;
+}
