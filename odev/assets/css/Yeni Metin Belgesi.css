@@ -2,10 +2,14 @@ body {
     background: url("../png/milky-way-2695569_960_720.jpg");
 }
 
+.bg-gray {
+    background-color: rgb(236, 228, 228);
+}
+
 @media only screen and (max-width: 767px) {
     .bolum {
         width: 100%;
-        height: 40vh;
+        height: 42vh;
         display: block;
     }
     header div {
