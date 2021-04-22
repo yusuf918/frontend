@@ -1,4 +1,9 @@
-body {
-    background: url("../png/milky-way-2695569_960_720.jpg") center center;
-    background-size: cover;
-}
+ header ul li:first-child {
+     border-bottom: 2px black solid;
+     border-radius: 2px;
+ }
+ 
+ header ul li:not(:first-child):hover {
+     border-bottom: 2px #6c757d solid;
+     border-radius: 2px;
+ }
