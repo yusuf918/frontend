@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- 
-        
+        css dosyaları
      -->
     <link rel="stylesheet" href="./assets/bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="../odev/assets/fontawesome-free-5.15.3-web/css/all.min.css">
     <!-- js dosyaları -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 
-    <script src="./a.js"></script>
+    <script src="./assets/js/main.js"></script>
 </head>
 
-<headers>
+<header>
     <div class="container">
         <div class="row">
 
@@ -54,7 +54,34 @@
             </div>
             <div class="col pr-0 pt-3 px-sm-0 ">
                 <div class="row ">
-                    <div class="col-4 pt-2 px-0 text-capitalize text-truncate text-nowrap  ml-auto ">
+                    <!-- <ul class="list-inline list-unstyled d-none d-lg-block border-bottom border-dark  " style="background-color: #e9ecef;">
+                        <li class="list-inline-item px-0 py-3 ml-5">
+                            <a href="#" class="px-2">elektronik</a></li>
+                        <li class=" list-inline-item px-0 text-wrap">
+                            <a href="# " class="px-2 text-wrap">
+                                <div class="row">ev bahçe </div>
+                                <div class="row">ofis,yapı,market</div>
+                            </a>
+                        </li>
+                        <li class="list-inline-item px-0 ">
+                            <a href="# " class="px-2 text-wrap">
+                                <div class="row">yurt dışı</div>
+                                <div class="row">alışveriş</div>
+                            </a>
+                        </li>
+                        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">kazananlar klubü</a> </li>
+                        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">satış yap</a>
+                        </li>
+                        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">mağaza aç</a></li>
+                        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">bize ulaşın</a>
+                        </li>
+                        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">iade süreci</a></li>
+                        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">sipariş takibi</a>
+                        </li>
+
+
+                    </ul> -->
+                    <div class="col-4 pt-2 px-0 text-capitalize text-truncate text-nowrap  ml-auto d-lg-none">
                         <div class="row m-0 text-truncate">
                             <div class="col-auto    text-truncate p-0">giris yap </div>
                         </div>
@@ -62,12 +89,12 @@
                     </div>
 
 
-                    <div class=" px-3 rounded-circle bg-warning d-inline-block pt-2">
+                    <div class=" px-3 rounded-circle bg-warning d-inline-block pt-2 d-xl-none">
                         <a href="giris.html">
                             <i class="far fa-user fa-lg"></i>
                         </a>
                     </div>
-                    <div class="col-auto rounded-circle bg-warning px-2 pt-2">
+                    <div class="col-auto rounded-circle bg-warning px-2 pt-2 d-xl-none">
                         <a href="sepet.html">
                             <i class="fas fa-shopping-cart fa-lg"></i>
 
@@ -80,6 +107,7 @@
 
         </div>
     </div>
+
     <!-- arama çubuğu -->
     <div class="input-group mb-3 ml-4 d-lg-none">
         <div class="input-group-prepend">
@@ -92,28 +120,30 @@
             <button class="btn  btn-outline-secondary bg-primary btn-small px-4" style="position: relative; left: -35%; border-radius: 50% ;" type="button">Bul</button>
         </div>
     </div>
-</headers>
+</header>
 <!-- navbar lg -->
-<nav>
+<!-- <nav>
     <ul class="list-inline list-unstyled d-none d-lg-block border-bottom border-dark  " style="background-color: #e9ecef;">
         <li class="list-inline-item px-3 py-3 ml-5">
-            <a href="#" class="px-2">asddf</a></li>
-        <li class=" list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a></li>
-        <li class="list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a>
+            <a href="#" class="px-2">elektronik</a></li>
+        <li class=" list-inline-item px-0 text-wrap"><a href="# " class="px-2 text-wrap">ev bahçe ofis yapı market</a></li>
+        <li class="list-inline-item px-0 "><a href="# " class="px-2 text-wrap">yurt dışı alışveriş</a>
         </li>
-        <li class="list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a> </li>
-        <li class=" list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a>
+        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">kazananlar klubü</a> </li>
+        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">satış yap</a>
         </li>
-        <li class="list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a></li>
-        <li class=" list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a>
+        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">mağaza aç</a></li>
+        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">bize ulaşın</a>
         </li>
-        <li class="list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a></li>
-        <li class=" list-inline-item px-3 "><a href="# " class="px-2 ">asddf</a>
+        <li class="list-inline-item px-0 "><a href="# " class="px-2 ">iade süreci</a></li>
+        <li class=" list-inline-item px-0 "><a href="# " class="px-2 ">sipariş takibi</a>
         </li>
 
 
     </ul>
-</nav>
+</nav> -->
 </body>
+
+</html>
 
 </html>

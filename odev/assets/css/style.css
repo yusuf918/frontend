@@ -8,6 +8,12 @@
      border-radius: 2px;
  }
  
- li a {
+ li {
      border-right: 2px solid gray;
+ }
+ 
+ @media screen and (max-width:768px) {
+     .text-truncgate {
+         overflow: visible !important;
+     }
  }
