@@ -1,19 +1,7 @@
- header ul li:first-child {
-     border-bottom: 2px black solid;
-     border-radius: 2px;
- }
- 
- header ul li:not(:first-child):hover {
-     border-bottom: 2px #6c757d solid;
-     border-radius: 2px;
- }
- 
- li {
-     border-right: 2px solid gray;
- }
- 
- @media screen and (max-width:768px) {
-     .text-truncgate {
-         overflow: visible !important;
-     }
- }
+header+ul li:not(:last-child) {
+    width: 10%;
+}
+
+header ul li:nth-child(2) {
+    width: 15%;
+}
