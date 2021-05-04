@@ -20,47 +20,114 @@
     <script src="./assets/js/main.js"></script>
 </head>
 <header>
-    <div class="row">
-        <div class="col-3 col-md-2">
-            <img src="https://picsum.photos/id/1076/600/400" class="img-fluid" alt="">
+    <div class="row m-0">
+        <!-- navbar-sm -->
+        <div class="col-auto d-lg-none p-0">
+            <nav class="navbar navbar-expand-lg  navbar-light px-0 mt-2  ">
+                <button class="navbar-toggler" type="button" style="border: 0px !important;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="col-3 col-4 col-md-2 px-0">
+            <img src="https://picsum.photos/id/1076/600/400 " class="img-fluid pr-0" alt="">
 
         </div>
-        <div class="col-9">
-            <nav class="nav">
-                <a class="nav-link active" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" href="#">Disabled</a>
-                <a class="nav-link active" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" href="#">Disabled</a>
-                <a class="nav-link disabled" href="#">Disabled</a>
+
+        <!-- sm&md -->
+        <div class="col-2 px-0 text-nowrap text-truncate mt-4 ml-auto d-lg-none"> Giris yap veya uye ol</div>
+        <div class="col-auto ">
+            <div class="row   ">
+
+                <div class="col p-2 mt-3 rounded-circle  p-0 d-lg-none" style="background-color:#e9ecef; ">
+                    <center><i class="fas fa-user-alt fa-lg "></i></center>
+                </div>
+                <div class="   mt-3 ml-1 col rounded-circle  d-lg-none  p-2" style="background-color: #e9ecef;">
+                    <center>
+                        <i class="fas   fa-lg fa-shopping-cart"></i>
+                    </center>
+                </div>
+                <a href="#">
+
+                </a>
+            </div>
+        </div>
+
+
+        <!-- d-lg -->
+        <div class="col-9 px-0 d-none d-lg-block">
+            <nav class="nav text text-wrap p-0">
+                <a class="nav-link text-muted px-1" href="#" style="width: 8%;">Yıldız fırsatlar</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 15%;">Tüm kampanyalar</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">Yurt dışı alışveriş</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">kazananlar klubu</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">Satış yap</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">Mağaza aç</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">Bize ulaşın</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 11%;">Bize ulaşın</a>
+                <a class="nav-link text-muted px-1" href="#" style="width: 9%;">Sipariş takibi</a>
             </nav>
-            <nav class="nav d-flex">
-                <div class="row w-100 h-5 pt-2">
-                    <div class="col-9">
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">$</span>
+            <nav class="nav d-flex mt-xl-3">
+                <div class="row m-0 w-100 h-5 pt-2 ">
+                    <div class="col p-0 h-5">
+                        <div class="input-group mb-0 ">
+                            <div class="input-group-prepend h-5">
+                                <span class="input-group-text rounded-left pr-0 pl-4" style="border-right: 0px;border-top-left-radius:50% !important;border-bottom-left-radius: 50% !important;"><i class="fas fa-lg fa-search"></i></span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+
+                            <input type="text" class="form-control py-4 " style="border-left:0px ;background-color: #e9ecef;" placeholder="keşfetmeye bak" aria-label="Amount (to the nearest dollar)">
                             <div class="input-group-append">
-                                <span class="input-group-text">.00</span>
                             </div>
+                            <button class="btn  bg-primary position-relative px-4" style="border-radius: 45%;left: -5%;">bul</button>
                         </div>
 
 
                     </div>
-                    <div class="col-3">
-                        <div class="row">
+                    <div class="col-auto ">
+                        <div class="row h-3 ">
 
-                            <div class="col  rounded-circle d-inline-block p-3 bg-dark"></div>
-                            <span class="col-auto mx-2"><div class="row">giris yap
-                                </div><div class="row">veya uye ol</div></span>
-                            <div class="col  rounded-circle d-inline-block p-3 bg-dark"></div>
+                            <div class="col-2 h-3 p-2 rounded-circle  " style="background-color: #e9ecef;">
+                                <center><i class="fas fa-user-alt fa-lg "></i></center>
+                            </div>
+                            <div class="col-auto text-wrap px-0" style="width: 40%;height: 5vh;"><a href="#">Giriş yap veya uye ol</a></div>
+                            <div class=" px-0 py-2  col-2 rounded-circle   " style="background-color: #e9ecef;">
+                                <center>
+                                    <i class="fas   fa-lg fa-shopping-cart"></i>
+                                </center>
+                            </div>
+                            <a href="#">
+                                <div class="pt-2 p-0 col-auto ">sepetim</div>
 
-
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -75,8 +142,54 @@
         </div>
     </div>
 
+    <!-- sm-search -->
+    <div class="row mx-0  d-lg-none">
+        <div class="col-12">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend" style="border-right: 0px;">
+                    <span class="input-group-text pr-0 pl-4" style="border-top-left-radius:50% ;border-bottom-left-radius:50% ;"><i class="fas  fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="keşfetmeye bak" style="background-color: #e9ecef;border-left: 0px;" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text px-4 bg-primary position-relative" style="border-top-left-radius:50% ;border-radius: 50% ;left: -35%;">bul</span>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
 </header>
+
+<main>
+    <ul class="nav d-none d-lg-flex">
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
+
+</main>
 
 </body>
 
