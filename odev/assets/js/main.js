@@ -1,20 +1,26 @@
 // varsayılan main kısmı
 $(document).ready(function() {
-    $("li").mouseover(function() {
-        $("#varsayilan").css("display", "none");
+    $("ul").mouseover(function() {
+        $("#varsayilan").css({ "display": "none" });
+        $("#mainResim").css({ "display": "none" });
+
+
     });
-    $("li").mouseout(function() {
-        $("#varsayilan").css("display", "block");
+    $("ul").mouseout(function() {
+        $("#varsayilan").css({ "display": "block" });
+        $("#mainResim").css({ "display": "block" });
+        $("#asd").css({ "display": "block" });
     });
 });
 
 // elektronik kısmı
 $(document).ready(function() {
     $("#liElektronik").mouseover(function() {
-        $("#elektronik").css("display", "block");
+        $("#elektronik").css({ "display": "block" });
     });
     $("#liElektronik").mouseout(function() {
-        $("#elektronik").css("display", "none");
+        $("#elektronik").css({ "display": "none" });
+
     });
 });
 
@@ -79,6 +85,7 @@ $(document).ready(function() {
     });
     $("#liKitapMuzik").mouseout(function() {
         $("#kitapMuzik").css("display", "none");
+
     });
 });
 

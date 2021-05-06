@@ -3,3 +3,58 @@
         height: 10vh;
     }
 }
+
+main li:hover {
+    border-bottom: 2px blue solid;
+    border-radius: 4px;
+}
+
+#elektronikResim {
+    background: url("https://picsum.photos/id/111/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#evResim {
+    background: url("https://picsum.photos/id/112/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#modaResim {
+    background: url("https://picsum.photos/id/113/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#kozmetikResim {
+    background: url("https://picsum.photos/id/114/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#evResim {
+    background: url("https://picsum.photos/id/115/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#anneResim {
+    background: url("https://picsum.photos/id/116/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#superResim {
+    background: url("https://picsum.photos/id/117/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#kitapResim {
+    background: url("https://picsum.photos/id/118/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#otomobilResim {
+    background: url("https://picsum.photos/id/119/600/400") center center no-repeat;
+    background-size: cover;
+}
+
+#sporResim {
+    background: url("https://picsum.photos/id/120/600/400") center center no-repeat;
+    background-size: cover;
+}
