@@ -9,6 +9,10 @@ main li:hover {
     border-radius: 4px;
 }
 
+.mainResimYukseklik {
+    height: 60vh !important;
+}
+
 #elektronikResim {
     background: url("https://picsum.photos/id/111/600/400") center center no-repeat;
     background-size: cover;
