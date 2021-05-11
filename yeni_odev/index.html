@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +19,29 @@
     <header>
         <!-- navbar -->
         <ul class="nav justify-content-between">
+
             <li class="nav-item">
-                sm button tıklama metodu gelecek
+                <!-- sm button tıklama metodu gelecek -->
+                <button class="btn " onclick="headerAsagiKaydir()">
+                    <i class="fas fa-lg fa-align-justify"></i>
+                    <i class="fas fa-times d-none"></i></button>
+                <!-- dugmeye basıldıktan sonra -->
 
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#">bennett</a>
+                <a class="nav-link " style="font-size: 25px;" href="#"><b>bennett</b></a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link " href="#">
+
+                    <span class="material-icons" style="font-size:36px;">
+                        shopping_bag
+                        </span>
+                    <span class="d-inline-block p-3 rounded-circle " style="background-color: #f66d6d;"></span>
+                    <span class="d-inline-block position-relative " style="left: -30%;top: -0.6rem;" id="headerSayi"></span>
+                </a>
             </li>
 
         </ul>
