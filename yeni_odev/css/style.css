@@ -1,0 +1,11 @@
+body {
+    background-color: #f9c5d1;
+    padding: 0%;
+}
+
+.headerBorder {
+    border-radius: 0% !important;
+    border-color: #2d325b;
+    color: #2d325b;
+    border: 2px solid;
+}
