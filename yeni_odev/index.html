@@ -17,41 +17,79 @@
 <body>
 
     <header>
-        <!-- navbar -->
+        <!-- baslik -->
         <ul class="nav justify-content-between">
 
+            <!-- baslik en sol kısım -->
             <li class="nav-item">
-                <!-- sm button tıklama metodu gelecek -->
-                <button class="btn " onclick="headerAsagiKaydir()">
-                    <i class="fas fa-lg fa-align-justify"></i>
-                    <i class="fas fa-times d-none"></i></button>
-                <!-- dugmeye basıldıktan sonra -->
-
+                <!-- sm button tıklama butonu gelecek -->
+                <button class="btn d-lg-none">
+                    <i class="fas fa-lg fa-align-justify d- py-1" id="fa-align" onclick="tanitimAsagiKaydir()"></i>
+                    <i class="fas fa-lg fa-times py-1 pr-1 " style="display: none;" id="fa-times" onclick="tanitimAsagiKaydirKapat()"></i>
+                </button>
+                <!-- lg-sayfa link butonlari -->
+                <ul class="list-unstyled list-inline py-1 mt-3 morRenk d-none d-lg-block">
+                    <a href="#" class=" headerBorder px-4 py-2">
+                        <li class="list-inline-item   m-0   dugmeAnimasyon   teaStore  ">
+                            asd
+                        </li>
+                    </a>
+                    <a href="#" class="headerBorder px-4 py-2 ">
+                        <li class="list-inline-item   m-0   dugmeAnimasyon contact"></li>
+                    </a>
+                    <a href="#" class="headerBorder px-4 py-2 ">
+                        <li class="list-inline-item m-0   dugmeAnimasyon about">Temporibus.</li>
+                    </a>
+                </ul>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link " style="font-size: 25px;" href="#"><b>bennett</b></a>
+                <a class="nav-link morRenk" style="font-size: 25px; " href="#"><b>bennett</b></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link " href="#">
+            <!-- baslik en sag kısım -->
+            <li class="nav-item mb-5  ">
+                <a class="nav-link p-0" href="#">
 
                     <span class="material-icons" style="font-size:36px;">
                         shopping_bag
                         </span>
+
+
                     <span class="d-inline-block p-3 rounded-circle " style="background-color: #f66d6d;"></span>
-                    <span class="d-inline-block position-relative " style="left: -30%;top: -0.6rem;" id="headerSayi"></span>
+                    <span class="d-inline-block position-relative text-white" style="left: -30%;top: -0.6rem;" id="headerSayi"></span>
                 </a>
             </li>
 
         </ul>
     </header>
 
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-9 text-center headerBorder text-uppercase text-wrap mx-auto   h5 mb-0 py-2">refresh yourself with tea</div>
+            </div>
+            <div class="row">
+                <div class="col-11 mx-auto py-3 text-center font-weight-bold headerBorder text-uppercase text-wrap mx-auto   h1">
+                    <div style="font-size: 60px; transform: scale(0.8, 1);line-height: 12vh;letter-spacing: -1px; "> every <span class="position-relative" style="left:-20%;">morning</span> golden morning</div>
+                </div>
+            </div>
+        </div>
+        <span class="d-inline-block position-relative " style=" width:15%;top: -38vh;left: 80%;"> 
+        <hr  style="height: 3px;background-color:#2d325b;">
+        </span>
 
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/main.js"></script>
+    </main>
+
+
+
+
+
+
+    <script src="./js/jquery-3.6.0.min.js "></script>
+    <script src="./js/bootstrap.js "></script>
+    <script src="./js/main.js "></script>
 </body>
 
 </html>

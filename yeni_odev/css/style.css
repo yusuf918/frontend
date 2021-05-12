@@ -5,7 +5,22 @@ body {
 
 .headerBorder {
     border-radius: 0% !important;
-    border-color: #2d325b;
-    color: #2d325b;
+    border-color: #2d325b !important;
+    color: #2d325b !important;
     border: 2px solid;
 }
+
+.kenarlik {
+    border: 1px solid;
+    outline: 2px solid;
+    border-color: #2d325b !important;
+}
+
+.morRenk {
+    color: #2d325b !important;
+}
+
+
+/* baslik dugme animasyonlari gelecek */
+
+.dugmeAnimasyon {}
