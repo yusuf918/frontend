@@ -24,3 +24,24 @@ body {
 /* baslik dugme animasyonlari gelecek */
 
 .dugmeAnimasyon {}
+
+
+/* kucuk ve orta cihaz tanitim font boyutu icin */
+
+@media screen and (max-width:324px) {
+    main .morRenk {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:474px) {
+    main .morRenk {
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width:576px) {
+    main .morRenk {
+        font-size: 90px;
+    }
+}

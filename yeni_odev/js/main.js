@@ -18,13 +18,13 @@ function tanitimAsagiKaydir() {
     document.getElementById("fa-align").style.display = "none";
     document.getElementById("fa-times").style.display = "block";
     document.getElementById("tanitimKucukOrtaCihaz").style.display = "block";
-    document.getElementById("tanitimGenel").style.display = "none";
+    document.getElementById("tanitimVarsayilan").style.display = "none";
 
 }
 
 function tanitimAsagiKaydirKapat() {
     document.getElementById("fa-align").style.display = "block";
     document.getElementById("fa-times").style.display = "none";
-    document.getElementById("tanitimGenel").style.display = "block";
+    document.getElementById("tanitimVarsayilan").style.display = "block";
     document.getElementById("tanitimKucukOrtaCihaz").style.display = "none";
 }
