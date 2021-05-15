@@ -7,7 +7,6 @@ headerSayi.innerHTML = sayi;
 //header en son içerik
 var kutu1 = document.getElementsByClassName("teaStore");
 var kutu2 = document.getElementsByClassName("contact");
-
 var kutu3 = document.getElementsByClassName("about");
 
 kutu1[0].innerHTML = "teaStore";
@@ -18,10 +17,14 @@ function tanitimAsagiKaydir() {
     // document.write("asagi kaydir");
     document.getElementById("fa-align").style.display = "none";
     document.getElementById("fa-times").style.display = "block";
+    document.getElementById("tanitimKucukOrtaCihaz").style.display = "block";
+    document.getElementById("tanitimGenel").style.display = "none";
+
 }
 
 function tanitimAsagiKaydirKapat() {
     document.getElementById("fa-align").style.display = "block";
     document.getElementById("fa-times").style.display = "none";
-
+    document.getElementById("tanitimGenel").style.display = "block";
+    document.getElementById("tanitimKucukOrtaCihaz").style.display = "none";
 }
