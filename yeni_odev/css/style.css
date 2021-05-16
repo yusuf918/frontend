@@ -1,47 +1,50 @@
-body {
-    background-color: #f9c5d1;
-    padding: 0%;
-}
-
-.headerBorder {
-    border-radius: 0% !important;
-    border-color: #2d325b !important;
-    color: #2d325b !important;
-    border: 2px solid;
-}
-
-.kenarlik {
-    border: 1px solid;
-    outline: 2px solid;
-    border-color: #2d325b !important;
-}
-
-.morRenk {
-    color: #2d325b !important;
-}
-
-
-/* baslik dugme animasyonlari gelecek */
-
-.dugmeAnimasyon {}
-
-
-/* kucuk ve orta cihaz tanitim font boyutu icin */
-
-@media screen and (max-width:324px) {
-    main .morRenk {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width:474px) {
-    main .morRenk {
-        font-size: 80px;
-    }
-}
-
-@media screen and (min-width:576px) {
-    main .morRenk {
-        font-size: 90px;
-    }
-}
+        body {
+            background-color: #f9c5d1;
+            padding: 0%;
+            height: 100vh;
+        }
+        
+        .kalinKenarlik {
+            border-radius: 0% !important;
+            border-color: #2d325b !important;
+            color: #2d325b !important;
+            border: 2px solid;
+        }
+        
+        .inceKenarlik {
+            border: 1px solid;
+            border-color: #2d325b !important;
+        }
+        
+        .morRenk {
+            color: #2d325b !important;
+        }
+        /* baslik dugme animasyonlari gelecek */
+        
+        .dugmeAnimasyon {}
+        /* kucuk ve orta cihaz tanitim font boyutu icin */
+        
+        @media screen and (max-width:324px) {
+            #tanitimKucukOrtaCihaz .morRenk {
+                font-size: 40px;
+            }
+        }
+        
+        @media screen and (min-width:474px) {
+            #tanitimKucukOrtaCihaz .morRenk {
+                font-size: 80px;
+            }
+        }
+        
+        @media screen and (min-width:576px) {
+            #tanitimKucukOrtaCihaz .morRenk {
+                font-size: 90px;
+            }
+        }
+        
+        @media screen and (min-width:992px) {
+            .kucukFont {
+                margin-top: 105px;
+                font-size: 10px;
+            }
+        }
