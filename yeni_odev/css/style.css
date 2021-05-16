@@ -1,63 +1,88 @@
-        body {
-            background-color: #f9c5d1;
-            padding: 0%;
-            height: 100vh;
-        }
-        
-        .kalinKenarlik {
-            border-radius: 0% !important;
-            border-color: #2d325b !important;
-            color: #2d325b !important;
-            border: 2px solid;
-        }
-        
-        .inceKenarlik {
-            border: 1px solid;
-            border-color: #2d325b !important;
-        }
-        
-        .morRenk {
-            color: #2d325b !important;
-        }
-        
-        .turuncuRenk {
-            background-color: #f66d6d;
-        }
-        /* baslik dugme animasyonlari gelecek */
-        
-        .dugmeAnimasyon {}
-        /* kucuk ve orta cihaz tanitim font boyutu icin */
-        
-        @media screen and (max-width:324px) {
-            #tanitimKucukOrtaCihaz .morRenk {
-                font-size: 40px;
-            }
-        }
-        
-        @media screen and (min-width:474px) {
-            #tanitimKucukOrtaCihaz .morRenk {
-                font-size: 80px;
-            }
-        }
-        
-        @media screen and (min-width:576px) {
-            #tanitimKucukOrtaCihaz .morRenk {
-                font-size: 90px;
-            }
-        }
-        
-        @media screen and (min-width:992px) {
-            .kucukFont {
-                margin-top: 105px;
-                font-size: 10px;
-            }
-        }
-        
-        .tanitimHarf {
-            transform: scale(.6, 1.3);
-            letter-spacing: -2px;
-        }
-        
-        .font900 {
-            font-weight: 900;
-        }
+                body {
+                    background-color: #f9c5d1;
+                    padding: 0%;
+                    height: 100vh;
+                }
+                
+                .kalinKenarlik {
+                    border-radius: 0% !important;
+                    border-color: #2d325b !important;
+                    color: #2d325b !important;
+                    border: 2px solid;
+                }
+                
+                .inceKenarlik {
+                    border: 1px solid;
+                    border-color: #2d325b !important;
+                }
+                
+                .morRenk {
+                    color: #2d325b !important;
+                }
+                
+                .turuncuRenk {
+                    background-color: #f66d6d;
+                }
+                /* baslik dugme animasyonlari gelecek */
+                
+                .dugmeAnimasyon {}
+                /* kucuk ve orta cihaz tanitim font boyutu icin */
+                /* en kucuk cihaz anasayfa font */
+                
+                .tanitimHarf {
+                    transform: scale(.6, 1.3);
+                    letter-spacing: -2px;
+                }
+                
+                .morningStyle {
+                    left: -45px;
+                }
+                
+                .morningYancizgi {
+                    width: 55px;
+                    height: 0.2rem;
+                    top: -14vh;
+                    left: 70px;
+                    background-color: #2d325b;
+                }
+                
+                @media screen and (max-width: 324px) {
+                    #tanitimKucukOrtaCihaz .morRenk {
+                        font-size: 40px;
+                    }
+                }
+                
+                @media screen and (min-width:375px) {
+                    .tanitimHarf {
+                        transform: scale(.7, 1.3);
+                    }
+                    .morningStyle {
+                        left: -60px
+                    }
+                    .morningYancizgi {
+                        left: 80px;
+                    }
+                }
+                
+                @media screen and (min-width:474px) {
+                    #tanitimKucukOrtaCihaz .morRenk {
+                        font-size: 80px;
+                    }
+                }
+                
+                @media screen and (min-width:576px) {
+                    #tanitimKucukOrtaCihaz .morRenk {
+                        font-size: 90px;
+                    }
+                }
+                
+                @media screen and (min-width:992px) {
+                    .kucukFont {
+                        margin-top: 105px;
+                        font-size: 10px;
+                    }
+                }
+                
+                .font900 {
+                    font-weight: 900;
+                }
