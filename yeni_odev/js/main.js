@@ -32,3 +32,5 @@ function tanitimAsagiKaydirKapat() {
     document.getElementById("tanitimVarsayilan").style.display = "block";
 
 }
+var refreshYourself = "refresh yourself with tea";
+document.getElementsByClassName("refreshYourself")[0].innerHTML = refreshYourself;
