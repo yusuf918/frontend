@@ -19,11 +19,7 @@ function tanitimAsagiKaydir() {
     document.getElementById("fa-times").style.display = "block";
     document.getElementById("tanitimKucukOrtaCihaz").style.display = "block";
     document.getElementById("tanitimVarsayilan").style.display = "none";
-
-
 }
-//jquery ile aşagı kaydırma
-
 
 function tanitimAsagiKaydirKapat() {
     document.getElementById("fa-align").style.display = "block";
@@ -32,5 +28,6 @@ function tanitimAsagiKaydirKapat() {
     document.getElementById("tanitimVarsayilan").style.display = "block";
 
 }
+// refresh yourself yazısını ekrana yazdırma için
 var refreshYourself = "refresh yourself with tea";
 document.getElementsByClassName("refreshYourself")[0].innerHTML = refreshYourself;
