@@ -6,10 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <h1>tea store</h1>
+    <header>
+        <nav>
+
+            <header class="pt-2 pembeRenk">
+                <!-- baslik -->
+                <ul class="nav justify-content-between ">
+
+                    <!-- baslik en sol kısım -->
+                    <li class="nav-item">
+                        <!-- sm button tıklama butonu gelecek -->
+                        <span class="d-lg-none">
+                            <i class="fas fa-lg fa-align-justify pl-3 pt-2" id="fa-align" onclick="tanitimAsagiKaydir()"></i>
+                            <i class="fas fa-lg fa-times pt-2 pl-3 " style="display: none;" id="fa-times" onclick="tanitimAsagiKaydirKapat()"></i>
+                        </span>
+                        <!-- lg-sayfa link butonlari -->
+                        <ul class="list-unstyled list-inline py-1 mt-3  morRenk d-none d-lg-block">
+                            <a href="teastore.html" class=" border border-white bg-white px-4 py-2 ">
+                                <li class="list-inline-item m-0   dugmeAnimasyon teaStore ">
+                                    as>
+                                </li>
+                            </a>
+
+
+
+                            <a href="contact.html" class="border border-white px-4 py-2 ">
+                                <li class="list-inline-item m-0 dugmeAnimasyon  ">
+                                    <div class="about"></div>
+                                </li>
+                            </a>
+                            <a href="" class="border border-white px-4 py-2 ">
+                                <li class="list-inline-item m-0 dugmeAnimasyon contact ">
+                                    <div class="contact"></div>
+
+
+                                </li>
+                            </a>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-white h3 pr-4 font-weight-normal pr-0 py-0 " href="# "> bennett</a>
+                    </li>
+
+                    <!-- baslik en sag kısım -->
+                    <li class="nav-item mb-5 ">
+                        <a class="nav-link p-0 " href="# ">
+
+                            <span class="material-icons " style="font-size:36px; ">
+                        shopping_bag
+                        </span>
+
+
+                            <span class="d-inline-block turuncuRenk mb-1 rounded-circle " style="padding: 13px; "></span>
+                            <span class="d-inline-block position-relative text-white" style="left: -27%;top: -0.7rem;" id="headerSayi"></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </header>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="container d-lg-none" id="tanitimKucukOrtaCihaz" style="display: none; ">
+            <div class="display-4 text-uppercase font-weight-bold ">
+                <center>
+                    <a href="teastore.html tex">
+                        <div class="teaStore">tea store</div>
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 my-2 text-uppercase font-weight-bold morRenk ">
+                <center>
+                    <a href="about.html" class="morRenk ">
+                        <div class="about">about</div>
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 text-uppercase font-weight-bold morRenk ">
+                <center>
+                    <a href="contact.html " class="morRenk ">
+                        <div class="contact ">contact</div>
+                    </a>
+                </center>
+            </div>
+        </div>
+
+
+        <div class="container justify-content-center mt-1 " id="tanitimVarsayilan">
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- <nav>
+        <ul>
+            <li>
+                <a href="#" data-text="ghj"></a>
+            </li>
+            <li>
+
+                <a href="#" data-text="uıom"></a>
+            </li>
+            <li>
+
+                <a href="#" data-text="sedf"> </a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <script src="./js/jquery-3.6.0.min.js "></script>
+    <script src="./js/bootstrap.js "></script>
+    <script src="./js/main.js "></script>
 </body>
 
 </html>

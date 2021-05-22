@@ -5,13 +5,9 @@ headerSayi.innerHTML = sayi;
 
 
 //header en son içerik
-var kutu1 = document.getElementsByClassName("teaStore");
-var kutu2 = document.getElementsByClassName("contact");
-var kutu3 = document.getElementsByClassName("about");
-
-kutu1[0].innerHTML = "teaStore";
-kutu2[0].innerHTML = "Contact";
-kutu3[0].innerHTML = "About";
+document.getElementsByClassName("about")[0].innerHTML = "About";
+document.getElementsByClassName("teaStore")[0].innerHTML = "Tea store";
+document.getElementsByClassName("contact")[0].innerHTML = "Contact";
 
 function tanitimAsagiKaydir() {
     // document.write("asagi kaydir");
