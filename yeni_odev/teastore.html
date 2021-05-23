@@ -25,10 +25,11 @@
                     <!-- baslik en sol kısım -->
                     <li class="nav-item">
                         <!-- sm button tıklama butonu gelecek -->
-                        <span class="d-lg-none">
-                            <i class="fas fa-lg fa-align-justify pl-3 pt-2" id="fa-align" onclick="tanitimAsagiKaydir()"></i>
-                            <i class="fas fa-lg fa-times pt-2 pl-3 " style="display: none;" id="fa-times" onclick="tanitimAsagiKaydirKapat()"></i>
+                        <!--bu kısmı javascriptten çagırdım-->
+                        <span class="btn d-lg-none">
                         </span>
+
+
                         <!-- lg-sayfa link butonlari -->
                         <ul class="list-unstyled list-inline py-1 mt-3  morRenk d-none d-lg-block">
                             <a href="teastore.html" class=" border border-white bg-white px-4 py-2 ">
@@ -56,21 +57,13 @@
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link text-white h3 pr-4 font-weight-normal pr-0 py-0 " href="# "> bennett</a>
+                        <a href="# " class="bennetBolumu text-white">
+                        </a>
                     </li>
 
                     <!-- baslik en sag kısım -->
-                    <li class="nav-item mb-5 ">
-                        <a class="nav-link p-0 " href="# ">
+                    <li class="nav-item mb-5 pt-lg-3 baslikEnSon">
 
-                            <span class="material-icons " style="font-size:36px; ">
-                        shopping_bag
-                        </span>
-
-
-                            <span class="d-inline-block turuncuRenk mb-1 rounded-circle " style="padding: 13px; "></span>
-                            <span class="d-inline-block position-relative text-white" style="left: -27%;top: -0.7rem;" id="headerSayi"></span>
-                        </a>
                     </li>
 
                 </ul>
@@ -82,11 +75,11 @@
 
 
     <main>
-        <div class="container d-lg-none" id="tanitimKucukOrtaCihaz" style="display: none; ">
+        <div class="container d-lg-none" id="tanitimKucukOrtaCihaz" style="display: none;">
             <div class="display-4 text-uppercase font-weight-bold ">
                 <center>
-                    <a href="teastore.html tex">
-                        <div class="teaStore">tea store</div>
+                    <a href="teastore.html ">
+                        <div class="teaStore text-white">tea store</div>
                     </a>
                 </center>
             </div>
@@ -116,7 +109,14 @@
 
 
 
+    <footer>
+        <div class="row p-3 border-top border-dark fixed-bottom d-md-none pembeRenk ">
+            <div class="col-sm-12 col-md col-lg-3 sticky-bottom d-md-none ">
+                <a href="teastore.html "><button class="btn-block text-white text-uppercase acıkYesil py-2 " style="font-weight: 800; "><span class="fontEvery ">browse teas</span></button></a>
+            </div>
 
+        </div>
+    </footer>
 
 
 
