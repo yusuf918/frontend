@@ -9,9 +9,68 @@
 </head>
 
 <body>
-    <button onclick="divDondur('arttır')">+</button>
-    <button onclick="divDondur('azalt')">-</button>
-    <h1>contact</h1>
+    <nav>
+        <ul>
+            <li class="navbarLi">
+                <a href="#" class="dugme" data-text="home">home</a>
+            </li>
+            <li class="navbarLi">
+                <a href="#" class="dugme" data-text="content">about </a>
 
+            </li>
+            <li class="navbarLi">
+                <a href="#" class="dugme" data-text="developer">contact</a>
 
+            </li>
+        </ul>
+    </nav>
+
+    <style>
+        .navbarLi {
+            display: inline-block;
+        }
+        
+        .dugme {
+            display: block;
+            width: 150px;
+            height: 50px;
+            background-color: magenta;
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+            content: attr(data-text);
+            outline: 2px solid red;
+            text-decoration: none;
+        }
+        
+        .navbarLi:first-child a::before {
+            content: 'home';
+        }
+        
+        .navbarLi:nth-child(2) a::before {
+            content: 'about';
+        }
+        
+        .navbarLi:last-child a::before {
+            content: 'contact';
+        }
+        
+        .dugme::before {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: mediumblue;
+            transform: rotateX(90deg);
+            transform-origin: top;
+            transition: 300ms all;
+        }
+        
+        .dugme:hover::before {
+            transform: rotateX(0deg);
+        }
+    </style>
 </body>

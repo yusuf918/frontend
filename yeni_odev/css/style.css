@@ -32,8 +32,55 @@
                 .acıkYesil {
                     background-color: #0d927d;
                 }
+                /* dugme animasyon kismi */
                 
-                .dugmeAnimasyon {}
+                .navbarLi {
+                    display: inline-block;
+                }
+                
+                .dugme {
+                    display: block;
+                    width: 150px;
+                    height: 50px;
+                    background-color: magenta;
+                    color: #2d325b;
+                    line-height: 50px;
+                    text-align: center;
+                    position: relative;
+                    content: attr(data-text);
+                    outline: 2px solid #2d325b;
+                    text-decoration: none;
+                }
+                
+                .navbarLi:first-child a::before {
+                    content: 'home';
+                }
+                
+                .navbarLi:nth-child(2) a::before {
+                    content: 'about';
+                }
+                
+                .navbarLi:last-child a::before {
+                    content: 'contact';
+                }
+                
+                .dugme::before {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: white;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #2d325b;
+                    transform: rotateX(90deg);
+                    transform-origin: top;
+                    transition: 300ms all;
+                }
+                
+                .dugme:hover::before {
+                    transform: rotateX(0deg);
+                }
                 /* kucuk ve orta cihaz tanitim font boyutu icin */
                 /*  anasayfa font */
                 
