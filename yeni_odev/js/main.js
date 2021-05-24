@@ -1,3 +1,14 @@
+//giris animasyonu yok etme
+function animasyonYokEt() {
+    var i;
+    setTimeout(() => {
+        document.getElementsByTagName("nav")[0].style.display = "none";
+        document.getElementsByClassName("icerik")[0].style.display = "block";
+        document.getElementsByClassName("icerik")[2].style.display = "block";
+        document.getElementsByClassName("icerik")[2].style.display = "block";
+    }, 1000);
+}
+
 // dugme  kısmını buraya yazdım
 var tıklamaDugmesi = "<i class='fas fa-lg fa-align-justify d- py-1' id='fa-align' onclick='tanitimAsagiKaydir()'></i> <i class='fas fa-lg fa-times py-1 pr-1 ' style='display: none;' id='fa-times' onclick='tanitimAsagiKaydirKapat()'></i>";
 document.getElementsByClassName("d-lg-none")[0].innerHTML = tıklamaDugmesi;

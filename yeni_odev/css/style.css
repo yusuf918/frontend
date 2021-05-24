@@ -1,159 +1,208 @@
-                body {
-                    background-color: #f9c5d1;
-                    padding: 0%;
-                    height: 100vh;
-                }
-                
-                .kalinKenarlik {
-                    border-radius: 0% !important;
-                    border-color: #2d325b !important;
-                    color: #2d325b !important;
-                    border: 2px solid;
-                }
-                
-                .inceKenarlik {
-                    border: 1px solid;
-                    border-color: #2d325b !important;
-                }
-                
-                .morRenk {
-                    color: #2d325b !important;
-                }
-                
-                .turuncuRenk {
-                    background-color: #f66d6d;
-                }
-                /* baslik dugme animasyonlari gelecek */
-                
-                .pembeRenk {
-                    background-color: #f9c5d1;
-                }
-                
-                .acıkYesil {
-                    background-color: #0d927d;
-                }
-                /* dugme animasyon kismi */
-                
-                .navbarLi {
-                    display: inline-block;
-                }
-                
-                .dugme {
-                    display: block;
-                    width: 150px;
-                    height: 50px;
-                    background-color: magenta;
-                    color: #2d325b;
-                    line-height: 50px;
-                    text-align: center;
-                    position: relative;
-                    content: attr(data-text);
-                    outline: 2px solid #2d325b;
-                    text-decoration: none;
-                }
-                
-                .navbarLi:first-child a::before {
-                    content: 'tea store';
-                }
-                
-                .navbarLi:nth-child(2) a::before {
-                    content: 'about';
-                }
-                
-                .navbarLi:last-child a::before {
-                    content: 'contact';
-                }
-                
-                .col-sm-12 .navbarLi a::before {
-                    content: 'browse teas';
-                }
-                
-                .col-sm-12 .dugme {
-                    color: white;
-                    background-color: #0d927d;
-                }
-                
-                .dugme::before {
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    color: white;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #2d325b;
-                    transform: rotateX(90deg);
-                    transform-origin: top;
-                    transition: 300ms all;
-                }
-                
-                .col-sm-12 .dugme::before {
-                    background-color: white;
-                    color: #2d325b;
-                }
-                
-                .dugme:hover::before {
-                    transform: rotateX(0deg);
-                }
-                /* kucuk ve orta cihaz tanitim font boyutu icin */
-                /*  anasayfa font */
-                
-                @media screen and (min-width: 320px) {
-                    .fontEvery {
-                        font-weight: 700;
-                        transform: scale(.8, 1.06);
-                    }
-                    .bennet .inceKenarlik {
-                        border-top: none;
-                        border-bottom: none;
-                    }
-                    .bennetYaziYukseklik {
-                        height: 110px;
-                    }
-                }
-                
-                @media screen and (min-width: 375px) {
-                    .fontEvery {
-                        transform: scale(.9, 1.3);
-                        font-weight: 800;
-                    }
-                    .bennetYaziYukseklik {
-                        height: 90px;
-                    }
-                }
-                
-                @media screen and (min-width: 420px) {
-                    .fontEvery {
-                        transform: scale(1, 1.4);
-                        font-weight: 800;
-                    }
-                }
-                
-                @media screen and (min-width: 768px) {
-                    .bennet .inceKenarlik {
-                        border-bottom: 1px solid;
-                    }
-                    .bennetYaziYukseklik {
-                        height: 120px;
-                    }
-                }
-                
-                @media screen and (min-width: 1024px) {
-                    .fontEvery {
-                        transform: scale(1, 1.7);
-                        font-weight: 800;
-                    }
-                    .bennetYaziYukseklik {
-                        height: 110px;
-                    }
-                }
-                
-                @media screen and (min-width: 1440px) {
-                    .fontEvery {
-                        transform: scale(2, 2.8);
-                        font-weight: 800;
-                    }
-                    .harfBosluk {
-                        line-height: 280px;
-                    }
-                }
+body {
+    padding: 0%;
+    height: 100vh;
+}
+
+.baslangicAnimasyonu {
+    width: 100%;
+    height: 100vh;
+}
+
+.baslangicAnimasyonu::before {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    transition: 300ms all;
+}
+
+.baslangicAnimasyonu:hover::before {
+    transform: rotateY(0deg);
+}
+
+.baslangicAnimasyonu::after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #2d325b;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    transition: 300ms all;
+}
+
+.baslangicAnimasyonu:hover::after {
+    transition-delay: 300ms;
+    transform: rotateY(0deg);
+}
+
+.kalinKenarlik {
+    border-radius: 0% !important;
+    border-color: #2d325b !important;
+    color: #2d325b !important;
+    border: 2px solid;
+}
+
+.inceKenarlik {
+    border: 1px solid;
+    border-color: #2d325b !important;
+}
+
+.morRenk {
+    color: #2d325b !important;
+}
+
+.turuncuRenk {
+    background-color: #f66d6d;
+}
+
+
+/* baslik dugme animasyonlari gelecek */
+
+.pembeRenk {
+    background-color: #f9c5d1;
+}
+
+.acıkYesil {
+    background-color: #0d927d;
+}
+
+
+/* dugme animasyon kismi */
+
+.navbarLi {
+    display: inline-block;
+}
+
+.dugme {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: magenta;
+    color: #2d325b;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    content: attr(data-text);
+    outline: 2px solid #2d325b;
+    text-decoration: none;
+}
+
+.navbarLi:first-child a::before {
+    content: 'tea store';
+}
+
+.navbarLi:nth-child(2) a::before {
+    content: 'about';
+}
+
+.navbarLi:last-child a::before {
+    content: 'contact';
+}
+
+.col-sm-12 .navbarLi a::before {
+    content: 'browse teas';
+}
+
+.col-sm-12 .dugme {
+    color: white;
+    background-color: #0d927d;
+}
+
+.dugme::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #2d325b;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: 300ms all;
+}
+
+.col-sm-12 .dugme::before {
+    background-color: white;
+    color: #2d325b;
+}
+
+.dugme:hover::before {
+    transform: rotateX(0deg);
+}
+
+
+/* kucuk ve orta cihaz tanitim font boyutu icin */
+
+
+/*  anasayfa font */
+
+@media screen and (min-width: 320px) {
+    .fontEvery {
+        font-weight: 700;
+        transform: scale(.8, 1.06);
+    }
+    .bennet .inceKenarlik {
+        border-top: none;
+        border-bottom: none;
+    }
+    .bennetYaziYukseklik {
+        height: 110px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .fontEvery {
+        transform: scale(.9, 1.3);
+        font-weight: 800;
+    }
+    .bennetYaziYukseklik {
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .fontEvery {
+        transform: scale(1, 1.4);
+        font-weight: 800;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bennet .inceKenarlik {
+        border-bottom: 1px solid;
+    }
+    .bennetYaziYukseklik {
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .fontEvery {
+        transform: scale(1, 1.7);
+        font-weight: 800;
+    }
+    .bennetYaziYukseklik {
+        height: 110px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .fontEvery {
+        transform: scale(2, 2.8);
+        font-weight: 800;
+    }
+    .harfBosluk {
+        line-height: 280px;
+    }
+}
