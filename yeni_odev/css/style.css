@@ -53,7 +53,7 @@
                 }
                 
                 .navbarLi:first-child a::before {
-                    content: 'home';
+                    content: 'tea store';
                 }
                 
                 .navbarLi:nth-child(2) a::before {
@@ -62,6 +62,15 @@
                 
                 .navbarLi:last-child a::before {
                     content: 'contact';
+                }
+                
+                .col-sm-12 .navbarLi a::before {
+                    content: 'browse teas';
+                }
+                
+                .col-sm-12 .dugme {
+                    color: white;
+                    background-color: #0d927d;
                 }
                 
                 .dugme::before {
@@ -76,6 +85,11 @@
                     transform: rotateX(90deg);
                     transform-origin: top;
                     transition: 300ms all;
+                }
+                
+                .col-sm-12 .dugme::before {
+                    background-color: white;
+                    color: #2d325b;
                 }
                 
                 .dugme:hover::before {

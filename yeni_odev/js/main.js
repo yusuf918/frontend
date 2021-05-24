@@ -12,9 +12,7 @@ document.getElementsByClassName("bennetBolumu")[0].innerHTML = " <div class = 'n
 
 
 
-document.getElementsByClassName("about")[0].innerHTML = "About";
-document.getElementsByClassName("teaStore")[0].innerHTML = "Tea store";
-document.getElementsByClassName("contact")[0].innerHTML = "Contact";
+
 //header en son içerik
 document.getElementsByClassName("baslikEnSon")[0].innerHTML = "<a class='nav-link p-0' href='#'><span class='material-icons ' style='font-size:36px; '>shopping_bag</span><span class='d-inline-block turuncuRenk mb-1 rounded-circle' style='padding: 13px;'></span><span class='d-inline-block position-relative text-white' style='left: -27%;top: -0.7rem;' id='headerSayi'></span></a>";
 // header turuncu dairedeki sayi icin
@@ -28,8 +26,16 @@ function tanitimAsagiKaydir() {
     document.getElementById("fa-times").style.display = "block";
     document.getElementById("tanitimKucukOrtaCihaz").style.display = "block";
     document.getElementById("tanitimVarsayilan").style.display = "none";
-    document.body.style.backgroundColor = "#f9c5d1";
+    document.getElementById("tanitimKucukOrtaCihaz").style.backgroundColor = "#f9c5d1";
+    document.getElementsByClassName("teaStoreLink")[0].innerHTML = " <div class='teaStore'>tea store</div> ";
+    document.getElementsByClassName("aboutLink")[0].innerHTML = " <div class='about'>about</div> ";
+    document.getElementsByClassName("contactLink")[0].innerHTML = " <div class='contact'>contact</div>";
+
 }
+
+document.getElementsByClassName("teaStore")[0].innerHTML = "Tea store";
+document.getElementsByClassName("about")[0].innerHTML = "About";
+document.getElementsByClassName("contact")[0].innerHTML = "Contact";
 
 function tanitimAsagiKaydirKapat() {
     document.getElementById("fa-align").style.display = "block";
