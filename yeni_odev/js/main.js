@@ -4,14 +4,16 @@ function animasyonYokEt() {
     setTimeout(() => {
         document.getElementsByTagName("nav")[0].style.display = "none";
         document.getElementsByClassName("icerik")[0].style.display = "block";
-        document.getElementsByClassName("icerik")[2].style.display = "block";
-        document.getElementsByClassName("icerik")[2].style.display = "block";
+
     }, 1000);
 }
 
 // dugme  kısmını buraya yazdım
 var tıklamaDugmesi = "<i class='fas fa-lg fa-align-justify d- py-1' id='fa-align' onclick='tanitimAsagiKaydir()'></i> <i class='fas fa-lg fa-times py-1 pr-1 ' style='display: none;' id='fa-times' onclick='tanitimAsagiKaydirKapat()'></i>";
 document.getElementsByClassName("d-lg-none")[0].innerHTML = tıklamaDugmesi;
+
+
+
 
 //bennet bolumu
 var bennetYazisi = "bennet";
@@ -44,9 +46,9 @@ function tanitimAsagiKaydir() {
 
 }
 
-document.getElementsByClassName("teaStore")[0].innerHTML = "Tea store";
-document.getElementsByClassName("about")[0].innerHTML = "About";
-document.getElementsByClassName("contact")[0].innerHTML = "Contact";
+// document.getElementsByClassName("teaStore")[0].innerHTML = "Tea store";
+// document.getElementsByClassName("contact")[0].innerHTML = "Contact";
+// document.getElementsByClassName("about")[0].innerHTML = "About";
 
 function tanitimAsagiKaydirKapat() {
     document.getElementById("fa-align").style.display = "block";
@@ -56,5 +58,10 @@ function tanitimAsagiKaydirKapat() {
 
 }
 // refresh yourself yazısını ekrana yazdırma için
-var refreshYourself = "refresh yourself with tea";
-document.getElementsByClassName("refreshYourself")[0].innerHTML = refreshYourself;
+// var i;
+// for (i = 0; i < icerik.length; i++) {
+//     document.getElementsByClassName("icerik")[i].style.display = "none";
+
+// }
+// var refreshYourself = "refresh yourself with tea";
+// document.getElementsByClassName("refreshYourself")[0].innerHTML = refreshYourself;
