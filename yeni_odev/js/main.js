@@ -10,7 +10,7 @@ function animasyonYokEt() {
 
 // dugme  kısmını buraya yazdım
 var tıklamaDugmesi = "<i class='fas fa-lg fa-align-justify d- py-1' id='fa-align' onclick='tanitimAsagiKaydir()'></i> <i class='fas fa-lg fa-times py-1 pr-1 ' style='display: none;' id='fa-times' onclick='tanitimAsagiKaydirKapat()'></i>";
-document.getElementsByClassName("d-lg-none")[0].innerHTML = tıklamaDugmesi;
+document.getElementsByClassName("tiklamaDugmesi")[0].innerHTML = tıklamaDugmesi;
 
 
 
