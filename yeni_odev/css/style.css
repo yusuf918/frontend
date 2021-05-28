@@ -98,21 +98,23 @@ body {
     text-decoration: none;
 }
 
-.navbarLi:first-child a::before {
-    content: 'tea store';
+.navbarLi a::before {
+    content: attr(data-text);
 }
 
-.navbarLi:nth-child(2) a::before {
+
+/* .navbarLi:nth-child(1) .navbarLi a::before {
     content: 'about';
 }
 
 .navbarLi:last-child a::before {
     content: 'contact';
-}
+} */
 
-.col-sm-12 .navbarLi a::before {
+
+/* .col-sm-12 .navbarLi a::before {
     content: 'browse teas';
-}
+} */
 
 .col-sm-12 .dugme {
     color: white;
