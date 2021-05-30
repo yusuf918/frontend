@@ -102,20 +102,6 @@ body {
     content: attr(data-text);
 }
 
-
-/* .navbarLi:nth-child(1) .navbarLi a::before {
-    content: 'about';
-}
-
-.navbarLi:last-child a::before {
-    content: 'contact';
-} */
-
-
-/* .col-sm-12 .navbarLi a::before {
-    content: 'browse teas';
-} */
-
 .col-sm-12 .dugme {
     color: white;
     background-color: #0d927d;
@@ -144,8 +130,7 @@ body {
     transform: rotateX(0deg);
 }
 
-
-/* kucuk ve orta cihaz tanitim font boyutu icin */
+main .coreValues .container {}
 
 
 /*  anasayfa font */
