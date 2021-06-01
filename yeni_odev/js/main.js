@@ -39,7 +39,6 @@ function tanitimAsagiKaydir() {
     document.getElementById("fa-times").style.display = "block";
     document.getElementById("tanitimKucukOrtaCihaz").style.display = "block";
     document.getElementById("tanitimVarsayilan").style.display = "none";
-    document.getElementById("tanitimKucukOrtaCihaz").style.backgroundColor = "#f9c5d1";
     document.getElementsByClassName("teaStoreLink")[0].innerHTML = " <div class='teaStore'>tea store</div> ";
     document.getElementsByClassName("aboutLink")[0].innerHTML = " <div class='about'>about</div> ";
     document.getElementsByClassName("contactLink")[0].innerHTML = " <div class='contact'>contact</div>";
