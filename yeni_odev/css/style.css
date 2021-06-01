@@ -98,7 +98,7 @@ body {
     text-decoration: none;
 }
 
-.navbarLi a::before {
+.navbarLi .dugme::before {
     content: attr(data-text);
 }
 
