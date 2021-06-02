@@ -10,11 +10,53 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="sayfaAc('icerik')">
+
+    <header class="pt-2   icerik fixed-top" style="display: none;">
+        <!-- baslik -->
+        <ul class="nav justify-content-between ">
+
+            <!-- baslik en sol kısım -->
+            <li class="nav-item">
+                <!-- sm button tıklama butonu gelecek -->
+                <!--bu kısmı javascriptten çagırdım-->
+                <span class="btn d-lg-none">
+                    </span>
+
+
+                <!-- lg-sayfa link butonlari -->
+                <ul class="d-none d-lg-block pt-2">
+                    <li class="navbarLi">
+                        <a href="teastore.html" class="dugme" data-text="home">tea store</a>
+                    </li>
+                    <li class="navbarLi">
+                        <a href="about.html" class="dugme" data-text="content">about </a>
+
+                    </li>
+                    <li class="navbarLi">
+                        <a href="contact.html" class="dugme" data-text="developer">contact</a>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item mr-lg-5">
+                <a href="index.html" class="bennetBolumu text-white">
+                </a>
+            </li>
+
+            <!-- baslik en sag kısım -->
+            <li class="nav-item mb-5 pt-lg-3 mr-lg-4 baslikEnSon">
+
+            </li>
+
+        </ul>
+    </header>
+
+
     <nav>
         <ul>
             <li class="baslangicAnimasyonu" onmouseover="animasyonYokEt()">
@@ -23,7 +65,85 @@
             </li>
         </ul>
     </nav>
-    <div href="#" class="icerik" data-text="asd" style="display: none;">asd</div>
+
+
+
+    <main class="icerik">
+        <div class="container d-lg-none pt-5 pembeRenk" id="tanitimKucukOrtaCihaz" style="display: none;height: 100vh; ">
+            <div class="display-4 text-uppercase font-weight-bold pt-5">
+                <center>
+                    <a href="teastore.html " class="morRenk teaStoreLink">
+
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 my-2 text-uppercase font-weight-bold morRenk ">
+                <center>
+                    <a href="about.html " class="morRenk  aboutLink">
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 text-uppercase font-weight-bold morRenk ">
+                <center>
+                    <a href="contact.html " class="text-white contactLink">
+
+                    </a>
+                </center>
+            </div>
+        </div>
+
+        <div id="tanitimVarsayilan">
+            <div>
+                <div class="row m-0">
+
+                    <div class="col-12 col-lg-6  d-flex align-items-end text-white" style="height: 100vh;background-color: #0d927d;">
+                        <div class="row ">
+
+                            <div class="col-12 p-0 pl-md-4 pl-lg-1  ">
+                                <div class="col-12 col-lg-6 d-lg-inline-block display-4 font-weight-bold py-3 pt-lg-0  contactYazisi">
+                                    <span class="p-0  m-0 display-4 " style="font-family: 'Work Sans', sans-serif;">co</span>
+                                    <span class="m-n3 p-0">nta</span>
+                                    <span class="p-0 m-0 display-4 mr-n3" style="font-family: 'Work Sans', sans-serif;">c</span>
+                                    <span class="p-0 m-0">t</span>
+                                </div>
+
+                                <div class="col-12  col-md-6 col-lg-5 d-lg-inline-block  pb-5 contactTakimAciklamasi" style="letter-spacing: -1px; ">
+                                    The Bennett team is committed to ensuring you have a positive exhibiting experience. Please contact the team member who may best assist you with your question
+                                </div>
+                            </div>
+                            <div class=" col-3  pb-2 ml-md-4 pl-md-3"> <i class=" far fa-lg fa-envelope bg-success"></i></div>
+                            <div class=" col-8  h3 bennetInfo">info@bennettea.org</div>
+                            <div class="col-3 ml-md-4 pl-md-3 m-0 pb-5">
+                                <i class="fas fa-lg fa-phone-alt "></i>
+                            </div>
+                            <div class=" col-7">
+                                (947) 856 1795
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 col-lg-6 bg-info" style="height: 100vh;">
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+
 
 
 

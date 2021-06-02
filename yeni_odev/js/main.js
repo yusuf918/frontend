@@ -3,14 +3,24 @@ function animasyonYokEt() {
     var i;
     setTimeout(() => {
         document.getElementsByTagName("nav")[0].style.display = "none";
-        document.getElementsByClassName("icerik")[0].style.display = "block";
-
+        var y = document.getElementsByClassName("icerik");
+        y[0].style.display = "block";
     }, 1000);
+}
+
+function sayfaAc(x) {
+    var y = document.getElementsByClassName(x);
+    var i;
+
+    for (i = 1; i < y.length; i++) {
+        y[i].style.display = "block";
+
+    }
 }
 
 // dugme  kısmını buraya yazdım
 var tıklamaDugmesi = "<i class='fas fa-lg fa-align-justify d- py-1' id='fa-align' onclick='tanitimAsagiKaydir()'></i> <i class='fas fa-lg fa-times py-1 pr-1 ' style='display: none;' id='fa-times' onclick='tanitimAsagiKaydirKapat()'></i>";
-document.getElementsByClassName("tiklamaDugmesi")[0].innerHTML = tıklamaDugmesi;
+document.getElementsByClassName("d-lg-none")[0].innerHTML = tıklamaDugmesi;
 
 
 
@@ -26,12 +36,23 @@ document.getElementsByClassName("bennetBolumu")[0].innerHTML = " <div class = 'n
 
 
 
+
 //header en son içerik
 document.getElementsByClassName("baslikEnSon")[0].innerHTML = "<a class='nav-link p-0' href='#'><span class='material-icons ' style='font-size:36px; '>shopping_bag</span><span class='d-inline-block turuncuRenk mb-1 rounded-circle' style='padding: 13px;'></span><span class='d-inline-block position-relative text-white' style='left: -27%;top: -0.7rem;' id='headerSayi'></span></a>";
 // header turuncu dairedeki sayi icin
 var headerSayi = document.getElementById("headerSayi");
-var sayi = "0";
-headerSayi.innerHTML = sayi;
+var sayi = 0;
+
+
+function sayiYazdir(x) {
+    headerSayi.innerHTML = x;
+
+}
+sayiYazdir(sayi);
+
+
+
+
 
 
 function tanitimAsagiKaydir() {

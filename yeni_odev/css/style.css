@@ -147,6 +147,9 @@ main .coreValues .container {}
     .bennetYaziYukseklik {
         height: 110px;
     }
+    .bennetInfo {
+        font-size: 1.75rem;
+    }
 }
 
 @media screen and (min-width: 375px) {
@@ -182,6 +185,16 @@ main .coreValues .container {}
     }
     .bennetYaziYukseklik {
         height: 110px;
+    }
+    .bennetInfo,
+    .contactTakimAciklamasi {
+        font-size: 12px !important;
+    }
+    .contactTakimAciklamasi {
+        line-height: 15px;
+    }
+    .contactTakimAciklamasi {
+        vertical-align: middle;
     }
 }
 
