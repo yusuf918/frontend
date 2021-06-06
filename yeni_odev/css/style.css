@@ -70,10 +70,6 @@
     .pembeRenk {
         background-color: #f9c5d1;
     }
-    
-    .acıkYesil {
-        background-color: #0d927d;
-    }
     /* dugme animasyon kismi */
     
     .navbarLi {
@@ -214,15 +210,20 @@
     .teaStoreLinki:hover {
         color: #2d325b;
     }
-
-    .navbarLi .col-12:hover:before{
-color:#2d325b;
-background-color:white;
-    }
-    .pembeArkaPlan{
     
-        background-color:#f9c5d1;
+    .navbarLi .col-12:hover:before {
+        color: #2d325b;
+        background-color: white;
     }
-    .morArkaPlan{
-background-color:#2d325b;
+    
+    .pembeArkaPlan {
+        background-color: #f9c5d1;
+    }
+    
+    .morArkaPlan {
+        background-color: #2d325b;
+    }
+    
+    .acıkYesil {
+        background-color: #0d927d;
     }
