@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- sayfa açılış animasyonu -->
+    <nav>
+        <ul>
+            <li class="baslangicAnimasyonu" onmouseover="animasyonYokEt()">
+
+
+            </li>
+        </ul>
+    </nav>
+
+    <header class="pt-2 contact  icerik fixed-top" style="display: none;">
+        <!-- baslik -->
+        <ul class="nav justify-content-between ">
+
+            <!-- baslik en sol kısım -->
+            <li class="nav-item">
+                <!-- sm button tıklama butonu gelecek -->
+                <!--bu kısmı javascriptten çagırdım-->
+                <div class="hamburger-btn d-lg-none">
+                </div>
+
+
+
+                <!-- lg-sayfa link butonlari -->
+                <ul class="d-none d-lg-block pt-2">
+                    <li class="navbarLi">
+                        <a href="teastore.html" class="py-2 pl-2 dugme acıkYesil text-white  border border-white" data-text="tea store">tea store</a>
+                    </li>
+                    <li class="navbarLi">
+                        <a href="about.html" class="py-2 px-4 mx-lg-n1 text-white dugme acıkYesil border border-white" data-text="about">about </a>
+
+                    </li>
+                    <li class="navbarLi">
+                        <a href="contact.html" class="py-2 px-4 dugme acıkYesil bg-white morRenk border border-white" data-text="contact">contact</a>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item mr-lg-5">
+                <a href="index.html" class="bennetBolumu text-white">
+                </a>
+            </li>
+
+            <!-- baslik en sag kısım -->
+            <li class="nav-item mb-5 pt-lg-3 mr-lg-4 baslikEnSon">
+
+            </li>
+
+        </ul>
+    </header>
+
+    <!-- kucuk ve orta cihaz asagı acılır bolum -->
+    <div class="container d-lg-none pembeArkaPlan pt-5" id="tanitimKucukOrtaCihaz" style="display: none;height:100vh; ">
+        <div class="display-4 text-uppercase font-weight-bold ">
+            <center>
+                <a href="teastore.html " class="morRenk teaStoreLink">
+
+                </a>
+            </center>
+        </div>
+        <div class="display-4 my-2 text-uppercase font-weight-bold morRenk ">
+            <center>
+                <a href="about.html " class="morRenk aboutLink">
+                </a>
+            </center>
+        </div>
+        <div class="display-4 text-uppercase font-weight-bold morRenk ">
+            <center>
+                <a href="contact.html " class="morRenk contactLink">
+
+                </a>
+            </center>
+        </div>
+    </div>
+    <main class="icerik p-0 m-0">
+        <div class="container d-lg-none" id="tanitimKucukOrtaCihaz" style="display: none;">
+            <div class="display-4 text-uppercase font-weight-bold ">
+                <center>
+                    <a href="teastore.html " class="teaStoreLink text-white">
+
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 my-2 text-uppercase font-weight-bold morRenk ">
+                <center>
+                    <a href="about.html" class="morRenk aboutLink">
+
+                    </a>
+                </center>
+            </div>
+            <div class="display-4 text-uppercase font-weight-bold morRenk pb-3">
+                <center>
+                    <a href="contact.html " class="morRenk contactLink">
+
+                    </a>
+                </center>
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+
+
+
+
+
+        <div class=" m-0 p-0" id="tanitimVarsayilan">
+            <!-- d-lg için animasyon kısmı -->
+            <div class="col-12 row m-0 col-lg turuncuRenk d-inline-block p-0" style="height: 100vh;">
+                <div class="h-75 bg-primary col-12 p-2 "></div>
+                <div class="h-25 col-12 bg-warning p-2 "></div>
+                <div class="col-12 m-0 col-lg d-inline-block acıkYesil p-0 bg-dark " style="height: 100vh; "></div>
+            </div>
+
+            <!-- d-sm normal kısım -->
+
+        </div>
+
+    </main>
+    <div class="btn " onclick="animasyon(1) ">1</div>
+    <div class="btn " onclick="animasyon(2) ">2</div>
+    <div class="btn " onclick="animasyon(3) ">3</div>
+    <div class="btn " onclick="animasyon(4) ">4</div>
+    <div class="btn " onclick="animasyon(5) ">5</div>
+    <div class="btn " onclick="animasyon(6) ">5</div>
+
+    <div class="hamburger ">
+        <div class="sliderAnimasyon bg-danger p-0 ">
+            çay rengi
+        </div>
+        <div class="sliderAnimasyon bg-dark p-0 ">
+            asd
+        </div>
+
+        <div class="sliderAnimasyon bg-warning p-0 ">
+            mor renkli
+        </div>
+
+        <div class="sliderAnimasyon bg-info p-0 ">
+            koyu renkli
+        </div>
+
+    </div>
+
+
+    <style>
+        .hamburger-btn {
+            width: 100%;
+            height: 100vh;
+            background-color: red;
+        }
+        
+        .sliderAnimasyon {
+            height: 10vh;
+            width: 50%;
+            background-color: blueviolet;
+        }
+        
+        .sliderAnimasyon:first-child {
+            animation-name: soldanacılır;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        
+        .sliderAnimasyon:nth-child(2) {
+            animation-name: sagdanacılır;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+        
+        .sliderAnimasyon:nth-child(3) {
+            animation-name: yukaridanacilir;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+        
+        .sliderAnimasyon:nth-child(4) {
+            animation-name: asagidanacilir;
+            animation-duration: 1000ms;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+        
+        @keyframes soldanacılır {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            10% {
+                width: 10%;
+                height: 5vh;
+            }
+            20% {
+                width: 20%;
+                height: 5vh;
+            }
+            30% {
+                width: 30%;
+                height: 5vh;
+            }
+            40% {
+                width: 40%;
+                height: 5vh;
+            }
+            50% {
+                width: 50%;
+                height: 5vh;
+            }
+            60% {
+                width: 60%;
+                height: 5vh;
+            }
+            70% {
+                width: 70%;
+                height: 5vh;
+            }
+            80% {
+                width: 80%;
+                height: 5vh;
+            }
+            90% {
+                width: 90%;
+                height: 5vh;
+            }
+            100% {
+                width: 100%;
+                height: 5vh;
+            }
+        }
+        
+        @keyframes sagdanacılır {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            10% {
+                width: 10%;
+                height: 5vh;
+            }
+            20% {
+                width: 20%;
+                height: 5vh;
+            }
+            30% {
+                width: 30%;
+                height: 5vh;
+            }
+            40% {
+                width: 40%;
+                height: 5vh;
+            }
+            50% {
+                width: 50%;
+                height: 5vh;
+            }
+            60% {
+                width: 60%;
+                height: 5vh;
+            }
+            70% {
+                width: 70%;
+                height: 5vh;
+            }
+            80% {
+                width: 80%;
+                height: 5vh;
+            }
+            90% {
+                width: 90%;
+                height: 5vh;
+            }
+            100% {
+                width: 100%;
+                height: 5vh;
+            }
+        }
+        
+        @keyframes asagidanacilir {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            10% {
+                width: 100%;
+                height: 1vh;
+            }
+            20% {
+                width: 100%;
+                height: 2vh;
+            }
+            30% {
+                width: 100%;
+                height: 3vh;
+            }
+            40% {
+                width: 100%;
+                height: 4vh;
+            }
+            50% {
+                width: 100%;
+                height: 5vh;
+            }
+            60% {
+                width: 100%;
+                height: 6vh;
+            }
+            70% {
+                width: 100%;
+                height: 7vh;
+            }
+            80% {
+                width: 100%;
+                height: 8vh;
+            }
+            90% {
+                width: 100%;
+                height: 9vh;
+            }
+            100% {
+                width: 100%;
+                height: 10vh;
+            }
+        }
+        
+        @keyframes yukaridanacilir {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            10% {
+                width: 100%;
+                height: 1vh;
+            }
+            20% {
+                width: 100%;
+                height: 2vh;
+            }
+            30% {
+                width: 100%;
+                height: 3vh;
+            }
+            40% {
+                width: 100%;
+                height: 4vh;
+            }
+            50% {
+                width: 100%;
+                height: 5vh;
+            }
+            60% {
+                width: 100%;
+                height: 6vh;
+            }
+            70% {
+                width: 100%;
+                height: 7vh;
+            }
+            80% {
+                width: 100%;
+                height: 8vh;
+            }
+            90% {
+                width: 100%;
+                height: 9vh;
+            }
+            100% {
+                width: 100%;
+                height: 10vh;
+            }
+        }
+    </style>
+
+
+    <script>
+    </script>
+
+
+
+    <script src="./js/jquery-3.6.0.min.js "></script>
+    <script src="./js/bootstrap.js "></script>
+    <script src="./js/main.js "></script>
+</body>
+
+</html>

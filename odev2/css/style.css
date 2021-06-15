@@ -122,7 +122,27 @@
         transform: rotateX(0deg);
     }
     
-    main .coreValues .container {}
+    .hamburger-btn {
+        margin-top: -10vh;
+        width: 50px;
+        height: 50px!important;
+        display: inline-block;
+        justify-content: center;
+        align-content: flex-start;
+        background-color: transparent;
+    }
+    
+    .line {
+        width: 25px;
+        height: 2px;
+        display: block;
+        background-color: #2d325b;
+        margin: 7px 0;
+    }
+    
+    .line:first-child {
+        margin: 0px 0;
+    }
     /*  anasayfa font */
     
     @media screen and (min-width: 320px) {
@@ -226,4 +246,13 @@
     
     .acıkYesil {
         background-color: #0d927d;
+    }
+    
+    .navbarLi .acıkYesil {
+        outline: 0px;
+    }
+    
+    .contact .dugme:before {
+        background-color: white;
+        color: #2d325b;
     }
