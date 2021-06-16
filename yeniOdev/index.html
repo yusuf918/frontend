@@ -13,45 +13,48 @@
 
 <body>
     <header>
-        <nav class="nav bg-dark pt-3 pb-2 ">
-            <div class="nav-link ">
-                <a href="index.html " class="text-decoration-none text-white h3">
-                    <strong>Emigre</strong>
-                </a>
-            </div>
-            <div class="nav-link  ps-1">
-                <div class="mt-1" onclick="alertDisplay('block')"> <i class="fas fa-search h4 mt-0 mb-auto text-white"></i></div>
-            </div>
-            <div class="nav-link px-3 ps-2 mt-1">
-                <a href="loginOrRegister.html">
-                    <i class="fas fa-user h4 text-white"></i>
+        <div class="row">
+            <div class="d-none d-lg-inline-block col-lg-7 col-xl-8 py-1 px-2 bg-dark d-lg-inline-block" style="height: 4vh;"></div>
 
-                </a>
-            </div>
-            <div class="nav-link px-0 mt-1">
-                <a href="cart.html">
-                    <i class="fas fa-shopping-cart h4 text-white"></i>
+            <nav class="nav bg-dark pt-3 pb-2 col-12 col-lg-5 col-xl-4  ms-auto ">
+                <div class="nav-link d-lg-none">
+                    <a href="index.html " class="text-decoration-none text-white h3">
+                        <strong>Emigre</strong>
+                    </a>
+                </div>
+                <div class="nav-link  ps-1 ps-lg-5">
+                    <div class="mt-1" onclick="alertDisplay('block')"> <i class="fas fa-search h4 mt-0 mb-auto text-white"></i></div>
+                </div>
+                <div class="nav-link px-3 ps-2 mt-1">
+                    <a href="loginOrRegister.html">
+                        <i class="fas fa-user h4 text-white"></i>
 
-                </a>
-            </div>
-            <div class="pt-2">
-                <a href="cart.html" class="text-decoration-none">
+                    </a>
+                </div>
+                <div class="nav-link px-0 mt-1">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart h4 text-white"></i>
 
-                    <span class="small text-warning pt-auto " id="satinAlmaSayisi" style="margin-left: -180%;">a</span>
-                </a>
-            </div>
+                    </a>
+                </div>
+                <div class="pt-2">
+                    <a href="cart.html" class="text-decoration-none">
 
-            <div class=" nav-link ps-0 col-1 mt-1">
-                <div class="hamburger-btn col-3 d-lg-none ">
-                    <div class="row m-0 px-3 ">
-                        <span class="bg-white pt-1 pl-2 m-0 rounded "></span>
-                        <span class="bg-white pt-1 pl-3  rounded " style="margin: 3px 0px;"></span>
-                        <span class="bg-white pt-1 pl-3 m-0 rounded "></span>
+                        <span class="small text-warning pt-auto " id="satinAlmaSayisi" style="margin-left: -180%;">a</span>
+                    </a>
+                </div>
+
+                <div class=" nav-link ps-0 col-1 mt-1">
+                    <div class="hamburger-btn col-3 d-lg-none ">
+                        <div class="row m-0 px-3 ">
+                            <span class="bg-white pt-1 pl-2 m-0 rounded "></span>
+                            <span class="bg-white pt-1 pl-3  rounded " style="margin: 3px 0px;"></span>
+                            <span class="bg-white pt-1 pl-3 m-0 rounded "></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
 
     </header>
 
@@ -139,21 +142,23 @@
 
 
     <!-- sayfa karartma ve sm arama kutusu için gerekli kodlar -->
-    <div class="col-12" id="sayfayiKarart" style="height: 100vh;margin-top: -15vh;background-color: black;opacity: 0.5;display: none;z-index: 1;" onclick="alertDisplay('none')">
+    <div class="col-12 fixed-top" id="sayfayiKarart" style="height: 104vh;margin-top: 0px;background-color: black;opacity: 0.5;display: none;z-index: 1;" onclick="alertDisplay('none')">
     </div>
 
-    <div class="position-relative" style="margin-top: -90vh">
-        <div class="col-10 bg-white  rounded mx-auto " id="aramaCubugu" style="height: 45vh;display: none;opacity: 0px;z-index: 2;background-color: white;">
-            <div class="row m-0 pt-2">
-                <div class="mt-4 mb-4">
-                    <div class="ms-auto col-1 me-2" onclick="alertDisplay('none')">
-                        <div class="fas fa-times text-muted col-1"></div>
+    <div class="fixed-top pt-4">
+        <div class="pt-3">
+            <div class="col-10 bg-white  rounded mx-auto " id="aramaCubugu" style="height: 45vh;display: none;opacity: 0px;z-index: 2;background-color: white;">
+                <div class="row m-0 pt-2">
+                    <div class="mt-4 mb-4">
+                        <div class="ms-auto col-1 me-2" onclick="alertDisplay('none')">
+                            <div class="fas fa-times text-muted col-1"></div>
+                        </div>
                     </div>
-                </div>
-                <div class=" col-10 mt-3 mx-auto ">
-                    <div class="input-group mb-3 ">
-                        <input type="text " class="form-control rounded-0 pt-2 pb-2 " placeholder="Search " aria-label="search " aria-describedby="button-addon2 ">
-                        <button class="btn btn-outline-secondary rounded-0 bg-danger text-white " type="button " id="button-addon2 ">Go</button>
+                    <div class=" col-10 mt-3 mx-auto ">
+                        <div class="input-group mb-3 ">
+                            <input type="text " class="form-control rounded-0 pt-2 pb-2 " placeholder="Search " aria-label="search " aria-describedby="button-addon2 ">
+                            <button class="btn btn-outline-secondary rounded-0 bg-danger text-white " type="button " id="button-addon2 ">Go</button>
+                        </div>
                     </div>
                 </div>
             </div>

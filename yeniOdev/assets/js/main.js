@@ -20,6 +20,20 @@ function satinAlmalariYazdir(sayi) {
 
 satinAlmalariYazdir(x);
 
+
+var pdf = document.getElementsByClassName("pdf");
+for (let i = 0; i < pdf.length; i++) {
+    pdf[i].className = "badge pdf bg-danger small float-end mt-1 text-uppercase ";
+    pdf[i].innerHTML = "PDF";
+}
+var arkaPlansızPdf = document.getElementsByClassName("ArkaPLansızpdf");
+for (let i = 0; i < arkaPlansızPdf.length; i++) {
+    arkaPlansızPdf[i].className = "badge pdf bg-danger small float-end mt-1 text-uppercase ";
+    arkaPlansızPdf[i].innerHTML = "PDF";
+}
+
+//document.getElementsByClassName("")[0].className =
+
 $(function() {
     $("").click(function() {
         $(".byFamilyAcilim").toggle(1000);
