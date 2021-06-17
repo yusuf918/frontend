@@ -11,6 +11,27 @@ function alertDisplay(display) {
     }
 }
 
+function ucret(index) {
+    return index < 15 ? "100" : index < 51 ? "75" : "50";
+}
+
+
+var issues = document.getElementById("issues");
+var a = '<div class="linkliSolukYazi">show all</div>';
+let issueLength = 69;
+var sonunaPdfEklenecekler = [64, 65, 66, 67, 68, 69];
+var sonunaUcretEklenecekler = [13, 14, 16, 18, 19, 21, 23, 26, 27, 41, 52, 53, 55, 63];
+for (i = 1; i <= issueLength; i++) {
+    if (sonunaPdfEklenecekler.includes(i)) {
+        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="pdf"></span>' + '</div>';
+    } else if (sonunaUcretEklenecekler.includes(i)) {
+        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="float-end">' + "$" + ucret(i) + '.00' + '</span>' + '</div>';
+
+    } else
+        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '</div>';
+
+    issues.innerHTML = a;
+}
 var x = 0;
 
 function satinAlmalariYazdir(sayi) {
@@ -20,22 +41,43 @@ function satinAlmalariYazdir(sayi) {
 
 satinAlmalariYazdir(x);
 
+function yazdir() {
+    document.getElementById("yazdir").innerHTML = "asdfg";
+}
+
+var linkliSolukYazi = document.getElementsByClassName("linkliSolukYazi")
+for (let i = 0; i < linkliSolukYazi.length; i++) {
+    linkliSolukYazi[i].className = "linkliSolukYazi text-muted border-bottom border-secondary text-capitalize col-10 mx-auto";
+}
 
 var pdf = document.getElementsByClassName("pdf");
 for (let i = 0; i < pdf.length; i++) {
-    pdf[i].className = "badge pdf bg-danger small float-end mt-1 text-uppercase ";
-    pdf[i].innerHTML = "PDF";
-}
-var arkaPlansızPdf = document.getElementsByClassName("ArkaPLansızpdf");
-for (let i = 0; i < arkaPlansızPdf.length; i++) {
-    arkaPlansızPdf[i].className = "badge pdf bg-danger small float-end mt-1 text-uppercase ";
-    arkaPlansızPdf[i].innerHTML = "PDF";
+    pdf[i].className = "badge pdf bg-danger small float-end mt-1  ";
+    pdf[i].innerHTML = "Pdf";
 }
 
+var arkaPlansizPdf = document.getElementsByClassName("arkaPlansizPdf");
+for (let i = 0; i < arkaPlansizPdf.length; i++) {
+    arkaPlansizPdf[i].className = "badge arkaPlansizPdf bg-gradient small float-end mt-1 text-uppercase ";
+    arkaPlansizPdf[i].innerHTML = "Pdf";
+}
+
+var printedVersiyon = document.getElementsByClassName("printedVersiyon");
+for (let i = 0; i < printedVersiyon.length; i++) {
+    printedVersiyon[i].className = "badge printedVersiyon bg-secondary small float-end mt-1  me-1 ";
+    printedVersiyon[i].innerHTML = "printed versiyon";
+}
 //document.getElementsByClassName("")[0].className =
+var arkaPlansizPrintedVersiyon = document.getElementsByClassName("arkaPlansizPrintedVersiyon");
+for (let i = 0; i < arkaPlansizPrintedVersiyon.length; i++) {
+    arkaPlansizPrintedVersiyon[i].className = "badge arkaPlansizPrintedVersiyon bg-gradient small float-end mt-1  me-1 ";
+    arkaPlansizPrintedVersiyon[i].innerHTML = "printed versiyon";
+}
 
-$(function() {
-    $("").click(function() {
-        $(".byFamilyAcilim").toggle(1000);
+
+
+$(function(basılacak, displayDegisecek) {
+    $(basılacak).click(function() {
+        $(basılacak).toggle();
     });
 });
