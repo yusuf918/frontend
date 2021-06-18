@@ -74,10 +74,28 @@ for (let i = 0; i < arkaPlansizPrintedVersiyon.length; i++) {
     arkaPlansizPrintedVersiyon[i].innerHTML = "printed versiyon";
 }
 
+$(".hamburger-btn").click(function() {
+    $(".baslangictaKapali").toggle(1000);
+});
 
-
-$(function(basılacak, displayDegisecek) {
-    $(basılacak).click(function() {
-        $(basılacak).toggle();
-    });
+$(".tiklandigindaHepsiniKapat").click(function() {
+    $("section").hide();
+});
+$(".byFamily").click(function() {
+    $(".byFamilyAcilim").toggle();
+});
+$(".byStyle").click(function() {
+    $(".byStyleAcilim").toggle();
+});
+$(".langauages").click(function() {
+    $(".langauagesAcilim").toggle();
+});
+$(".typeSpecimens").click(function() {
+    $(".typeSpecimensAcilim").toggle();
+});
+$(".emigreMagazine").click(function() {
+    $(".emigreMagazineAcilim").toggle();
+});
+$(".merchMore").click(function() {
+    $(".merchMoreAcilim").toggle();
 });

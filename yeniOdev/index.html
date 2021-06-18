@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -16,7 +17,7 @@
         <div class="row">
             <div class="d-none d-lg-inline-block col-lg-7 col-xl-8 py-1 px-2 bg-dark d-lg-inline-block" style="height: 4vh;"></div>
 
-            <nav class="nav bg-dark pt-3 pb-2 col-12 col-lg-5 col-xl-4  ms-auto ">
+            <nav class="nav bg-dark pt-3 pb-2 col-12 col-lg-5 col-xl-4  ms-auto p-lg-0 ">
                 <div class="nav-link d-lg-none">
                     <a href="index.html " class="text-decoration-none text-white h3">
                         <strong>Emigre</strong>
@@ -59,10 +60,11 @@
     </header>
 
     <main>
-        <div class="baslangictaKapali mt-5">
+        <!-- small acılan div -->
+        <div class="baslangictaKapali mt-5 d-lg-none displayNone">
             <!-- byfamily -->
-            <div class="col-10 bg-dark text-white small mx-auto fw-bolder border border-secondary py-2 ps-2 byFamily">by Family</div>
-            <section class="byFamilyAcilim" style="height: 60vh;overflow-y: scroll;">
+            <div class="col-10 bg-dark text-white small mx-auto fw-bolder border border-secondary py-2  tiklandigindaHepsiniKapat byFamily">by Family</div>
+            <section class="byFamilyAcilim displayNone" style="height: 60vh;overflow-y: scroll;">
                 <div class="linkliSolukYazi "> show all</div>
                 <div class="linkliSolukYazi"> aida</div>
                 <div class="linkliSolukYazi">arbitrary </div>
@@ -124,8 +126,8 @@
             </section>
 
             <!-- by style -->
-            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 byStyle">By style</div>
-            <section>
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2   tiklandigindaHepsiniKapat  byStyle">By style</div>
+            <section class="byStyleAcilim displayNone">
                 <div class="linkliSolukYazi">serif</div>
                 <div class="linkliSolukYazi">sans serif</div>
                 <div class="linkliSolukYazi">display</div>
@@ -135,8 +137,8 @@
             </section>
 
             <!-- langauages -->
-            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 langauages">Langauages</div>
-            <section>
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2   tiklandigindaHepsiniKapat langauages">Langauages</div>
+            <section class=" langauagesAcilim displayNone">
                 <div class="linkliSolukYazi">latin</div>
                 <div class="linkliSolukYazi">central european</div>
                 <div class="linkliSolukYazi">cyrilic</div>
@@ -145,8 +147,8 @@
             </section>
 
             <!-- type specimens -->
-            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 typeSpecimens">Type specimens</div>
-            <section class="small">
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2   tiklandigindaHepsiniKapat typeSpecimens">Type specimens</div>
+            <section class="small tiklandigindaHepsiniKapat displayNone typeSpecimensAcilim">
                 <div class="linkliSolukYazi small"> <span class="small"> show all</span></div>
                 <div class="linkliSolukYazi small"><span class="small">email list </span></div>
                 <div class="linkliSolukYazi small"><span class="small">free catalog </span>
@@ -347,8 +349,8 @@
                 </div>
 
             </section>
-            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 emigreMagazine">Emigre magazine</div>
-            <section id="issues">
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2   tiklandigindaHepsiniKapat emigreMagazine ">Emigre magazine</div>
+            <section id="issues" class=" emigreMagazineAcilim displayNone">
                 <div class="linkliSolukYazi">issue 1</div>
                 <div class="linkliSolukYazi">issue 2</div>
                 <div class="linkliSolukYazi">issue 3</div>
@@ -404,8 +406,8 @@
 
             </section>
 
-            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 merchMore">Merch more</div>
-            <section>
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2   tiklandigindaHepsiniKapat merchMore">Merch more</div>
+            <section class="merchMoreAcilim displayNone">
                 <div class="linkliSolukYazi">books, t-sshits & CDs</div>
                 <div class="linkliSolukYazi">ceramics & fabrics</div>
                 <div class="linkliSolukYazi">collectables</div>
@@ -413,9 +415,25 @@
                 <div class="linkliSolukYazi">past projects</div>
             </section>
             <a href="news.html " class="text-decoration-none">
-                <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2 ps-2 news">News</div>
+                <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    news">News</div>
             </a>
         </div>
+
+        <nav class="row d-none d-lg-flex ps-xl-5 ms-xl-4">
+            <a href="index.html" class="text-decoration-none col-auto d-lg-block d-xl-none">
+                <div class="nav-link display-4 fw-bold text-danger px-2">Emigre Fonts</div>
+            </a>
+            <a href="index.html" class="text-decoration-none col-auto d-none d-xl-block ">
+                <div class="nav-link display-3 fw-bold text-danger small ">Emigre Fonts</div>
+            </a>
+            <div class="nav-link col-2 mt-lg-3 pt-lg-4 mt-xl-4 pt-xl-4 siyahRenk small xp-2 fw-bold px-xl-4">
+
+            </div>
+
+
+        </nav>
+
+
     </main>
 
 
@@ -449,10 +467,10 @@
         </div>
     </div>
 
-    <script src="./assets/js/main.js "></script>
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/main.js "></script>
 
     <script src="./assets/js/bootstrap.min.js "></script>
 </body>

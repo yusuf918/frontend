@@ -3,3 +3,15 @@
     padding: 1px 7px !important;
     opacity: 75% !important;
 }
+
+.displayNone {
+    display: none;
+}
+
+.siyahRenk {
+    color: black;
+}
+
+main .nav-link:hover {
+    color: red;
+}
