@@ -74,6 +74,8 @@ for (let i = 0; i < arkaPlansizPrintedVersiyon.length; i++) {
     arkaPlansizPrintedVersiyon[i].innerHTML = "printed versiyon";
 }
 
+
+
 $(".hamburger-btn").click(function() {
     $(".baslangictaKapali").toggle(1000);
 });
@@ -96,6 +98,13 @@ $(".typeSpecimens").click(function() {
 $(".emigreMagazine").click(function() {
     $(".emigreMagazineAcilim").toggle();
 });
+
 $(".merchMore").click(function() {
     $(".merchMoreAcilim").toggle();
 });
+$(".byFamilyLg").html($(".byFamilyAcilim").html());
+$(".byStyleLg").html($(".byStyleAcilim").html());
+$(".langauagesLg").html($(".langauagesAcilim").html());
+$(".typeSpecimensLg").html($(".typeSpecimensAcilim").html());
+$(".emigreMagazineLg").html($(".emigreMagazineAcilim").html());
+$(".merchMoreLg").html($(".merchMoreAcilim").html());

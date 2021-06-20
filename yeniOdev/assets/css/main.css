@@ -8,10 +8,26 @@
     display: none;
 }
 
+.width8 {
+    width: 8%;
+}
+
+.width10 {
+    width: 10%;
+}
+
+.width13 {
+    width: 12%;
+}
+
 .siyahRenk {
     color: black;
 }
 
 main .nav-link:hover {
     color: red;
+}
+
+.nav-link:hover ul {
+    display: block;
 }
