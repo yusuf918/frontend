@@ -108,3 +108,15 @@ $(".langauagesLg").html($(".langauagesAcilim").html());
 $(".typeSpecimensLg").html($(".typeSpecimensAcilim").html());
 $(".emigreMagazineLg").html($(".emigreMagazineAcilim").html());
 $(".merchMoreLg").html($(".merchMoreAcilim").html());
+
+// footer kısmındaki kısmımlar için
+$(".licensing").click(function() {
+    $(".licensingAcilim").toggle();
+});
+$(".typeDesigners").click(function() {
+    $(".typeDesignersAcilim").toggle();
+});
+
+// $(div[class != "licensing"]).click(function() {
+//     $(".licensingAcilim").hide();
+// });

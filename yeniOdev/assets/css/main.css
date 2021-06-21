@@ -31,3 +31,48 @@ main .nav-link:hover {
 .nav-link:hover ul {
     display: block;
 }
+
+.fontlar {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+.fontHtmlLink {
+    display: inline;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .fontlar {
+        width: 100%;
+        height: 22vh;
+        display: inline-block;
+    }
+    .fontHtmlLink {
+        display: inline;
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .fontHtmlLink {
+        display: inline;
+        width: 24%;
+    }
+    .fontlar {
+        height: 18vh;
+    }
+}
+
+.licensingAcilim {
+    top: -40vh;
+    height: 230px;
+    width: 180px;
+    display: none;
+}
+
+.typeDesignersAcilim {
+    height: 105vh;
+    top: -108vh;
+}
