@@ -38,6 +38,10 @@ main .nav-link:hover {
     margin-bottom: 15px;
 }
 
+.lisansYaziBoyutu {
+    font-size: 10px;
+}
+
 .fontHtmlLink {
     display: inline;
     width: 100%;
@@ -75,4 +79,5 @@ main .nav-link:hover {
 .typeDesignersAcilim {
     height: 105vh;
     top: -108vh;
+    display: none;
 }
