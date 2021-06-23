@@ -11,27 +11,37 @@ function alertDisplay(display) {
     }
 }
 
-function ucret(index) {
-    return index < 15 ? "100" : index < 51 ? "75" : "50";
-}
 
 
-var issues = document.getElementById("issues");
-var a = '<div class="linkliSolukYazi">show all</div>';
-let issueLength = 69;
-var sonunaPdfEklenecekler = [64, 65, 66, 67, 68, 69];
-var sonunaUcretEklenecekler = [13, 14, 16, 18, 19, 21, 23, 26, 27, 41, 52, 53, 55, 63];
-for (i = 1; i <= issueLength; i++) {
-    if (sonunaPdfEklenecekler.includes(i)) {
-        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="pdf"></span>' + '</div>';
-    } else if (sonunaUcretEklenecekler.includes(i)) {
-        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="float-end">' + "$" + ucret(i) + '.00' + '</span>' + '</div>';
 
-    } else
-        a += '<div class="linkliSolukYazi">' + 'issue' + " " + (i) + '</div>';
+function issuesYazdir(x) {
+    function ucret(index) {
+        return index < 15 ? "100" : index < 51 ? "75" : "50";
+    }
 
+
+
+    var issues = document.getElementById("issues");
+    var a = '<div class="linkliSolukYazi">show all</div>';
+    let issueLength = 69;
+    var sonunaPdfEklenecekler = [64, 65, 66, 67, 68, 69];
+    var sonunaUcretEklenecekler = [13, 14, 16, 18, 19, 21, 23, 26, 27, 41, 52, 53, 55, 63];
+
+    for (i = 1; i <= issueLength; i++) {
+        if (sonunaPdfEklenecekler.includes(i)) {
+            a += '<a href=\"' + x + '/issues/' + i.toString() + '.html\" class=\"text-decoration-none\"><div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="pdf"></span>' + '</div>' + '</a>';
+        } else if (sonunaUcretEklenecekler.includes(i)) {
+            a += '<a href=\"' + x + '/issues/' + i.toString() + '.html\" class=\"text-decoration-none\"><div class="linkliSolukYazi">' + 'issue' + " " + (i) + '<span class="float-end">' + "$" + ucret(i) + '.00' + '</span>' + '</div>' + '</a>';
+
+        } else
+            a += '<a href=\"' + x + '/issues/' + i.toString() + '.html\" class=\"text-decoration-none\"> <div class="linkliSolukYazi">' + 'issue' + " " + (i) + '</div>' + '</a>';
+
+    }
     issues.innerHTML = a;
 }
+
+issuesYazdir(dosya);
+
 var x = 0;
 
 function satinAlmalariYazdir(sayi) {
@@ -44,6 +54,7 @@ satinAlmalariYazdir(x);
 function yazdir() {
     document.getElementById("yazdir").innerHTML = "asdfg";
 }
+
 
 var linkliSolukYazi = document.getElementsByClassName("linkliSolukYazi")
 for (let i = 0; i < linkliSolukYazi.length; i++) {
@@ -76,6 +87,7 @@ for (let i = 0; i < arkaPlansizPrintedVersiyon.length; i++) {
 
 
 
+
 $(".hamburger-btn").click(function() {
     $(".baslangictaKapali").toggle(1000);
 });
@@ -83,32 +95,66 @@ $(".hamburger-btn").click(function() {
 $(".tiklandigindaHepsiniKapat").click(function() {
     $("section").hide();
 });
-$(".byFamily").click(function() {
+
+
+//sm navbar burada basliyor
+$('html').click(function() {
+    $(".byFamilyAcilim").hide();
+});
+$(".byFamily").click(function(e) {
+    e.stopPropagation();
     $(".byFamilyAcilim").toggle();
+
 });
-$(".byStyle").click(function() {
+
+
+$('html').click(function() {
+    $(".byStyleAcilim").hide();
+});
+$(".byStyle").click(function(e) {
+    e.stopPropagation();
     $(".byStyleAcilim").toggle();
+
 });
-$(".langauages").click(function() {
+
+$('html').click(function() {
+    $(".langauagesAcilim").hide();
+});
+$(".langauages").click(function(e) {
+    e.stopPropagation();
     $(".langauagesAcilim").toggle();
+
 });
-$(".typeSpecimens").click(function() {
+
+
+$('html').click(function() {
+    $(".typeSpecimensAcilim").hide();
+});
+$(".typeSpecimens").click(function(e) {
+    e.stopPropagation();
     $(".typeSpecimensAcilim").toggle();
+
 });
-$(".emigreMagazine").click(function() {
+
+
+$('html').click(function() {
+    $(".emigreMagazineAcilim").hide();
+});
+$(".emigreMagazine").click(function(e) {
+    e.stopPropagation();
     $(".emigreMagazineAcilim").toggle();
+
 });
 
-$(".merchMore").click(function() {
+$('html').click(function() {
+    $(".merchMoreAcilim").hide();
+});
+$(".merchMore").click(function(e) {
+    e.stopPropagation();
     $(".merchMoreAcilim").toggle();
-});
-$(".byFamilyLg").html($(".byFamilyAcilim").html());
-$(".byStyleLg").html($(".byStyleAcilim").html());
-$(".langauagesLg").html($(".langauagesAcilim").html());
-$(".typeSpecimensLg").html($(".typeSpecimensAcilim").html());
-$(".emigreMagazineLg").html($(".emigreMagazineAcilim").html());
-$(".merchMoreLg").html($(".merchMoreAcilim").html());
 
+});
+//sm navbar  burda bitiyor
 // footer kısmındaki kısmımlar için
 
 

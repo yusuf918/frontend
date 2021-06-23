@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+
+<body>
+    <header id="enUstKısım">
+        <div class="row">
+            <div class="d-none d-lg-inline-block col-lg-7 col-xl-8 py-1 px-2 bg-dark d-lg-inline-block" style="height: 4vh;"></div>
+
+            <nav class="nav bg-dark pt-3 pb-2 col-12 col-lg-5 col-xl-4  ms-auto p-lg-0 ">
+                <div class="nav-link d-lg-none">
+                    <a href="../index.html " class="text-decoration-none text-white h3">
+                        <strong>Emigre</strong>
+                    </a>
+                </div>
+                <div class="nav-link  ps-1 ps-lg-5">
+                    <div class="mt-1" onclick="alertDisplay('block')"> <i class="fas fa-search h4 mt-0 mb-auto text-white"></i></div>
+                </div>
+                <div class="nav-link px-3 ps-2 mt-1">
+                    <a href="../loginOrRegister.html">
+                        <i class="fas fa-user h4 text-white"></i>
+
+                    </a>
+                </div>
+                <div class="nav-link px-0 mt-1">
+                    <a href="../cart.html">
+                        <i class="fas fa-shopping-cart h4 text-white"></i>
+
+                    </a>
+                </div>
+                <div class="pt-2">
+                    <a href="../cart.html" class="text-decoration-none">
+
+                        <span class="small text-warning pt-auto " id="satinAlmaSayisi" style="margin-left: -180%;">a</span>
+                    </a>
+                </div>
+
+                <div class=" nav-link ps-0 col-1 mt-1">
+                    <div class="hamburger-btn col-3 d-lg-none ">
+                        <div class="row m-0 px-3 ">
+                            <span class="bg-white pt-1 pl-2 m-0 rounded "></span>
+                            <span class="bg-white pt-1 pl-3  rounded " style="margin: 3px 0px;"></span>
+                            <span class="bg-white pt-1 pl-3 m-0 rounded "></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- small acılan div -->
+    <div class="baslangictaKapali mt-5 d-lg-none displayNone">
+        <!-- byfamily -->
+        <div class="col-10 bg-dark text-white small mx-auto fw-bolder border border-secondary py-2  byFamily">by Family</div>
+        <section class="byFamilyAcilim displayNone" style="height: 60vh;overflow-y: scroll;">
+            <a href="../byStyle/all.html" class="text-decoration-none">
+                <div class="linkliSolukYazi "> show all</div>
+            </a>
+            <a href="../fonts/alda.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> aida</div>
+            </a>
+            <a href="../fonts/arbitrary.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">arbitrary </div>
+            </a>
+            <a href="../fonts/backSpace.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">backspacer </div>
+            </a>
+            <a href="../fonts/base9&12.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">base 9&12 </div>
+            </a>
+            <a href="../fonts/base9000.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">base 900 </div>
+            </a>
+            <a href="../fonts/baseMonospace.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">base monospace </div>
+            </a>
+            <a href="../fonts/bigCheese.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">big cheese </div>
+            </a>
+            <a href="../fonts/blockheadAlphabet.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">blockhead alphabet </div>
+            </a>
+            <a href="../fonts/blockheadIllustrations.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">blockhead illustrations </div>
+            </a>
+            <a href="../fonts/brothers.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">brothers </div>
+            </a>
+            <a href="../fonts/cardea.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">cardea </div>
+            </a>
+            <a href="../fonts/cholla.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">cholla </div>
+            </a>
+            <a href="../fonts/chowdown.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">chowdown </div>
+            </a>
+            <a href="../fonts/citizen.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">citizen </div>
+            </a>
+            <a href="../fonts/council.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">council </div>
+            </a>
+            <a href="../fonts/crackly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">crackly </div>
+            </a>
+            <a href="../fonts/dalliance.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">dalliance </div>
+            </a>
+            <a href="../fonts/deadHistory.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">dead history </div>
+            </a>
+            <a href="../fonts/deadHistory.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">democratica </div>
+            </a>
+            <a href="../fonts/dogma.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">dogma </div>
+            </a>
+            <a href="../fonts/eideticNeo.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">eidetic neo </div>
+            </a>
+            <a href="../fonts/elektrix.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">elektrix </div>
+            </a>
+            <a href="../fonts/exocet.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">exocet </div>
+            </a>
+            <a href="../fonts/fairplex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">fairplex </div>
+            </a>
+            <a href="../fonts/fellaParts.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">fella parts </div>
+            </a>
+            <a href="../fonts/filosofia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">filosofia </div>
+            </a>
+            <a href="../fonts/filosofia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">filosofia parma </div>
+            </a>
+            <a href="../fonts/hypnopedia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">hypnopaedia </div>
+            </a>
+            <a href="../fonts/journal.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">journal </div>
+            </a>
+            <a href="../fonts/keedy.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">keedy </div>
+            </a>
+            <a href="../fonts/loRes.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">lo-res </div>
+            </a>
+            <a href="../fonts/losFeliz.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">los feliz </div>
+            </a>
+            <a href="../fonts/lunatix.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">lunatix </div>
+            </a>
+            <a href="../fonts/malaga.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">malaga </div>
+            </a>
+            <a href="../fonts/mason.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">mason </div>
+            </a>
+            <a href="../fonts/matrixII.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">matrix II </div>
+            </a>
+            <a href="../fonts/missionary.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">missionary </div>
+            </a>
+            <a href="../fonts/modula.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">modula </div>
+            </a>
+            <a href="../fonts/modulaRound.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">modula round &ribbed </div>
+            </a>
+            <a href="../fonts/motion.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">motion </div>
+            </a>
+            <a href="../fonts/mrEavesSansAndModern.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">mr eaves sans & modern </div>
+            </a>
+            <a href="../fonts/mrEavesXlSansAndModern.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">mr eaves XL sans modern & narrow </div>
+            </a>
+            <a href="../fonts/mr.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">mrs eaves </div>
+            </a>
+            <a href="../fonts/mrEavesXl.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">mrs eaves XL serif & narrow </div>
+            </a>
+            <a href="../fonts/narly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">narly </div>
+            </a>
+            <a href="../fonts/notCasion.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">not casion </div>
+            </a>
+            <a href="../fonts/oblong.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">oblong </div>
+            </a>
+            <a href="../fonts/ottomat.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">ottomat </div>
+            </a>
+            <a href="../fonts/outWest.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">outwest </div>
+            </a>
+            <a href="../fonts/platelet.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">platelet</div>
+            </a>
+            <a href="../fonts/poppi.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">poppi </div>
+            </a>
+            <a href="../fonts/priori.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">priori </div>
+            </a>
+            <a href="../fonts/prioriAcute.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">priori acute </div>
+            </a>
+            <a href="../fonts/program.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">program </div>
+            </a>
+            <a href="../fonts/puzzler.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">puzzler</div>
+            </a>
+            <a href="../fonts/remedy.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">remedy</div>
+            </a>
+            <a href="../fonts/sabbathBlack.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">sabbath black</div>
+            </a>
+            <a href="../fonts/senator.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">senator</div>
+            </a>
+            <a href="../fonts/solex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">solex</div>
+            </a>
+            <a href="../fonts/suburban.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">suburban</div>
+            </a>
+            <a href="../fonts/tangly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">tangly</div>
+            </a>
+            <a href="../fonts/tarzana.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">tarzana</div>
+            </a>
+            <a href="../fonts/templateGothic.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">template gothic</div>
+            </a>
+            <a href="../fonts/theApolloProgramFontSet.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">the apollo program Font set</div>
+            </a>
+            <a href="../fonts/thingBat.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">thingbat</div>
+            </a>
+            <a href="../fonts/totallyGothic.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">totally gothic & totally glyphic</div>
+            </a>
+            <a href="../fonts/tribute.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">tribute</div>
+            </a>
+            <a href="../fonts/triplex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">triplex</div>
+            </a>
+            <a href="../fonts/triplexItalic.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">triplex italic</div>
+            </a>
+            <a href="../fonts/variex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">variex</div>
+            </a>
+            <a href="../fonts/vendetta.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">vendetta</div>
+            </a>
+            <a href="../fonts/vistaSans.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">vista sans</div>
+            </a>
+            <a href="../fonts/VistaSansNarrow.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">vista sans narrow</div>
+            </a>
+            <a href="../fonts/vistaSlab.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">vista slab</div>
+            </a>
+            <a href="../fonts/whirligig.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">whirligig</div>
+            </a>
+            <a href="../fonts/zeitguys.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">zeitguys</div>
+            </a>
+
+
+        </section>
+
+        <!-- by style -->
+        <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2     byStyle">By style</div>
+        <section class="byStyleAcilim displayNone">
+            <a href="../byStyle/serif.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">serif</div>
+            </a>
+            <a href="../byStyle/sansSerif.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">sans serif</div>
+            </a>
+            <a href="../byStyle/display.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">display</div>
+            </a>
+            <a href="../byStyle/picture&Pattern.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">picture & pattern</div>
+            </a>
+            <a href="../byStyle/recentReleases.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">recent releases</div>
+            </a>
+            <a href="../byStyle/bestSellers.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">best sellers</div>
+            </a>
+        </section>
+
+        <!-- langauages -->
+        <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    langauages">Langauages</div>
+        <section class=" langauagesAcilim displayNone">
+            <a href="../byStyle/latin.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">latin</div>
+            </a>
+            <a href="../byStyle/centralEuropean.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">central european</div>
+            </a>
+            <a href="../byStyle/cyrilic.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">cyrilic</div>
+            </a>
+            <a href="../byStyle/greek.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">greek</div>
+            </a>
+            <a href="../byStyle/vietnamese.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">vietnamese</div>
+            </a>
+        </section>
+
+        <!-- type specimens -->
+        <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    typeSpecimens">Type specimens</div>
+        <section class="small  displayNone typeSpecimensAcilim">
+            <a href="../TypeSpecimens.html" class="text-decoration-none">
+                <div class="linkliSolukYazi small"> <span class="small"> show all</span></div>
+            </a>
+            <a href="../TypeSpecimens.html" class="text-decoration-none">
+                <div class="linkliSolukYazi small"><span class="small">email list </span></div>
+            </a>
+            <a href="../TypeSpecimens.html" class="text-decoration-none">
+                <div class="linkliSolukYazi small">
+                    <span class="small">free catalog </span>
+
+                    <span class="arkaPlansizPdf me-5 small"></span>
+                    <span class="printedVersiyon small"></span>
+
+                </div>
+            </a>
+            <a href="../TypeSpecimens.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">type specimen set </span>
+                    <span class="arkaPlansizPdf  small"></span>
+                    <span class="printedVersiyon small"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small">type specimen book</span>
+                    <span class="arkaPlansizPdf me-5 small"></span>
+                    <span class="printedVersiyon small"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/alda.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">alda </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/apolloProgram.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">apollo program </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/base900.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">base 900 </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/baseMonospace.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">base monospace </span>
+                    <span class="pdf"></span>
+
+                </div>
+            </a>
+            <a href="../TypeSpecimens/brothersCouncil.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">brothers/council </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/cardea.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">cardea </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/cholla.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">chollo </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/chowdown.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> chowdown</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/crackly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> carckly</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/dalliance.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> dalliance</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/departures.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> departures</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/digitalFonts.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> digital fonts</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/eideticNeo.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> eidetic neo</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/fairplex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> fairplex  </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/philosophia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> philosophia</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/fourLetterWords.html" class="text-decoration-none">
+                <div class="linkliSolukYazi small"><span class="small">four letter words</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/historia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> historia  </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/hypnopedia.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> hypnopedia  </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/inflectionPoint.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> inflection point</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/keedy.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> keedy</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/loRes.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> lo-res</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/losFeliz.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> los feliz</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/malaga.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> malaga</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/matrixII.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> matrix ||</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/mrEaves.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> mr eaves</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/mrEavesXlNarrow.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small">mr eaves xl narrow</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/mrsEaves&MrsEavesXl.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">
+                    <span class="small">mr eaves & mrs eaves XL </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/mrsEavesClassic.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> mrs eaves classic </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/narly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">narly </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/nineLiterallyTypes.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> nine literary types </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/notYourVardenVariety.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small">not your garden variety</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/notCasion.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> not casion</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/platelet.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> platelet</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/poppi.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> poppi </span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/program.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> program </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/puzzler.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> puzzler </span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/solex.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> solex</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/tangly.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small">tangly</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/theCollection.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">
+                    <span class="small"> the collection</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/tribute.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">
+                    <span class="small"> tribute</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/typeSampler.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> type sampler</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/vendetta.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small"> vendetta</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/vista.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">
+                    <span class="small"> vista</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/vistaSansNarrowSlab.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"> <span class="small">vista sans narrow slab</span>
+                    <span class="pdf"></span>
+                    <span class="printedVersiyon"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/whirligig.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small"> whirligig</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+            <a href="../TypeSpecimens/zeitguys.html" class="text-decoration-none">
+                <div class="linkliSolukYazi"><span class="small">zeitguys</span>
+                    <span class="pdf"></span>
+                </div>
+            </a>
+
+        </section>
+        <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    emigreMagazine ">Emigre magazine</div>
+        <section id="issues" class=" emigreMagazineAcilim displayNone">
+
+
+        </section>
+
+        <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    merchMore">Merch more</div>
+        <section class="merchMoreAcilim displayNone">
+            <a href="../booksTshirts.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">books, t-sshits & CDs</div>
+            </a>
+            <a href="../ceramics.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">ceramics & fabrics</div>
+            </a>
+            <a href="../collectables.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">collectables</div>
+            </a>
+            <a href="../essay.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">essay & interwiews</div>
+            </a>
+            <a href="../past.html" class="text-decoration-none">
+                <div class="linkliSolukYazi">past projects</div>
+            </a>
+        </section>
+        <a href="../news.html " class="text-decoration-none">
+            <div class="col-10 mx-auto text-dark small fw-bold border-bottom border-secondary py-2    news">News</div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var dosya = '..';
+    </script>
+
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
