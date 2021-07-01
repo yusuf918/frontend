@@ -180,3 +180,69 @@ $(".licensing").click(function(e) {
     $(".licensingAcilim").toggle();
 
 });
+
+// lg navbar için gerekli kodlar
+// by family
+$('.byFamilyNavLg').html($('.byFamilyAcilim').html());
+$('html').click(function() {
+    $(".byFamilyNavLg").hide();
+});
+$(".byFamilyNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".byFamilyNavLg").toggle();
+
+});
+
+// by style
+$('.byStyleLg').html($('.byStyleAcilim').html());
+$('html').click(function() {
+    $(".byStyleLg").hide();
+});
+$(".byStyleNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".byStyleLg").toggle();
+
+});
+
+//langauages 
+$('.langauagesLg').html($('.langauagesAcilim').html());
+$('html').click(function() {
+    $(".langauagesLg").hide();
+});
+$(".langauagesNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".langauagesLg").toggle();
+
+});
+// type specimens
+$('.typeSpecimensLg').html($('.typeSpecimensAcilim').html());
+$('html').click(function() {
+    $(".typeSpecimensLg").hide();
+});
+$(".typeSpecimensNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".typeSpecimensLg").toggle();
+
+});
+//emigre magazine
+$('.emigreMagazineLg').html($('.emigreMagazineAcilim').html());
+$('html').click(function() {
+    $(".emigreMagazineLg").hide();
+});
+$(".emigreMagazineNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".emigreMagazineLg").toggle();
+
+});
+
+
+// merch more merchMoreNavItem
+$('.merchMoreLg').html($('.merchMoreAcilim').html());
+$('html').click(function() {
+    $(".merchMoreLg").hide();
+});
+$(".merchMoreNavItem").click(function(e) {
+    e.stopPropagation();
+    $(".merchMoreLg").toggle();
+
+});
