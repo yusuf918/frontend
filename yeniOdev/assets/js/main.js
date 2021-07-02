@@ -246,3 +246,28 @@ $(".merchMoreNavItem").click(function(e) {
     $(".merchMoreLg").toggle();
 
 });
+// açılışta resimleri rastgele değiştirme için
+
+function ResimleriDegistir() {
+    let article = document.getElementsByTagName("article")[0];
+    let div = article.getElementsByClassName("fontlar");
+
+    if (div.length > 0) {
+        for (let i = 0; i < div.length - 1; i++) {
+            let rastgele = Math.floor(Math.random() * 76);
+            let bos = div[i].style.backgroundImage;
+            div[i].style.backgroundImage = div[rastgele].style.backgroundImage; // 0 ve 9 arasında sayı üretir.
+            div[rastgele].style.backgroundImage = bos;
+
+        }
+    }
+    return -1;
+
+}
+
+//ResimleriDegistir();
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 200,
+    wrap: false
+})
