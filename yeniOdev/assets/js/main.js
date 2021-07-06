@@ -249,8 +249,8 @@ $(".merchMoreNavItem").click(function(e) {
 // açılışta resimleri rastgele değiştirme için
 
 function ResimleriDegistir() {
-    let article = document.getElementsByTagName("article")[0];
-    let div = article.getElementsByClassName("fontlar");
+    let div = $("article .fontlar");
+    console.log(div[3]);
 
     if (div.length > 0) {
         for (let i = 0; i < div.length - 1; i++) {
@@ -261,13 +261,36 @@ function ResimleriDegistir() {
 
         }
     }
-    return -1;
 
 }
+ResimleriDegistir();
 
-//ResimleriDegistir();
-var myCarousel = document.querySelector('#myCarousel')
-var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 200,
-    wrap: false
+$(".more").click(function() {
+    $("main .displayNone").show();
+
+    $(".more").hide();
+    $(".less").show();
 })
+$(".less").click(function() {
+    $("main .displayNone").hide();
+    $(".more").show();
+    $(".less").hide();
+});
+
+function scrollHareket() {
+    window.onmousemove = function(olay) {
+        //gerçekleşen olayla ilgili tüm bilgi olay değişkenine aktarılıyor.
+
+        var xpos = olay.clientX;
+        //clientX: farenin x eksenindeki konumu
+        //clientY farenin y eksenindeki konumu
+        console.log(xpos);
+        // console.log(ypos);
+        document.getElementsByClassName("button")[0].style.left = xpos + "px";
+
+        console.log(9);
+
+    }
+
+
+}

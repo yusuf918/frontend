@@ -85,6 +85,12 @@ main .nav-link:hover {
 
 /* all html */
 
+.carouselButton {
+    width: 10px!important;
+    height: 10px!important;
+    padding: 0px!important;
+}
+
 
 /* .byFamilyNavLg::-webkit-scrollbar-track {
     border-radius: 10px;
