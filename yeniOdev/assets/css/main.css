@@ -91,6 +91,27 @@ main .nav-link:hover {
     padding: 0px!important;
 }
 
+.cardBgColor {
+    background-color: #fafafa;
+}
+
+.cardBorder {
+    border: 1px solid #eee;
+    border-left: 3px solid black
+}
+
+.space {
+    margin-right: .25rem !important;
+}
+
+.space:first-child {
+    margin-left: .5rem !important;
+}
+
+.space:last-child {
+    margin-right: .5rem !important;
+}
+
 
 /* .byFamilyNavLg::-webkit-scrollbar-track {
     border-radius: 10px;

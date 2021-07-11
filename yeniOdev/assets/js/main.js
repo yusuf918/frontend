@@ -250,7 +250,6 @@ $(".merchMoreNavItem").click(function(e) {
 
 function ResimleriDegistir() {
     let div = $("article .fontlar");
-    console.log(div[3]);
 
     if (div.length > 0) {
         for (let i = 0; i < div.length - 1; i++) {
@@ -265,6 +264,8 @@ function ResimleriDegistir() {
 }
 ResimleriDegistir();
 
+
+// fonts klasoru
 $(".more").click(function() {
     $("main .displayNone").show();
 
@@ -277,20 +278,22 @@ $(".less").click(function() {
     $(".less").hide();
 });
 
-function scrollHareket() {
-    window.onmousemove = function(olay) {
-        //gerçekleşen olayla ilgili tüm bilgi olay değişkenine aktarılıyor.
-
-        var xpos = olay.clientX;
-        //clientX: farenin x eksenindeki konumu
-        //clientY farenin y eksenindeki konumu
-        console.log(xpos);
-        // console.log(ypos);
-        document.getElementsByClassName("button")[0].style.left = xpos + "px";
-
-        console.log(9);
-
-    }
-
-
+function scrollHareket(event) {
+    var xpos = event.clientX + "px";
+    document.getElementsByClassName("button")[0].style.left = xpos;
+    $('input[type=text].sitebg').css("font-size", xpos);
 }
+$('input[type=text].sitebg').val('type your text here...');
+$(".alert-close").click(function() {
+    $(".alert").hide()
+})
+$(".alertRow").map(function(index, item) {
+
+    $(item).attr("class", "row m-0 mt-2 px-0");
+
+});
+$(".alertCard").map(function(index, item) {
+
+    $(item).attr("class", "col space me-1 display-4 border text-center border-secondary");
+
+});
