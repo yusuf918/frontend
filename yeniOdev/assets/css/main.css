@@ -1,3 +1,4 @@
+@import 'fontsStyle.css';
 .badge {
     border-radius: 10px;
     padding: 1px 7px !important;
@@ -110,6 +111,14 @@ main .nav-link:hover {
 
 .space:last-child {
     margin-right: .5rem !important;
+}
+
+.bg-muted {
+    background-color: #95a5a6;
+}
+
+.outline-0 {
+    outline: 0px !important;
 }
 
 

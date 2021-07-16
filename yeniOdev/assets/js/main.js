@@ -283,9 +283,16 @@ function scrollHareket(event) {
     document.getElementsByClassName("button")[0].style.left = xpos;
     $('input[type=text].sitebg').css("font-size", xpos);
 }
-$('input[type=text].sitebg').val('type your text here...');
+$('input[type=text].sitebg').val('Type your customized text here...');
+
+$(".cardBorder input[type=text].sitebg").click(function() {
+    let a = $('input[type=text].sitebg').val();
+    console.log(a);
+
+})
+
 $(".alert-close").click(function() {
-    $(".alert").hide()
+    $(".alertSection").hide()
 })
 $(".alertRow").map(function(index, item) {
 
@@ -297,3 +304,17 @@ $(".alertCard").map(function(index, item) {
     $(item).attr("class", "col space me-1 display-4 border text-center border-secondary");
 
 });
+// alert displayını blok yapmak için
+$(".badge:first-child").click(function() {
+    $(".alertSection").css("display", "block");
+})
+$(window).scroll(function() {
+    var currenPosition = $(this).scrollTop();
+    currenPosition == 0 ? $(".upSwipe").css("display", "none") :
+        $(".upSwipe").css("display", "block");
+
+});
+let getHeader = document.querySelector("#enUstKısım");
+var header = getHeader.import.querySelector('#icerik');
+document.body.appendChild(document.importNode(header, true));
+let characterSet = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
