@@ -6,3 +6,21 @@
     transition: 0.5s all;
     display: block;
 }
+
+.backSpaceCharset {
+    background-color: rgb(0, 0, 0, .5);
+    top: -146vh;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+    .backSpaceCharset {
+        top: -180vh;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .backSpaceCharset {
+        top: -220vh;
+    }
+}

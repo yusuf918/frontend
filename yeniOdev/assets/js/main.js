@@ -294,6 +294,34 @@ $(".cardBorder input[type=text].sitebg").click(function() {
 $(".alert-close").click(function() {
     $(".alertSection").hide()
 })
+
+// alert displayını blok yapmak için
+$(".badge:first-child").click(function() {
+        $(".alertSection").css("display", "block");
+    })
+    // sayfa basına götürme
+$(window).scroll(function() {
+    var currenPosition = $(this).scrollTop();
+    currenPosition == 0 ? $(".upSwipe").css("display", "none") :
+        $(".upSwipe").css("display", "block");
+
+});
+
+
+let characterSet = "ABCDEFGHIJKLMNOPRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÀÂÄÃÅÇÐÉÈÊËÌÍÎÏŁÑØÓÒÔÖÕŠÞÚÙÛÜÝŸŽáàâäãåçðéèêëıíìîïłñøóòôöõþšúùûüýÿžÆŒæœßﬁﬂ0123456789¹²³ % ‰½¼¾$¢€¤£¥ ƒ = +−×÷≠ < > ±≤≥⁄∂ & ! ? ¡¿., : ;…@# * ·•-–—¶§‡()[] {}/\\|¦ ^~_ '\"\“\”\‘\’‚„‹›«»°™®©ªº `´¨ˆ˜¯˘˙˚¸˝˛ˇ";
+let alertPrint = "";
+for (let i = 0; i < characterSet.length; i++) {
+    if (i % 6 == 0) {
+        alertPrint = alertPrint + '<div class="row m-0 mt-2 px-0">' + '<div class="alertCard">' + characterSet[i] + '</div>';
+
+    } else if (i % 6 != 5) {
+        alertPrint = alertPrint + '<div class="alertCard">' + characterSet[i] + '</div>';
+    } else {
+        alertPrint = alertPrint + '<div class="alertCard">' + characterSet[i] + '</div>' + '</div>';
+
+    }
+}
+$(".backspaceAlert").html(alertPrint);
 $(".alertRow").map(function(index, item) {
 
     $(item).attr("class", "row m-0 mt-2 px-0");
@@ -301,20 +329,11 @@ $(".alertRow").map(function(index, item) {
 });
 $(".alertCard").map(function(index, item) {
 
-    $(item).attr("class", "col space me-1 display-4 border text-center border-secondary");
+    $(item).attr("class", "col px-0 py-0 space me-1 display-4 border text-center border-secondary");
 
 });
-// alert displayını blok yapmak için
-$(".badge:first-child").click(function() {
-    $(".alertSection").css("display", "block");
-})
-$(window).scroll(function() {
-    var currenPosition = $(this).scrollTop();
-    currenPosition == 0 ? $(".upSwipe").css("display", "none") :
-        $(".upSwipe").css("display", "block");
-
-});
-let getHeader = document.querySelector("#enUstKısım");
-var header = getHeader.import.querySelector('#icerik');
-document.body.appendChild(document.importNode(header, true));
-let characterSet = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
+let usercount;
+for (let i = 5; i <= 500; i += 5) {
+    usercount += `<option value="${i} users">${i} users </option>`;
+}
+$("#countDesktopUser").html(usercount);
