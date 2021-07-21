@@ -24,3 +24,11 @@
         top: -220vh;
     }
 }
+
+.text-red {
+    color: #ff0000!important;
+}
+
+.format-description {
+    color: #999;
+}

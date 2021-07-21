@@ -37,7 +37,7 @@ function issuesYazdir(x) {
             a += '<a href=\"' + x + '/issues/' + i.toString() + '.html\" class=\"text-decoration-none\"> <div class="linkliSolukYazi">' + 'issue' + " " + (i) + '</div>' + '</a>';
 
     }
-    issues.innerHTML = a;
+    $(issues).html(a);
 }
 
 issuesYazdir(dosya);
@@ -46,7 +46,7 @@ var x = 0;
 
 function satinAlmalariYazdir(sayi) {
 
-    document.getElementById("satinAlmaSayisi").innerHTML = sayi;
+    $("#satinAlmaSayisi").html(sayi);
 }
 
 satinAlmalariYazdir(x);
@@ -98,6 +98,15 @@ $(".tiklandigindaHepsiniKapat").click(function() {
 
 
 //sm navbar burada basliyor
+
+// $(".byFamily").on("click", ".byFamilyAcilim", function(e) {
+//     e.stopPropagation();
+//     $(".byFamilyAcilim").toggle();
+
+// });
+
+
+
 $('html').click(function() {
     $(".byFamilyAcilim").hide();
 });
@@ -267,11 +276,11 @@ ResimleriDegistir();
 
 // fonts klasoru
 $(".more").click(function() {
-    $("main .displayNone").show();
+    $(this).parent().next().show();
 
     $(".more").hide();
     $(".less").show();
-})
+});
 $(".less").click(function() {
     $("main .displayNone").hide();
     $(".more").show();
@@ -332,8 +341,35 @@ $(".alertCard").map(function(index, item) {
     $(item).attr("class", "col px-0 py-0 space me-1 display-4 border text-center border-secondary");
 
 });
+
+
 let usercount;
 for (let i = 5; i <= 500; i += 5) {
     usercount += `<option value="${i} users">${i} users </option>`;
 }
 $("#countDesktopUser").html(usercount);
+
+$('header').on('click', '.baslangictaKapali', function() {
+    $(".baslangictaKapali").css("display", "block")
+
+});
+
+$("header").load("../index.html #enUstKısım");
+$(".byFamilyAcilim").load("../index.html .byFamilyAcilim");
+$(".byStyleAcilim").load("../index.html .byStyleAcilim");
+$(".langauagesAcilim").load("../index.html .langauagesAcilim");
+$(".typeSpecimensAcilim").load("../index.html .typeSpecimensAcilim");
+$(".emigreMagazineAcilim").load("../index.html .emigreMagazineAcilim");
+$(".merchMoreAcilim").load("../index.html .merchMoreAcilim");
+$(".news").load("../index.html .newsHtml");
+
+
+
+
+
+
+
+
+// $("").live("click", function() {
+//     $(".baslangictaKapali").css("display", "block");
+// })
