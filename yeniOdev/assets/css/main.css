@@ -11,8 +11,8 @@ body {
     }
 }*/
 
-@media screen and (min-width:767px) and (max-width:1023px) {
-    body {
+
+/* body { 
         background: url("../img/orientation_screen.jpg") no-repeat center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -25,7 +25,24 @@ body {
     main {
         visibility: hidden;
     }
-    footer {
-        visibility: hidden;
+    footer { */
+
+
+/* visibility: hidden;
     }
 }
+
+@media screen and (max-width:328px) {
+    ul li a {
+        font-size: 200%;
+        font-weight: 900;
+        line-height: 5vh;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    ul li a {
+        font-size: 300%;
+        line-height: 15vh;
+    }
+} */
