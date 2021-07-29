@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/mouseAnimate.css">
 </head>
 
 <body class="bg-white" style="height: 100vh;">
@@ -30,11 +31,27 @@
         </div>
 
         <div class="content fixed-bottom d-none">
-            <div class="mb-4">
-                <a href="#" class="text-decoration-none d-block text-white  display-1 fw-bold ps-2">DIRECTORS</a>
-                <a href="#" class="text-decoration-none d-block text-white  display-1 fw-bold ps-2">ABOUT</a>
-                <a href="#" class="text-decoration-none d-block text-white  display-1 fw-bold ps-2">NEWS</a>
-                <div class="cursor"></div>
+            <ul class="mb-4 fw-bold" style="width:300px;">
+                <li>
+                    <a href="#" class="display-3 fw-bold">directors</a>
+                </li>
+                <li>
+                    <a href="#" class="display-3  fw-bold">about</a>
+                </li>
+                <li>
+                    <a href="#" class="display-3 fw-bold">news</a>
+                </li>
+                <div class="cursor">
+                    <div style="width: 2px;height: 2px;background-color: whitesmoke;margin-top: 8px;"></div>
+                </div>
+
+            </ul>
+
+            <div class="screen position-relative" style="top: -5vh;">
+                <div class="row m-0 pe-5 pe-lg-0">
+                    <i class="fas fa-expand col-1 ms-auto text-white"></i>
+                    <i class="fas fa-compress col-1 d-none ms-auto text-white"></i>
+                </div>
             </div>
         </div>
     </footer>
@@ -48,4 +65,4 @@
     <script src="./assets/js/main.js"></script>
 </body>
 
-</html>-
+</html>
