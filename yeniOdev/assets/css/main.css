@@ -1,7 +1,99 @@
+@import "./bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+/* @import "./mouseAnimate.css"; */
+
 body {
-    cursor: none;
+    /* cursor: none; */
     max-height: 100vh;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dLetter {
+    font-family: 'Comfortaa', cursive;
+}
+
+.about .content-header {
+    text-transform: uppercase;
+}
+
+.about-fsize10vw {
+    font-size: 10vw;
+}
+
+.about-line-height div {
+    line-height: 80%;
+    font-weight: 900;
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    * {
+        visibility: hidden;
+    }
+    body {
+        background-image: url(../img/orientation_screen.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh !important;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .about-height {
+        margin-top: 30vh;
+    }
+    .about-line-height div {
+        line-height: 20%;
+    }
+    .about-image {
+        position: absolute;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (min-width:1439px) {
+    .about-line-height div {
+        line-height: 80%;
+    }
+}
+
+.about-text {
+    line-height: 35px;
+}
+
+.about-contact .email {
+    font-weight: 600;
+}
+
+.about-link {
+    display: inline-block;
+}
+
+.about-link a {
+    display: block;
+}
+
+.about-contact .email .about-link:hover {
+    transform: rotateY(40deg);
+    margin-left: -50px;
+}
+
+.about-link a:hover {
+    color: black;
+}
+
+
+/* @media screen and (min-width:1023px) and (max-width:1439px) {
+    .content-header div:not(:first-child) {
+        line-height: 10vh;
+    }
+} */
 
 
 /* @media screen and (max-width:1023px) { 
