@@ -5,6 +5,7 @@
 
 body {
     /* cursor: none; */
+    background-color: black;
     max-height: 100vh;
 }
 
@@ -138,3 +139,7 @@ a {
         line-height: 15vh;
     }
 } */
+
+.news * {
+    color: white
+}
