@@ -28,11 +28,13 @@ function clearTimer() {
     clearTimeout(timer);
 
 }
+
 $(".fw-bold").hover(function() {
     setInterval(function() {
         $(".fw-bold").css("font-size")
     })
 })
+
 const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
     cursor.style.left = e.pageX + "px";

@@ -1,6 +1,10 @@
 @import "./bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
+/* news new font */
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+
 /* @import "./mouseAnimate.css"; */
 
 body {
@@ -55,6 +59,9 @@ a {
     .about-image {
         position: absolute;
         transform: translateY(-50%);
+    }
+    .news .new li {
+        display: inline-block;
     }
 }
 
@@ -141,5 +148,43 @@ a {
 } */
 
 .news * {
-    color: white
+    color: white;
 }
+
+.news header {
+    background-color: black;
+    box-shadow: 0px 30px 5px rgba(0, 0, 0, 0.74);
+}
+
+.news ul,
+li {
+    list-style-type: none;
+    padding: 0%;
+}
+
+.news ul.date {
+    line-height: 80%;
+    margin-bottom: 10px;
+}
+
+.news .new {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 75%;
+}
+
+
+/* .news .new {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: flex-start;
+    height: 150px;
+}
+
+.new li {
+    background-color: red;
+    display: block;
+}
+
+*/
