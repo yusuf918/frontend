@@ -5,6 +5,19 @@ $(".date").each(function(index) {
         $(this).text("JAN 20");
 });
 
+// .news header animation
+let percent = 0;
+let headerAnimation = setInterval(function() {
+    $(".dLetter").css("left", (percent++) + "%");
+    if (percent >= 50) {
+        $("a:contains('BACK')").parent().toggleClass("d-none")
+        clearInterval(headerAnimation)
+    }
+}, 10);
+
+
+
+
 
 
 const cursor = document.querySelector(".cursor");
