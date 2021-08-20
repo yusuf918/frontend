@@ -20,11 +20,11 @@ let headerAnimation = setInterval(function() {
 
 
 
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.pageX + "px";
-    cursor.style.top = e.pageY + "px";
-})
+// const cursor = document.querySelector(".cursor");
+// document.addEventListener("mousemove", (e) => {
+//     cursor.style.left = e.pageX + "px";
+//     cursor.style.top = e.pageY + "px";
+// })
 $(".fa-expand,.fa-compress").click(function() {
     $(".fa-expand,.fa-compress").toggleClass("d-none")
 })
@@ -37,4 +37,31 @@ $(".fa-compress").click(function() {
     document.exitFullscreen()
 
     return false;
+})
+$(".play-button").click(function() {
+    $(this).remove()
+    $("footer div").removeClass("d-none")
+})
+
+$("span:contains('FULLSCREEN')").click(function() {
+    $("footer img").css({
+        "position": "relative",
+        "top": "38vh",
+        "transform": "translateY('-200px')"
+    })
+    var viewer = $("footer")[0];
+    var rFS = viewer.mozRequestFullScreen || viewer.webkitRequestFullscreen || viewer.requestFullscreen;
+    rFS.call(viewer);
+})
+
+$("span:contains('MINISCREEN')").click(function() {
+    $(".screen .bg-dark").toggleClass("d-none")
+    $("footer img").css("position", "static")
+    document.exitFullscreen()
+    return false;
+
+})
+$(".screen .bg-dark").click(function() {
+    $(".screen .bg-dark").toggleClass("d-none")
+
 })

@@ -20,6 +20,14 @@ a {
 
 .dLetter {
     font-family: 'Comfortaa', cursive;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dLetter::before {
+    width: 20px;
+    height: 20px;
+    background-color: red;
 }
 
 .about .content-header {
@@ -183,6 +191,28 @@ li {
 .news .new {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     line-height: 75%;
+}
+
+.news .underline {
+    width: 35.03px;
+    height: 5px;
+    background-color: white;
+}
+
+.directors {
+    color: #fff;
+}
+
+.directors ul ul {
+    padding: 0%;
+}
+
+.line-height {
+    line-height: 85%;
+}
+
+.directors a {
+    color: white;
 }
 
 
