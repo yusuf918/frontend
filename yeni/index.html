@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 m-0 ">
+            <div class="container-fluid p-0 m-0">
+                <a class="navbar-brand m-0 text-uppercase h1 " href="#">start bootstrap</a>
+                <button class="navbar-toggler px-0 py-2 rounded-5 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ MENU               <span class="navbar-toggler-icon"><i class="fas fa-align-justify "></i></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " id="portfolio" href="#port">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about" href="#abot">about</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" id="contact" href="#cont">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="start-bootstrap" style="height: 120vh;">
+            <img src="./assets/img/avataaars.svg" class="masthead-avatar" alt="">
+            <div class="display-1 text-uppercase fw-bold text-center ">
+                start bootstrap
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <div class="altcizgi "></div>
+                <div class="yildiz mx-3">
+                    <div class="fas fa-2x fa-star "></div>
+
+                </div>
+                <div class="altcizgi"></div>
+
+
+            </div>
+
+            <div class="masthead-subheading h4 fw-normal text-center text-capitalize">
+                graphic artist-web designer - illustrator
+
+            </div>
+        </div>
+
+        <div class="portfolio" id="port">
+            <div class="portfolio mt-5 display-1 fw-bold text-center text-uppercase ">
+                portfolio
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4 mb-4 ">
+                <div class="altcizgi "></div>
+                <div class="yildiz mx-3 ">
+                    <i class="fas fa-2x fa-star "></i>
+
+                </div>
+                <div class="altcizgi "></div>
+            </div>
+        </div>
+
+        <template id="cardTemplate">
+                <div class="col-11 d-flex align-content-center justify-content-center rounded-5 card p-0 col-md-5 col-lg-3 mb-4 ">
+                    <div class="w-100 h-100 position-absolute rounded-5 bgImage " style="z-index: -1; background-image: url( './assets/img/cabin.png'); background-position: center center;background-repeat: no-repeat;background-size: cover;z-index: 1; ">
+                    <!-- <div class="w-100 h-100 position-relative bgLightGreen d-flex justify-content-center align-content-center rounded-5 " style="z-index: 3;display: none; ">
+                        <i class="fas fa-4x fa-plus mt-5 pt-3 "></i>
+                    </div> -->
+
+                </div>
+               </template>
+
+        <template id="div">
+
+    <div class="w-100 h-100 position-relative bgLightGreen d-flex justify-content-center align-content-center rounded-5 " style="z-index: 1; display: none; ">
+        <i class="fas fa-4x fa-plus mt-5 pt-3 "></i>
+    </div>
+</template>
+
+        <div class="row d-flex justify-content-center portfolioGrid mb-4 ">
+
+        </div>
+
+
+
+        <div class="about my-4 py-4 bgLightGreen " id="abot">
+
+            <div class="portfolio mt-5 display-1 fw-bold text-center text-uppercase text-white ">
+                about
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4 ">
+
+
+                <div class="altcizgi bg-white "></div>
+                <div class="yildiz mx-3 ">
+                    <div class="fas fa-2x fa-star text-white "></div>
+
+                </div>
+                <div class="altcizgi bg-white "></div>
+            </div>
+            <div class="row justify-content-center mb-4 ">
+
+                <p class="ps-2 pe-4 d-lg-inline-block col-lg-3 h3 fw-light ">
+                    Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+
+
+                </p>
+
+                <p class="ps-2 pe-4 d-lg-inline-block col-lg-3 h3 fw-light ">
+                    You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
+                </p>
+            </div>
+            <center class="mb-5 mt-5 ">
+                <button class="border border-white border-3  p-3 " style="background-color: #1abc9c;border-radius: 8px; ">
+                    <a href="https://startbootstrap.com/theme/freelancer" class="text-decoration-none h3 fw-light" style="color: white; ">
+                        <i class="fas h5 fa-download me-2 " style="color:white "></i>Free Download</a>    
+                    </button>
+            </center>
+        </div>
+
+        <div class="contact" id="cont">
+
+            <div class="portfolio mt-5 display-1 fw-bold text-center text-uppercase " style="color: #2c3c50;">
+                contact me
+            </div>
+            <div class="d-flex align-items-center justify-content-center my-4 mb-4 ">
+
+                <div class="altcizgi  "></div>
+                <div class="yildiz mx-3 ">
+                    <div class="fas fa-2x fa-star "></div>
+
+                </div>
+                <div class="altcizgi "></div>
+            </div>
+
+            <form action="login.php" method="get">
+
+                <div class="field col-8 mx-auto mb-5" style="margin-top: 70px !important;">
+                    <input type="text" class="text-dark col-11" autocomplate="off" id="fullname">
+                    <span class="exclamation d-none">
+                        <center>
+                            <i class="fas fa-exclamation text-danger "></i>
+                        </center>
+                    </span>
+                    <label for="fullname" class="text-dark">fullname</label>
+                    <hr size="3" class="col-11 mb-0">
+                    <div class="d-none small text-danger">name is required!</div>
+
+                </div>
+
+                <div class="field col-8 mx-auto mb-5">
+                    <input type="email" class="text-dark col-11" autocomplate="off" id="email">
+                    <span class="exclamation d-none">
+                        <center>
+                            <i class="fas fa-exclamation text-danger "></i>
+                        </center>
+                    </span>
+                    <label for="email" class="text-dark">email</label>
+                    <hr size="3" class="col-11 mb-0">
+                    <div class="d-none small text-danger my-0 p-0">email is required</div>
+                    <div class="d-none small text-danger my-0 p-0">invalid email</div>
+
+                </div>
+
+                <div class="field col-8 mx-auto mb-5">
+                    <input type="tel" class="text-dark col-11" autocomplate="off" id="telephoneNumber">
+                    <span class="exclamation d-none">
+                        <center>
+                            <i class="fas fa-exclamation text-danger "></i>
+                        </center>
+                    </span>
+                    <label for="telephoneNumber" class="text-dark">telephone number</label>
+                    <hr size="3" class="col-11 mb-0">
+                    <div class="d-none small text-danger my-0 p-0">telephone number required</div>
+
+                </div>
+
+                <div class="field col-8 mx-auto mb-5">
+                    <div class="col-11">
+                        <span class="exclamation d-none float-end">
+                            <center>
+                                <i class="fas fa-exclamation text-danger "></i>
+                            </center>
+                        </span>
+                    </div>
+                    <textarea type="text" class="text-dark col-11" autocomplate="off" id="textarea" rows="5"></textarea>
+                    <label for="fullname" class="text-dark">message</label>
+                    <hr class="col-11 mb-0">
+                    <div class="d-none small text-danger my-0 p-0">a message required</div>
+
+                </div>
+
+
+                <div class="col-8 mx-auto mb-5"><button class="btn bgLightGren rounded-5 py-4 px-5 disabled" type="submit">send</button></div>
+
+
+
+            </form>
+
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer class="text-center">
+        <div class="mb-5 col-12 col-lg-3 d-inline-block">
+            <h3 class="mb-4">LOCATION</h3>
+            <div>2215 John Daniel Drive
+            </div>
+            <div>
+                Clark, MO 65243
+            </div>
+        </div>
+
+
+        <div class="mb-5 col-12 col-lg-3 d-inline-block">
+            <h3 class="mb-4">AROUND THE WEB</h3>
+            <div>
+                <div class="btn btn-outline-light border-3 border-white"><i class="fab fa-facebook-f "></i></div>
+                <div class="btn btn-outline-light border-3 border-white">
+                    <i class="fab fa-twitter "></i></div>
+
+                <div class="btn btn-outline-light border-3 border-white">
+                    <i class="fab fa-linkedin-in"></i></div>
+                <div class="btn btn-outline-light  border-3 border-white">
+
+
+                    <i class="fas fa-basketball-ball"></i></div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-12 d-inline-block">
+            <h3 class="mb-4">ABOUT FREELANCER</h3>
+            <div>
+                Freelance is a free to use, MIT licensed Bootstrap theme created by
+                <a href="http://startbootstrap.com" style="color:#1abc9c;font-weight: 600;text-decoration: none;">Start Bootstrap</a>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="text-center py-4 copyrightBg">Copyright © Your Website 2021</div>
+
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js "></script>
+    <script src="./assets/js/popper.min.js "></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/main.js "></script>
+</body>
+
+</html>
