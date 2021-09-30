@@ -55,9 +55,33 @@ $(".field input,textarea").focusout(function() {
 
     })
     // portfolio slider kapatma dugmesi
-$(window).resize(function() {
-    $("#portfolio .container").width($("#portfolio img").width())
+$("#portfolio .times").click(function() {
+    $(this).parent().addClass("d-none")
 })
-$(".times div").click(function() {
-    $("#portfolio .image-slide-container .container").addClass("d-none")
+
+//kapatma butonu genişlik
+$("#portfolio .times").width($("img").innerWidth())
+
+var sliderHeight = $("#portfolio .col-12").height();
+var windowHeight = $(window).height();
+
+// slider yukseklik olayı
+$("#portfolio .col-12").css("margin-top", (windowHeight - sliderHeight) / 2)
+
+$("#portfolio .buttons").
+css("top", $(".col-12").height() / 2 + parseInt($("#portfolio .col-12").css("margin-top")))
+
+
+$(window).resize(function() {
+    $("#portfolio .times").width($("img").innerWidth())
+    $("#portfolio .buttons").
+    css("top", $(".col-12").height() / 2 + parseInt($("#portfolio .col-12").css("margin-top")))
+})
+
+// hover olayı
+$("#portfolio button").hover(function() {
+    $(this).toggleClass("text-dark text-muted")
+}, function() {
+    $(this).toggleClass("text-dark text-muted")
+
 })
