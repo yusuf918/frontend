@@ -174,7 +174,7 @@ span.exclamation {
     padding: 20px 36px;
 }
 
-#portfolio img {
+#portfolio .slider-img {
     max-width: 93%;
     position: relative;
     z-index: -1;
@@ -208,13 +208,22 @@ span.exclamation {
     font-size: 35px;
 }
 
-#portfolio .project-name {
-    opacity: 0.7;
+#portfolio .project-image {
+    position: relative;
+    z-index: -1;
 }
 
+#portfolio .img-hover {
+    cursor: pointer;
+    transition: 300ms all;
+    z-index: 2;
+    transform: translateY(-100%);
+    overflow: hidden;
+    background-color: rgba(133, 128, 127, 0);
+    opacity: 0;
+}
 
-/* 
-#portfolio .buttons {
-    width: 100%;
-    right: ;
-} */
+#portfolio .img-hover:hover {
+    background-color: rgba(244, 98, 58, 0.9);
+    opacity: 1;
+}

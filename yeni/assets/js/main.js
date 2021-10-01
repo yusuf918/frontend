@@ -60,28 +60,37 @@ $("#portfolio .times").click(function() {
 })
 
 //kapatma butonu genişlik
-$("#portfolio .times").width($("img").innerWidth())
+$("#portfolio .times").width($(".slider-img").innerWidth())
 
-var sliderHeight = $("#portfolio .col-12").height();
+var sliderHeight = $("#portfolio .slider-container").height();
 var windowHeight = $(window).height();
 
 // slider yukseklik olayı
-$("#portfolio .col-12").css("margin-top", (windowHeight - sliderHeight) / 2)
+$("#portfolio .slider-container").css("margin-top", (windowHeight - sliderHeight) / 2)
 
 $("#portfolio .buttons").
-css("top", $(".col-12").height() / 2 + parseInt($("#portfolio .col-12").css("margin-top")))
+css("top", $(".slider-container").height() / 2 + parseInt($("#portfolio .slider-container").css("margin-top")))
 
 
-$(window).resize(function() {
-    $("#portfolio .times").width($("img").innerWidth())
-    $("#portfolio .buttons").
-    css("top", $(".col-12").height() / 2 + parseInt($("#portfolio .col-12").css("margin-top")))
-})
+
 
 // hover olayı
 $("#portfolio button").hover(function() {
     $(this).toggleClass("text-dark text-muted")
 }, function() {
     $(this).toggleClass("text-dark text-muted")
+
+})
+
+
+// ana sayfa resim kısmı container yukseklik duzenlemesi
+$("#portfolio abbr").parent().height($(".project-image").height())
+
+
+$(window).resize(function() {
+    $("#portfolio .times").width($(".slider-img").innerWidth())
+    $("#portfolio .buttons").
+    css("top", $(".slider-container").height() / 2 + parseInt($("#portfolio .slider-container").css("margin-top")))
+    $("#portfolio abbr").parent().height($(".project-image").height())
 
 })
