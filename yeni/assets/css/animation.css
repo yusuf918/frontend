@@ -1,0 +1,60 @@
+/* kayan input animasyon */
+
+.field {
+    position: relative;
+}
+
+.container-box {
+    border: 1px solid red;
+    border-radius: 4px;
+    height: 58px;
+}
+
+.container-box:last-child {
+    height: 160px !important;
+}
+
+.field textarea {
+    border: 0;
+    outline: 0;
+}
+
+.field textarea:focus {
+    border: 0;
+    outline: 0;
+}
+
+.field input {
+    line-height: 40px;
+    padding: 0 0px;
+    font-size: 24px;
+    box-sizing: border-box;
+    border: 0px;
+    outline: 0px;
+    transition: 3s all;
+}
+
+.field input:focus {
+    outline: 0px;
+    border: 0px;
+}
+
+.field label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    line-height: 41px;
+    font-size: 20px;
+    color: #6c757d;
+}
+
+span.exclamation {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    margin-right: 10px;
+}

@@ -1,0 +1,44 @@
+body#about {
+    background-color: #f4623a;
+    text-align: center;
+    color: white;
+    padding: 8rem 0;
+}
+
+#about hr {
+    color: white;
+    background-color: white;
+}
+
+#about header {
+    padding: 0%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#about main p {
+    padding: 0 25px;
+    color: #ffffffbf;
+    margin-bottom: 24px;
+}
+
+#about footer button {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 36px;
+    color: black;
+    border: solid 2px white;
+    border-radius: 40px;
+}
+
+@media screen and (min-width:992px) {
+    #about main p {
+        box-sizing: border-box;
+        display: block;
+        padding-right: .25rem!important;
+        padding-left: .25rem!important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        flex: 0 0 auto;
+    }
+}

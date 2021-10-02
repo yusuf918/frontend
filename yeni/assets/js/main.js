@@ -1,17 +1,19 @@
+var imgSrc;
+var images = ["./assets/img/1.jpg", "./assets/img/2.jpg", "./assets/img/3.jpg", "./assets/img/4.jpg", "./assets/img/5.jpg", "./assets/img/6.jpg"]
 $(document).ready(function() {
     $(window).resize(function() {
         $("header nav").removeClass(" bg-light")
     });
-});
-$(".field input ,textarea").focus(function() {
-    $(this).parent().find("label").css({
-        "line-height": "20px",
-        "font-size": "12px",
-        "top": "-4px",
-        "color": "#6c757d"
-    });
-    $(".small").addClass("d-none")
+    $(".field input ,textarea").focus(function() {
+        $(this).parent().find("label").css({
+            "line-height": "20px",
+            "font-size": "12px",
+            "top": "-4px",
+            "color": "#6c757d"
+        });
+        $(".small").addClass("d-none")
 
+    })
 })
 
 
@@ -55,30 +57,31 @@ $(".field input,textarea").focusout(function() {
 
     })
     // portfolio slider kapatma dugmesi
-$("#portfolio .times").click(function() {
-    $(this).parent().addClass("d-none")
+$("#portfolio .times .icon-canc").click(function() {
+    $(".position-absolute:first-child").addClass("d-none")
 })
 
 //kapatma butonu genişlik
 $("#portfolio .times").width($(".slider-img").innerWidth())
 
-var sliderHeight = $("#portfolio .slider-container").height();
-var windowHeight = $(window).height();
+var sliderHeight = $("#portfolio .slider-container img").height();
+var windowHeight = $(window).outerHeight();
 
 // slider yukseklik olayı
 $("#portfolio .slider-container").css("margin-top", (windowHeight - sliderHeight) / 2)
 
-$("#portfolio .buttons").
-css("top", $(".slider-container").height() / 2 + parseInt($("#portfolio .slider-container").css("margin-top")))
+$("#portfolio .buttons").css("top", parseInt($("#portfolio .slider-container").css("margin-top")) + $(".slider-img").height() / 2)
+
+
 
 
 
 
 // hover olayı
 $("#portfolio button").hover(function() {
-    $(this).toggleClass("text-dark text-muted")
+    $(this).toggleClass("text-light text-muted")
 }, function() {
-    $(this).toggleClass("text-dark text-muted")
+    $(this).toggleClass("text-light text-muted")
 
 })
 
@@ -86,11 +89,48 @@ $("#portfolio button").hover(function() {
 // ana sayfa resim kısmı container yukseklik duzenlemesi
 $("#portfolio abbr").parent().height($(".project-image").height())
 
+$(".slider-container:first-child").height($(window).height())
+
+// slider gosterme
+$(".image-container").click(function() {
+    $(".slider-img").attr("src", $(this).find("img").attr("src"))
+    $("div:first-child").removeClass("d-none")
+    $("#portfolio .buttons").css("top", parseInt($("#portfolio .slider-container").css("margin-top")) + $(".slider-container img").height() / 2)
+    $("#portfolio .times").width($(".slider-img").innerWidth())
+    $("#portfolio .slider-container").css("margin-top", (windowHeight - sliderHeight) / 2)
+    $(".slider-container:first-child").height($(window).height())
+    $(".left").removeClass("d-none")
+    imgSrc = $(".slider-img").attr("src").split("/")[3][0]
+    imgSrc = parseInt(imgSrc);
+
+})
+
 
 $(window).resize(function() {
     $("#portfolio .times").width($(".slider-img").innerWidth())
-    $("#portfolio .buttons").
-    css("top", $(".slider-container").height() / 2 + parseInt($("#portfolio .slider-container").css("margin-top")))
-    $("#portfolio abbr").parent().height($(".project-image").height())
+    $("#portfolio .buttons").css("top", $(".slider-container img").height() / 2 + parseFloat($(".slider-container").css("margin-top")))
 
-})
+    $("#portfolio abbr").parent().height($(".project-image").height())
+    $("#portfolio .slider-container").css("margin-top", (windowHeight - sliderHeight) / 2)
+    $(".slider-container:first-child").height($(window).height())
+
+
+});
+
+function buttonClickLeft() {
+    imgSrc = parseInt(imgSrc)
+    imgSrc -= 1;
+    $(".slider-img").attr("src", images[imgSrc - 1])
+
+    if (imgSrc == 0)
+        imgSrc = 6
+}
+
+
+function buttonClickRight() {
+    imgSrc = parseInt(imgSrc)
+    imgSrc += 1;
+    $(".slider-img").attr("src", images[imgSrc - 1])
+    if (imgSrc == 6)
+        imgSrc = 0
+}
