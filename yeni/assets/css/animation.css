@@ -5,13 +5,9 @@
 }
 
 .container-box {
-    border: 1px solid red;
+    border: 1px solid #ced4da;
     border-radius: 4px;
     height: 58px;
-}
-
-.container-box:last-child {
-    height: 160px !important;
 }
 
 .field textarea {
@@ -24,6 +20,10 @@
     outline: 0;
 }
 
+.field .outline {
+    outline: 3px solid red
+}
+
 .field input {
     line-height: 40px;
     padding: 0 0px;
@@ -34,9 +34,15 @@
     transition: 3s all;
 }
 
-.field input:focus {
-    outline: 0px;
+.field textarea {
+    line-height: 40px;
+    padding: 10px;
+    font-size: 24px;
+    box-sizing: border-box;
     border: 0px;
+    outline: 0px;
+    transition: 3s all;
+    overflow-y: hidden;
 }
 
 .field label {
@@ -49,7 +55,7 @@
 }
 
 span.exclamation {
-    display: inline-block;
+    display: none;
     width: 15px;
     height: 15px;
     border: 1px solid red;

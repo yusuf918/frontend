@@ -4,6 +4,56 @@ $(document).ready(function() {
     $(window).resize(function() {
         $("header nav").removeClass(" bg-light")
     });
+
+    $("label").dblclick(function() {
+
+        $(this).css({
+            "line-height": "20px",
+            "font-size": "12px",
+            "top": "-4px",
+            "color": "#6c757d"
+        });
+        $(this).parent().find("#input").focus()
+        $(this).parent().find("#input").addClass("outline")
+
+        $(this).parent().parent().find(".alertFullName").remove()
+        $(this).parent().parent().find(".alertEmail").remove()
+        $(this).parent().parent().find(".alertPhone").remove()
+        $(this).parent().parent().find(".alertMessage").remove()
+
+    })
+
+    $("label").click(function() {
+
+        $(this).css({
+            "line-height": "20px",
+            "font-size": "12px",
+            "top": "-4px",
+            "color": "#6c757d"
+        });
+        $(this).parent().find("#input").focus()
+
+
+        $(this).parent().parent().find(".alertFullName").remove()
+        $(this).parent().parent().find(".alertEmail").remove()
+        $(this).parent().parent().find(".alertPhone").remove()
+        $(this).parent().parent().find(".alertMessage").remove()
+
+    })
+    $("#input").click(function() {
+        console.log("dfgh")
+        $(this).parent().find("label").css({
+            "line-height": "20px",
+            "font-size": "12px",
+            "top": "-4px",
+            "color": "#6c757d"
+        });
+        $(this).parent().find("#input").focus()
+        $(this).parent().parent().find(".alertFullName").remove()
+        $(this).parent().parent().find(".alertEmail").remove()
+        $(this).parent().parent().find(".alertPhone").remove()
+        $(this).parent().parent().find(".alertMessage").remove()
+    })
     $(".field input ,textarea").focus(function() {
         $(this).parent().find("label").css({
             "line-height": "20px",
@@ -11,65 +61,125 @@ $(document).ready(function() {
             "top": "-4px",
             "color": "#6c757d"
         });
-        $(".small").addClass("d-none")
+
+        $(this).parent().css("border-color", "#dc3545")
+        $(this).parent().css("outline", "2px solid #d63384")
+
+        // uyarı mesajı silme işlemi
+        $(this).parent().parent().find(".alertFullName").remove()
+        $(this).parent().parent().find(".alertEmail").remove()
+        $(this).parent().parent().find(".alertPhone").remove()
+        $(this).parent().parent().find(".alertMessage").remove()
 
     })
 })
 
+$(".field").find("label").css({
+    "line-height": "42px",
+    "font-size": "20px",
+    "top": 0
+})
+$(".field input").focusout(function() {
+    let text = $(this).val().replace(" ", "");
 
-$(".field input,textarea").focusout(function() {
-        let text = $(this).val()
-        text.replace(" ", "");
-        if ($(this).attr("type") == "email") {
-            if (text.search("@gmail.com") < 0) {
-                let a = $(this).parent().next();
-                a.removeClass("d-none");
-            } else {
-                $(this).parent().find("div").eq(1).addClass("d-none")
+    let type = $(this).attr("type");
 
-            }
+    if (type == "email") {
+        if (text.search("@gmail.com") < 0) {
+            $(this).parent().after('<div class="text-danger alertEmail">email is not valid</div>');
         }
-
         if (text.length < 1) {
             $(this).parent().find("label").css({
                 "line-height": "42px",
                 "font-size": "20px",
                 "top": 0
             })
-            $(this).parent().find("hr").css("background-color", "red")
-            $(this).parent().find("span").removeClass("d-none")
-            $(this).parent().after('<div class="small text-danger">' + $(this).attr("type") + ' is required!</div>')
+            $(this).parent().after('<div class="text-danger alertEmail">an email is required</div>');
+            $(this).parent().css({ "border-color": "#dc3545", "outline": "0" })
 
         } else {
-            $(this).parent().find("hr").css("background-color", "#6c757d")
-            $(this).parent().find("span").addClass("d-none")
-            $(this).parent().remove(".small")
+            $(this).parent().css({ "border-color": "#ced4da", "outline": "0" })
 
+        }
+    } else if (type == "tel") {
+        if (text.length < 1) {
+            $(this).parent().find("label").css({
+                "line-height": "42px",
+                "font-size": "20px",
+                "top": 0
+            })
+            $(this).parent().after('<div class="text-danger alertPhone">an phone number is required</div>');
+            $(this).parent().css({ "border-color": "#dc3545", "outline": "0" })
+
+        } else {
+            $(this).parent().css({ "border-color": "#ced4da", "outline": "0" })
 
         }
 
-        // buton Aktifleştirme
-        $("#fullname").val().length > 2 &&
-            $("#email").val().search("@gmail.com") > 0 &&
-            $("#telephoneNumber").val().length > 8 &&
-            $("#textarea").val().length > 3 ? $("button").removeClass("disabled") : $("button").addClass("disabled");
+    } else {
+        if (text.length < 1) {
+            $(this).parent().find("label").css({
+                "line-height": "42px",
+                "font-size": "20px",
+                "top": 0
+            })
+            $(this).parent().after('<div class="text-danger alertMessage">a name is required</div>');
+            $(this).parent().css({ "border-color": "#dc3545", "outline": "0" })
 
 
-    })
-    // portfolio slider kapatma dugmesi
+
+        } else {
+            $(this).parent().css({ "border-color": "#ced4da", "outline": "0" })
+
+        }
+
+
+    }
+})
+$("#textarea").focusout(function() {
+    let text = $("#textarea").val().replace(" ", "");
+    console.log("1sedrfg")
+    if (text.length < 1) {
+        $("#textarea").parent().find("label").css({
+            "line-height": "42px",
+            "font-size": "20px",
+            "top": 0
+        })
+        console.log(text)
+
+        $(this).parent().css({ "border-color": "#dc3545", "outline": "0" })
+
+
+    } else {
+        $(this).parent().css({ "border-color": "#ced4da", "outline": "0" })
+
+    }
+
+
+
+})
+
+
+
+
+
+
+
+
+// portfolio slider kapatma dugmesi
 $("#portfolio .times .icon-canc").click(function() {
     $(".position-absolute:first-child").addClass("d-none")
 })
 
 //kapatma butonu genişlik
 $("#portfolio .times").width($(".slider-img").innerWidth())
-
+    // slider ve pencere yuksekliği alma
 var sliderHeight = $("#portfolio .slider-container img").height();
 var windowHeight = $(window).outerHeight();
 
 // slider yukseklik olayı
 $("#portfolio .slider-container").css("margin-top", (windowHeight - sliderHeight) / 2)
-
+    //slider button yuksklik
 $("#portfolio .buttons").css("top", parseInt($("#portfolio .slider-container").css("margin-top")) + $(".slider-img").height() / 2)
 
 
@@ -77,7 +187,7 @@ $("#portfolio .buttons").css("top", parseInt($("#portfolio .slider-container").c
 
 
 
-// hover olayı
+// slider button hover olayı
 $("#portfolio button").hover(function() {
     $(this).toggleClass("text-light text-muted")
 }, function() {
@@ -116,7 +226,7 @@ $(window).resize(function() {
 
 
 });
-
+// slider sola tıklama
 function buttonClickLeft() {
     imgSrc = parseInt(imgSrc)
     imgSrc -= 1;
@@ -126,7 +236,7 @@ function buttonClickLeft() {
         imgSrc = 6
 }
 
-
+// slider saga tıklama
 function buttonClickRight() {
     imgSrc = parseInt(imgSrc)
     imgSrc += 1;
