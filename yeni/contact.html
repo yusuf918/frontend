@@ -12,77 +12,89 @@
 </head>
 
 <body id="contact">
-    <h3>
-        <center> lets get in touch </center>
-    </h3>
-    <hr>
-    <p class="col-4 mx-auto text-center text-muted">
-        Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!
-    </p>
-    <form action="login.php" method="get">
+    <header>
 
-        <div class="field col-4 mx-auto mb-5" style="margin-top: 70px !important;">
-            <div class="container-box d-flex justify-content-end">
-                <input type="text" class="text-dark col-11 " autocomplate="off" id="input">
-                <span class="exclamation ">
+        <h3 style="margin-top: 8rem;">
+            <center> Lets Get In Touch </center>
+        </h3>
+        <hr>
+        <p class="col-11 col-lg-4 mx-auto text-center text-muted">
+            Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!
+        </p>
+
+    </header>
+    <main>
+
+        <form action="login.php" method="get">
+
+            <div class="field col-11 col-lg-4 mx-auto mb-3" style="margin-top: 70px !important;">
+                <div class="container-box d-flex justify-content-end">
+                    <input type="text" class="text-dark col-11 " autocomplate="off" id="input">
+                    <span class="exclamation ">
                     <i class="icon-attention text-danger "></i>
                </span>
-                <label for="fullname" class="text-dark">Full Name</label>
+                    <label for="fullname" class="text-dark">Full Name</label>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="field col-4 mx-auto mb-5" style="margin-top: 70px !important;">
-            <div class="container-box d-flex justify-content-end">
-                <input type="email" class="text-dark col-11" autocomplate="off" id="input">
-                <span class="exclamation ">
+            <div class="field col-11 col-lg-4 mx-auto mb-3">
+                <div class="container-box d-flex justify-content-end">
+                    <input type="email" class="text-dark col-11" autocomplate="off" id="input">
+                    <span class="exclamation ">
                   <center>
                     <i class="icon-attention text-danger "></i>
                   </center>
                </span>
-                <label for="fullname" class="text-dark">Email adress</label>
+                    <label for="fullname" class="text-dark">Email adress</label>
+                </div>
             </div>
-        </div>
 
-        <div class="field col-4 mx-auto mb-5" style="margin-top: 70px !important;">
-            <div class="container-box d-flex justify-content-end">
-                <input type="tel" class="text-dark col-11" autocomplate="off" id="input">
-                <span class="exclamation ">
+            <div class="field col-11 col-lg-4 mx-auto mb-3">
+                <div class="container-box d-flex justify-content-end">
+                    <input type="tel" class="text-dark col-11" autocomplate="off" id="input">
+                    <span class="exclamation ">
                   <center>
                     <i class="icon-attention text-danger "></i>
                   </center>
                </span>
-                <label for="fullname" class="text-dark">Phone number</label>
+                    <label for="fullname" class="text-dark">Phone number</label>
+                </div>
+
             </div>
 
-        </div>
 
-
-        <div class="field col-4 mx-auto mb-5" style="margin-top: 70px !important;">
-            <div class="container-box d-flex justify-content-end">
-                <textarea name="" id="textarea" class="col-12"></textarea>
-                <span class="exclamation position-absolute">
+            <div class="field col-11  col-lg-4 mx-auto mb-3">
+                <div class="container-box d-flex justify-content-end" style="height: 150px;">
+                    <textarea name="" id="textarea" class="col-12"></textarea>
+                    <span class="exclamation position-absolute">
                   <center>
                     <i class="icon-attention text-danger "></i>
                   </center>
                </span>
-                <label for="fullname" class="text-dark">message</label>
+                    <label for="fullname" class="text-dark">message</label>
+                </div>
+
             </div>
 
+
+
+            <div class="col-11 col-lg-4 mx-auto mb-5"><button class="btn col-12  rounded-5 py-4 px-5 disabled" type="submit">SUBMIT</button></div>
+
+        </form>
+
+        <div class="phone " style="margin-bottom: 8rem;">
+            <div class="text-center"><i class="icon-mobile"></i>
+            </div>
+            <div class="text-center">+1 (555) 123-4567</div>
         </div>
+    </main>
 
 
+    <footer class="text-muted py-5 bg-light text-center">
 
-        <div class="col-8 mx-auto mb-5"><button class="btn bgLightGren rounded-5 py-4 px-5 disabled" type="submit">send</button></div>
-
-    </form>
-
-
-
-
-
-
-
+        Copyright &copy 2021 - Company Name
+    </footer>
 
 
 

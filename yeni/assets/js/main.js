@@ -41,7 +41,6 @@ $(document).ready(function() {
 
     })
     $("#input").click(function() {
-        console.log("dfgh")
         $(this).parent().find("label").css({
             "line-height": "20px",
             "font-size": "12px",
@@ -135,10 +134,17 @@ $(".field input").focusout(function() {
 
 
     }
+
+
+    formCheck();
+
+
+
+
+
 })
 $("#textarea").focusout(function() {
     let text = $("#textarea").val().replace(" ", "");
-    console.log("1sedrfg")
     if (text.length < 1) {
         $("#textarea").parent().find("label").css({
             "line-height": "42px",
@@ -156,9 +162,17 @@ $("#textarea").focusout(function() {
     }
 
 
+    formCheck();
 
 })
 
+function formCheck() {
+    $(".field input").eq(0).val() != "" &&
+        $(".field input").eq(1).val() != "" && $(".field input").eq(1).val().search("@gmail.com") > 1 &&
+        $(".field input").eq(2).val().length > 8 &&
+        $("textarea").val() != "" ?
+        $("button").removeClass("disabled") : $("button").addClass("disabled")
+}
 
 
 

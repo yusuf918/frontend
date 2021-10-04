@@ -36,3 +36,32 @@ hr {
     color: #f4623a;
     height: 3.5px;
 }
+
+#contact button.col-12 {
+    border-radius: 40px;
+    background-color: #f4623a;
+}
+
+#contact .icon-mobile {
+    color: #6c757d;
+    font-size: 40px;
+}
+
+#contact footer {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+@media screen and (min-width:767px) {
+    #contact p {
+        width: 672px
+    }
+    .field {
+        width: 672px
+    }
+    #contact .col-11:last-child {
+        width: 672px
+    }
+}
