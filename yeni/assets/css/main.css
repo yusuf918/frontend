@@ -105,3 +105,44 @@ ul.sidebar.active {
     background: rgba(52, 58, 64, 0.1);
     height: 80px;
 }
+
+section p {
+    font-size: calc( 1.6rem + 0.5px);
+}
+
+.padding-article {
+    padding: 7.5rem 0;
+}
+
+[class*="icon"] {
+    padding: 0;
+    margin-right: .5rem;
+    width: 16px
+}
+
+[class*="icon"]::before {
+    position: relative;
+    top: 19px;
+    color: #1d809f;
+}
+
+.row .text-white-50 {
+    font-size: 1.2rem;
+}
+
+.icon-hrt::before {
+    top: 0px;
+    color: #fff !important;
+}
+
+.callout {
+    padding: 180px 0;
+    background-image: url("../img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display-0 {
+    font-size: 4rem;
+}

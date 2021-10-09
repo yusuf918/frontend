@@ -15,3 +15,8 @@ $(window).scroll(function() {
 
     }
 })
+$(".scroll-to-top").click(function() {
+    $("html").animate({
+        scrollTop: 0
+    })
+})
