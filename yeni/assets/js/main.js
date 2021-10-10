@@ -20,3 +20,21 @@ $(".scroll-to-top").click(function() {
         scrollTop: 0
     })
 })
+$(".row .col-11").hover(
+    function() {
+        $(this).find("img").animate({
+            "width": "90%"
+        })
+
+        $(this).find(".caption-content").animate({ "margin-top": 36 })
+
+
+    },
+    function() {
+        $(this).find("img").animate({ "width": "100%" });
+        $(this).find(".caption-content").animate({ "margin-top": 0 })
+
+    }
+
+
+)
