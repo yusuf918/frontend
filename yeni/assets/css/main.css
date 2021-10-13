@@ -97,3 +97,38 @@ i[class*="icon"] {
     color: darkblue;
     background-color: blue;
 }
+
+.showcase h2 {
+    font-weight: 700;
+    color: #212529;
+}
+
+.testiminional img {
+    position: relative;
+    margin: 0 auto;
+    max-width: 12rem;
+}
+
+section .content {
+    padding-bottom: 8rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    color: blue;
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+footer a:last-child {
+    margin-left: 90px;
+}
+
+section .container.col-xl-6 {
+    padding-top: 8rem;
+}
