@@ -1,1 +1,0 @@
-$(".dLetter").text("d")

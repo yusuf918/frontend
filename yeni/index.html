@@ -5,248 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/fontello.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <header id="home">
-        <div class="container">
+    <header>
+        <nav class="nav my-2">
+            <div class="container ">
+                <span>Start Bootstrap</span>
+                <a href="#" class="btn px-3   bg-primary ">sign up</a>
+            </div>
+        </nav>
 
+        <div class="content" style="background: url('./assets/img/bg-masthead.jpg') center center no-repeat;">
+            <div class="container col-xl-6 mb-5">
 
+                <div class="display-3 text-center fw-bold text-white">Generate more leads with a professional landing page!</div>
 
-
-
-
-
-
-            <div class="menu-toggle d-flex flex-column">
-                <span></span>
-                <span></span>
-                <span></span>
 
 
             </div>
 
-            <div class="scroll-to-top">^</div>
+            <div class="row">
+                <center>
 
-            <h1 class="display-1 fw-bold">stylish portfolio</h1>
-            <h3 class="mb-5">A Free Bootstrap Theme by Start Bootstrap</h3>
+                    <div class="col-12 col-xl-6">
+                        <form action="./index.html" method="get">
+                            <input type="text" required placeholder="Email Address" class="py-3 col-6 col-md-8">
+                            <button type="submit" class="col-auto form-submit disabled p-3">Submit</button>
 
-            <div class="d-flex justify-content-center">
 
-                <button class="btn rounded-3 px-5 py-4 bg-primary"><a href="#">Find Out More</a></button>
+                        </form>
+                    </div>
+                </center>
+                <div class="required-email d-none">Email Address is required.</div>
+                <div class="invalid-email d-none">Email Address is not valid.</div>
+                <div class="mb-3 d-none success-message">
+                    <div>Form submission successful!</div>
+                    <div>To activate this form, sign up at</div>
+
+                </div>
+
+                <div class="form-link d-none"><a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a></div>
+
 
             </div>
+
+
+
+
         </div>
     </header>
 
     <main>
-        <section class="position-fixed" style="top: 0;right: 0;">
-            <ul class="nav flex-column sidebar" style="z-index: 2;">
-                <li class="nav-item py-3">
-                    <a class="nav-link  active" aria-current="page" href="#">start bootstrap</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="nav-link" href="#home">home</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="nav-link" href="#about">about</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="nav-link" href="#services">services</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="nav-link" href="#portfolio">portfolio</a>
-                </li>
-                <li class="nav-item py-2">
-                    <a class="nav-link" href="#contact">contact</a>
-                </li>
-            </ul>
-        </section>
-
-        <section class="text-center padding-article" id="about">
-            <h1 class="fw-bold">Stylish Portfolio is the perfect theme for your next project!</h1>
-            <p class="fw-light mb-5">
-                This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at <a href="https://unsplash.com" class="text-decoration-underline text-primary">Unsplash</a> !
-            </p>
-            <div class="d-flex justify-content-center">
-                <button class="btn rounded-3 px-5 py-4 text-white bg-dark">What We Opper</button>
-
-            </div>
-        </section>
-
-        <section class=" padding-article text-center" id="services" style="background-color: #1d809f;">
-            <div class="text-warning fw-bold h5 ">SERVICES</div>
-            <div class="text-white display-3 fw-bold mb-5">What We Offer</div>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                    <div class="icon-pencil bg-white d-inline-block rounded-circle" style="font-size: 50px;width: 120px;height: 120px;"></div>
-
-                    <div class="row m-0">
-                        <h3 class="fw-bold text-white">Responsive</h3>
-                    </div>
-                    <div class="row m-0">
-                        <p class="text-white-50">Looks great on any screen size!</p>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                    <div class="icon-mobile bg-white d-inline-block rounded-circle" style="font-size: 50px;width: 120px;height: 120px;"></div>
-
-                    <div class="row m-0">
-                        <h3 class="fw-bold text-white">Redesigned</h3>
-                    </div>
-                    <div class="row m-0">
-                        <p class="text-white-50">Freshly redesigned for Bootstrap 5.</p>
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                    <div class="icon-thumbs bg-white d-inline-block rounded-circle" style="font-size: 50px;width: 120px;height: 120px;"></div>
-
-                    <div class="row m-0">
-                        <h3 class="fw-bold text-white">favorited</h3>
-                    </div>
-                    <div class="row m-0">
-                        <p class="text-white-50">Millions of users Start <i class="icon-hrt text-white" style="content:'\e801' ;"></i> Bootstrap!</p>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                    <div class="icon-mobile bg-white d-inline-block rounded-circle" style="font-size: 50px;width: 120px;height: 120px;"></div>
-
-                    <div class="row m-0">
-                        <h3 class="fw-bold text-white">Question</h3>
-                    </div>
-                    <div class="row m-0">
-                        <p class="text-white-50">I mustache you a question...</p>
-                    </div>
-
-                </div>
+        <section class="feature-icon">
+            <div class="row">
+                <div class="icon-facebok"></div>
+                Lorem ipsum dolor sit amet.
+                <div class="col-12 col-lg-4 bg-warning"><i class="icon-window text-dark bg-danger"></i></div>
+                <div class="col-12 col-lg-4"><i class="icon-layer"></i></div>
+                <div class="col-12 col-lg-4"><i class="icon-terminal"></i></div>
             </div>
 
-        </section>
-
-        <section class="callout">
-            <div class="container text-center">
-
-                <h1 class="display-1 p-0 fw-bold">Stylish Portfolio</h1>
-                <h3 class="mb-5">A Free Bootstrap Theme by Start Bootstrap</h3>
-
-                <div class="d-flex justify-content-center">
-
-                    <button class="btn rounded-3 px-5 py-4 bg-primary"><a href="#">Download Now</a></button>
-
-                </div>
-            </div>
-        </section>
-
-        <div class="recent-projects text-center" id="portfolio">
-            <div class="text-warning fw-bold">PORTFOLIO</div>
-            <h3 class="display-4 col-8 col-md-12 mx-auto text-dark fw-bold">Recent Projects</h3>
-
-            <div class="container">
-                <div class="row m-0 justify-content-center ">
-                    <div class="col-11 col-md-10 col-lg-6 p-0 mb-3">
-
-                        <img src="./assets/img/portfolio-1.jpg" class="col-12 bg-danger mx-auto position-relative" style="z-index: -1;" alt="" srcset="">
-                        <div class="caption-content position-absolute px-4 ps-md-5 ">
-                            <div class="mb-2 small ">STATIONARY</div>
-                            <p>a yellow pencil with envelopes on a clean, blue backdrop</p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-11 col-md-10 col-lg-6 p-0 mb-3">
-
-                        <img src="./assets/img/portfolio-1.jpg" class="col-12 mx-auto" alt="" srcset="">
-                        <div class="caption-content position-absolute col-11 col-md-10 col-lg-5 px-4 ps-md-5 text-start text-white">
-                            <div class="mb-2 small ">ICE CREAM</div>
-                            <p>a dark blue background with a colored pencil, a clip, a tiny ice cream cone</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row m-0 justify-content-center">
-                    <div class="col-11 col-md-10 col-lg-6 p-0 mb-3">
-
-                        <img src="./assets/img/portfolio-1.jpg" class="col-12 mx-auto" alt="" srcset="">
-                        <div class="caption-content position-absolute col-11 col-md-10 col-lg-5 px-4 ps-md-5 text-start text-white">
-                            <div class="mb-2 small ">STRAWBERRIES</div>
-                            <p>strawberries are such a tasty snack aspecially with a little sugar on top!</p>
-                        </div>
-                    </div>
-                    <div class="col-11 col-md-10 col-lg-6 p-0 mb-3">
-
-                        <img src="./assets/img/portfolio-1.jpg" class="col-12 mx-auto" alt="" srcset="">
-                        <div class="caption-content position-absolute col-11 col-md-10 col-lg-5 px-4 ps-md-5 text-start text-white">
-                            <div class="mb-2 small ">STATIONARY</div>
-                            <p>a yellow workspace with some scissors,pencils and other objects</p>
-                        </div>
-                    </div>
-                </div>
 
 
 
-            </div>
-        </div>
 
-
-        <section style="background-color: #1d809f;margin-top: 120px;padding:7.5rem 0 ;">
-            <h1 class="text-center mb-4 text-white fw-bold">The button below are impossible to resist...</h1>
-
-            <div class="mb-4 d-flex justify-content-center">
-                <button class="btn px-5 py-4 rounded-3 bg-white text-dark me-4">Click me!</button>
-                <button class="btn px-5 py-4 rounded-3 bg-dark text-white">Look at me!</button>
-            </div>
-
-        </section>
-
-        <section id="contact">
-            <div class="map">
-                <iframe class="w-100" style="height: 30rem;" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Twitter,+I…tter,+Inc.,+Market+Street,+San+Francisco,+CA&t=m&z=15&iwloc=A&output=embed"></iframe>
-            </div>
         </section>
     </main>
-    <footer style="padding:7.5rem 0 ;">
-        <center>
-            <i class="icon-facebook  p-3"></i>
-            <i class="icon-twitter  p-3"></i>
-            <i class="icon-github  p-3"></i>
-            <br><br>
-            <br> <span class="text-muted">
-                Copyright © Your Website 2021
-            </span>
-        </center>
-    </footer>
 
 
 
-
-
-
-
-
-
-
-    <script src="./assets/js/popper.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/main.js"></script>
+
+
 </body>
 
 </html>
