@@ -92,10 +92,17 @@ button.disabled {
     opacity: 0.8;
 }
 
-i[class*="icon"] {
-    font-size: 20px;
-    color: darkblue;
-    background-color: blue;
+main i[class*="icon"] {
+    font-size: 100px;
+}
+
+.feature-icon {
+    padding: 5rem 0;
+}
+
+.feature-icon .contain {
+    max-width: 18rem;
+    text-align: center;
 }
 
 .showcase h2 {
@@ -123,10 +130,20 @@ footer a {
     text-decoration: underline;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+footer i[class*="icon"] {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer i.icon-facebook {
+    font-size: 20px;
 }
 
 footer a:last-child {
-    margin-left: 90px;
+    margin-left: calc(6%);
 }
 
 section .container.col-xl-6 {
