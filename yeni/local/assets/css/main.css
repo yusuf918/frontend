@@ -1,0 +1,71 @@
+@import "./normalize.css";
+header .bg-masthead {
+    padding-top: 12rem;
+    padding-bottom: 30rem;
+    background-image: url(../img/bg-masthead.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+header .bg-masthead .display-3 {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+main #header3 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    color: #012f5b;
+}
+
+main #header3 .container p {
+    font-weight: 500;
+}
+
+main #header3 button {
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+main #header3 .btn:first-child {
+    background-color: #ffc107;
+}
+
+main #header3 button:first-child:hover {
+    background-color: transparent;
+    border: 3px solid #ffc107;
+}
+
+main #header3 button:last-child {}
+
+main #header3 button:last-child:hover {
+    border: 3px solid #506df5;
+}
+
+.centeralize {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHeight {
+    height: 66px;
+}
+
+.header4 {
+    background-color: #ff4848;
+    padding: 7.5rem 0;
+    color: white;
+}
+
+.header4 .col-12 {
+    margin-top: 5rem;
+}
+
+.header4 .col-12:first-child {
+    margin-top: 0rem;
+}
