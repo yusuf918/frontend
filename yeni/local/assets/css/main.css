@@ -69,3 +69,23 @@ main #header3 button:last-child:hover {
 .header4 .col-12:first-child {
     margin-top: 0rem;
 }
+
+.header5,
+.header6 {
+    padding: 7.5rem 0;
+}
+
+.header5 p,
+.header5 h3,
+.header5 h2 {
+    text-align: center;
+}
+
+.header6 {
+    background-color: #ff4848;
+}
+
+.header6 .btn {
+    max-width: max-content;
+    margin: 0% auto;
+}
