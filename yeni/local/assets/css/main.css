@@ -1,4 +1,12 @@
 @import "./normalize.css";
+:root {
+    --purple: #012f5b;
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
 header .bg-masthead {
     padding-top: 12rem;
     padding-bottom: 30rem;
@@ -86,6 +94,14 @@ main #header3 button:last-child:hover {
 }
 
 .header6 .btn {
-    max-width: max-content;
-    margin: 0% auto;
+    padding: 16px 36px;
+    font-weight: 500;
+}
+
+.header6 .btn {
+    background-color: #012f5b;
+}
+
+.header6 .col-12:last-child .btn {
+    color: white;
 }
