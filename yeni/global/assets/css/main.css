@@ -74,3 +74,7 @@ header .nav-link:hover {
     width: 60px;
     margin-left: calc(50% - 30px);
 }
+
+.header-4 {
+    padding: 7.5rem 0;
+}
