@@ -19,22 +19,27 @@
         <div class="nav bg-white">
             <nav class="navbar navbar-expand-lg w-100">
                 <div class="container">
-                    <a class="navbar-brand " href="#">Start Bootstrap</a>
+                    <a class="navbar-brand " href="#home">Start Bootstrap</a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+<div style="width: 20px;height: 2px;background-color: black;margin-bottom: 3px;"></div>
+<div style="width: 20px;height: 2px;background-color: black;margin-bottom: 3px;"></div>
+<div style="width: 20px;height: 2px;background-color: black;"></div>
+                    </span>
                   </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">features</a>
+                                <a class="nav-link active topButton" aria-current="page" href="#features">features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">download</a>
+                                <a class="nav-link topButton " href="#download">download</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " href="#">send feedback</a>
+                                <a class="nav-link rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#">
+                                    <img src="chat-text.svg" alt=""> <span>Send Feedback</span></a>
                             </li>
                         </ul>
 
@@ -43,7 +48,7 @@
             </nav>
         </div>
 
-        <div class="container">
+        <div class="container" id="home">
             <div class=" row padding-y ">
                 <div class="col-12 col-lg-6 ">
                     <div class="container ">
@@ -51,14 +56,15 @@
                         <p class="lead mt-4 mb-5 text-lg-start fw-normal text-muted ">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
                         <div class="appBadge ">
                             <div class=" mb-5 mb-lg-0 text-lg-start ">
-                                <a href="# " class="d-inline ">
-                                    <img src="app-store-badge.svg " class="mb-lg-0 me-lg-4 d-lg-inline-block ">
-                                </a>
-                                <a href="# " class="d-inline ">
+                                <center>
+                                    <a href="# " class="d-inline ">
+                                        <img src="app-store-badge.svg " class="mb-lg-0 me-lg-4 d-lg-inline-block ">
+                                    </a>
+                                    <a href="# " class="d-inline ">
 
-                                    <img src="google-play-badge.svg " alt=" " class="d-lg-inline-block mb-lg-0">
-                                </a>
-
+                                        <img src="google-play-badge.svg " alt=" " class="d-lg-inline-block mb-lg-0">
+                                    </a>
+                                </center>
                             </div>
                         </div>
                     </div>
@@ -76,6 +82,47 @@
 
 
     <main>
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-lg">Submit</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
         <section class="header-2 padding-y ">
             <div class="container ">
                 <div class="row ">
@@ -93,7 +140,7 @@
 
         </section>
 
-        <section class="header-3 padding-y">
+        <section class="header-3 padding-y" id="features">
             <div class="container">
                 <div class="row">
 
@@ -146,29 +193,49 @@
 
 
                     <div class="col-12 col-lg-4 p-2 order-lg-0">
-                        <video muted="muted " autoplay=" " loop=" " style="max-width: 100%; height: 100% ">
+                        <center>
+                            <video muted="muted " autoplay=" " loop=" " style="max-width: 100%; height: 100% ">
                             <source src="./assets/img/demo-screen.mp4 " type="video/mp4 ">
                         </video>
+                        </center>
                     </div>
                 </div>
             </div>
 
 
         </section>
-        <section class="header-4 bg-light">
+        <section class="header-4 bg-light padding-y">
             <div class="container">
-                <div class="row m-0 ">
+                <div class="row px-4 ">
                     <div class="col-lg-6">
-                        <h3>enter new age of web design</h3>
-                        <p class="mt-4 text-muted">
+                        <h3 class="display-4">Enter new age of web design</h3>
+                        <p class="mt-4 pe-md-5 lead text-muted">
                             This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.
                         </p>
                     </div>
-                    <div class="col-lg-6">
-                        resim
+                    <div class="col-lg-6 ">
+                        <img src="rounded-photo.jpg" alt="" class="rounded-circle col-md-6 col-lg-12 img-fluid">
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="header-5 padding-10">
+            <div class="container px-5">
+                <h3 class="display-2 col-md-8 col-lg-7">Stop waiting Start building .</h3>
+
+
+
+                <button class="py-3 px-4 mt-4 rounded-pill "><a href="#">download for free</a></button>
+            </div>
+        </section>
+        <section class="header-6 padding-y" id="download">
+            <h2 class="text-center fw-bold">Get the app now!</h2>
+            <div class="mt-4">
+
+
+            </div>
+
         </section>
 
     </main>
@@ -178,9 +245,19 @@
 
 
     <footer>
-
+        <div class="container  py-5 px-5">
+            <h3 class="small"> © Your Website 2021. All Rights Reserved.</h3>
+            <p>Privacy · Terms · FAQ</p>
+        </div>
 
     </footer>
+
+
+
+
+
+
+
     <script src="./assets/js/bootstrap.min.js "></script>
 
     <script src="./assets/js/jquery.js"></script>

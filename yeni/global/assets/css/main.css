@@ -1,5 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
+video {
+    width: 137px;
+    height: 297px;
+    border-radius: 1rem;
+}
+
+.nav-link.rounded-pill {
+    background-color: blue;
+    display: flex;
+    justify-items: center;
+    color: white
+}
+
+.nav-link img {}
+
+.navbar-toggler:focus {
+    border: 0px !important;
+    outline: 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video::before {
+    width: 4rem;
+    height: 2rem;
+    background-color: black;
+    position: relative;
+    left: 30%;
+}
+
 .padding-y {
     padding: 5rem 0;
+}
+
+.padding-10 {
+    padding: 10rem 0;
 }
 
 a.navbar-brand {
@@ -20,7 +63,8 @@ header * {
     text-align: center;
 }
 
-header .appBadge img {
+header .appBadge img,
+.header-6 img {
     width: 135px !important;
     height: 40px !important;
     display: block;
@@ -75,6 +119,44 @@ header .nav-link:hover {
     margin-left: calc(50% - 30px);
 }
 
-.header-4 {
-    padding: 7.5rem 0;
+.header-4 h3,
+.header-5 h3 {
+    font-family: 'Newsreader', serif;
+}
+
+.header-4 .col-lg-6:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.header-5 {
+    color: white;
+    background-image: url("../img/design.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-5 button {
+    background-color: transparent;
+}
+
+.header-5 a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-5 .rounded-pill {
+    border: 2px solid white;
+}
+
+.header-6 {
+    background: linear-gradient( 45deg, #2937f0, #9f1ae2);
+    color: white;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: black;
+    text-align: center;
 }
