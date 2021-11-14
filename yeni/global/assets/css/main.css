@@ -1,162 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
-video {
-    width: 137px;
-    height: 297px;
-    border-radius: 1rem;
+:root {
+    --seaGreen: #64a19d;
 }
 
-.nav-link.rounded-pill {
-    background-color: blue;
+.bg-seaGreen {
+    background-color: var(--seaGreen);
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, .55)
+}
+
+
+/* outline sıfırlama */
+
+.navbar-toggler {
+    border: 1px solid var(--seaGreen);
     display: flex;
-    justify-items: center;
-    color: white
+    justify-content: center;
+    align-items: center;
+    color: var(--seaGreen);
+    box-shadow: var(--seaGreen);
 }
 
-.nav-link img {}
 
-.navbar-toggler:focus {
-    border: 0px !important;
-    outline: 0 !important;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
+/* times kapama işareti basladi */
 
 .navbar-toggler-icon {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 5px;
 }
 
-video::before {
-    width: 4rem;
-    height: 2rem;
-    background-color: black;
-    position: relative;
-    left: 30%;
+.w-30 {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.padding-y {
-    padding: 5rem 0;
+.h-3 {
+    height: 3px;
+    margin-bottom: 3px;
 }
 
-.padding-10 {
+.h3-last-child {
+    margin: 0;
+}
+
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+/* times bitti */
+
+header {
+    /* background: url("../img/bg-masthead.jpg") center center no-repeat; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/bg-masthead.jpg");
     padding: 10rem 0;
 }
 
-a.navbar-brand {
-    color: rgba(0, 0, 0, .9);
-    font-weight: bold;
+
+/* 
+@media screen and (max-width:321px) {
+    nav {
+        max-width: calc(100% - 12px);
+    }
+} */
+
+header p {
+    /* max-width: 296px; */
 }
 
-a.navbar-brand:hover {
-    color: blue;
+header h3 {
+    /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */
+    /* color: transparent; */
+    letter-spacing: .8rem;
 }
 
-a.nav-link {
-    color: #212529;
-    transition: 100ms background-color;
+.navbar {
+    background-color: white;
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
-header * {
-    text-align: center;
+.navbar-brand {
+    color: black
 }
 
-header .appBadge img,
-.header-6 img {
-    width: 135px !important;
-    height: 40px !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header .nav-link:hover {
-    color: #6c757d!important;
-}
-
-.header-2 {
-    background: linear-gradient( 45deg, #2937f0, #9f1ae2);
-    text-align: center;
-    color: white;
-}
-
-.header-2 p {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header-2 img {
-    max-width: 95px;
-}
-
-@media screen and (max-width:767px) {
-    .mbottom-4 {
-        margin-bottom: 1.5rem;
+@media screen and (min-width:767px) {
+    header p {
+        width: 296px;
     }
 }
 
-@media(prefers-reduced-motion: reduce) {
-    * {
-        transition: 0ms !important;
-        animation: none !important;
+@media screen and (min-width:1024px) {
+    header p {
+        width: 350px;
+    }
+    .text-lg-muted,
+    .nav-item .nav-link {
+        color: rgba(255, 255, 255, .5)
+    }
+    .navbar {
+        background-color: transparent;
     }
 }
 
-.header-3 p {
-    margin: 0 auto;
-    text-align: center;
-    color: #6c757d;
-}
-
-.header-3 h3 {
-    text-align: center;
-}
-
-.header-3 img {
-    width: 60px;
-    margin-left: calc(50% - 30px);
-}
-
-.header-4 h3,
-.header-5 h3 {
-    font-family: 'Newsreader', serif;
-}
-
-.header-4 .col-lg-6:last-child {
-    display: flex;
-    justify-content: center;
-}
-
-.header-5 {
+header button.btn {
+    background-color: var(--seaGreen);
     color: white;
-    background-image: url("../img/design.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 16px 20px;
+    letter-spacing: 4px;
+    border: 0px;
 }
 
-.header-5 button {
-    background-color: transparent;
+#about p span a {
+    color: var(--seaGreen);
+    text-decoration-color: var(--seaGreen);
 }
 
-.header-5 a {
-    color: white;
-    text-decoration: none;
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-.header-5 .rounded-pill {
-    border: 2px solid white;
-}
 
-.header-6 {
-    background: linear-gradient( 45deg, #2937f0, #9f1ae2);
-    color: white;
-}
-
-footer {
-    color: rgba(255, 255, 255, 0.5);
-    background-color: black;
-    text-align: center;
-}
+/* 
+* {
+    outline: 1px solid red;
+} */
