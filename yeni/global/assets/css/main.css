@@ -55,10 +55,13 @@ body {
 
 /* times bitti */
 
+.py-10 {
+    padding: 10rem 0;
+}
+
 header {
     /* background: url("../img/bg-masthead.jpg") center center no-repeat; */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../img/bg-masthead.jpg");
-    padding: 10rem 0;
 }
 
 
@@ -106,6 +109,9 @@ header h3 {
     }
     .navbar {
         background-color: transparent;
+    }
+    .nav-link {
+        margin-bottom: -5px;
     }
 }
 

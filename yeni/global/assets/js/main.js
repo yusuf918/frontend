@@ -6,7 +6,7 @@ function timesAlignAppend() {
 timesAlignAppend();
 timesAlignAppend();
 timesAlignAppend();
-$(".nav-link,.navbar-brand").addClass("py-3")
+$(".nav-link,.navbar-brand").addClass("py-4")
 $(window).scroll(function() {
         let height = $(this).scrollTop();
 
