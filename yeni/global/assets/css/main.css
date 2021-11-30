@@ -5,3 +5,46 @@
 body {
     height: 100vh;
 }
+
+span {
+    transition: 300ms all;
+}
+
+
+/* ul {
+    transition: 1000ms all;
+} */
+
+span.active {
+    transform: rotate(90deg);
+}
+
+.sidebar {
+    position: block;
+}
+
+@media screen and (max-width:1023px) {
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+    }
+}
+
+
+/* .sidebar .layout ul {
+    display: none;
+}
+
+.sidebar .layout ul.active {
+    display: block;
+} */
+
+.linkGroup {
+    display: none;
+}
+
+.linkGroup.active {
+    display: block;
+}
