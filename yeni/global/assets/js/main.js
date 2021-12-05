@@ -24,6 +24,11 @@ $(".linkGroup li").click(function(event) {
         event.stopPropagation()
     })
     // tum sayfalar icin head çagırma
-$.get("../components/header.html", function(data, status) {
+$.get("../components/head.html", function(data, status) {
     $("head").html(data)
+});
+//  footer çagırma
+
+$.get("../components/footer.html", function(data, status) {
+    $("footer").html(data)
 });

@@ -13,36 +13,37 @@
 
                 <div class="card px-0 ">
                     <div class="card-header bg-light text-center">
-                        <h1 class="py-3">Create Account</h1>
+                        <h3 class="py-3">Create Account</h3>
                     </div>
                     <div class="card-body ">
                         <div class="d-md-flex">
                             <div class="field col me-md-4">
-                                <input type="text" required id="name" class="me-md-4 col-12  border border-1 border-muted px-2 pt-4 pb-2 rounded-3  mt-3 ">
+                                <input type="text" required id="name" class="me-md-4 col-12  border border-1 border-muted px-2 pt-4 pb-2 rounded-3  mt-0 ">
                                 <label for="name">First name</label>
                             </div>
                             <div class="field col">
-                                <input type="text" required id="surname" class="col-12 border border-1 border-muted px-2 pt-4 pb-2 rounded-3  mt-3 ">
+                                <input type="text" required id="surname" class="col-12 border border-1 border-muted px-2 pt-4 pb-2 rounded-3  mt-0 ">
                                 <label for="surname">Last name</label>
                             </div>
                         </div>
 
 
 
-                        <div class="field">
+                        <div class="field mt-3">
+                            <input type="email" required id="mail" class="me-md-4  col-12  border border-1 border-muted px-2 pt-4 pb-2 rounded-3  mt-0 ">
 
-                            <input type="email" id="mail" required class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100 mt-3 ">
+                            <!-- <input type="email" id="mail" required class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100 mt-3 "> -->
 
                             <label for="mail">Email address</label>
                         </div>
 
-                        <div class="d-md-flex">
+                        <div class="d-md-flex  mt-3 ">
                             <div class="me-md-4 col field">
-                                <input type="password" required id="passwd" class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100 mt-3 ">
+                                <input type="password" required id="passwd" class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100 ">
                                 <label for="passwd">Password</label>
                             </div>
                             <div class="field col">
-                                <input type="password" id="confirm" required class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100 mt-3 ">
+                                <input type="password" id="confirm" required class="border border-1 border-muted px-0 m-0  pt-4 pb-2 rounded-3 w-100">
                                 <label for="confirm">Confirm Password</label>
                             </div>
                         </div>
@@ -50,11 +51,11 @@
 
 
 
-                        <input type="submit" value="Create Account" class="w-100 login mt-5 border-0 rounded-3 bg-primary text-white p-2 px-3">
+                        <input type="submit" value="Create Account" class="w-100 login mt-4 border-0 rounded-3 bg-primary text-white p-2 px-3">
                         <a href="./login.html"></a>
                     </div>
 
-                    <div class="card-footer bg-light text-center py-3">
+                    <div class="card-footer small bg-light text-center py-3">
                         <a href="./login.html">Have an account? Go to login</a>
                     </div>
                 </div>
@@ -68,20 +69,8 @@
         </div>
     </main>
 
-    <footer class="position-absolute   align-self-end w-100 bottom-0" style="z-index: -1;align-self: flex-end !important;;">
-        <div class="row m-0  bg-light" style="padding-top: 22px ;padding-bottom:22px;padding-left: 0.7rem;">
-            <div class="col text-muted small">Copyright © Your Website 2021</div>
-            <div class="col small ">
-                <span class="float-end">
-                    <a href="#"  >Terms & Conditions</a>
-                <span >&nbsp;.&nbsp;</span>
-                <a href="#">Privacy Policy</a>
-                </span>
+    <footer class="footer"></footer>
 
-            </div>
-        </div>
-
-    </footer>
 
 
     <script src="../assets/js/jquery.js"></script>

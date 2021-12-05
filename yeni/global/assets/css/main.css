@@ -4,6 +4,7 @@
 
 body {
     height: 100vh;
+    width: 100%;
 }
 
 span {
@@ -14,6 +15,11 @@ span {
 /* ul {
     transition: 1000ms all;
 } */
+
+.card-header.py-2rem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 span.active {
     transform: rotate(90deg);
@@ -79,7 +85,7 @@ label {
     transition: 300ms all;
     position: absolute;
     margin-left: 10px;
-    margin-top: 33px;
+    line-height: 51px;
 }
 
 .field {
@@ -89,18 +95,18 @@ label {
 input:valid+label {
     font-size: 14px;
     opacity: 0.65;
-    margin-top: 20px;
+    line-height: 20px;
 }
 
 input:focus+label {
-    margin-top: 20px;
+    line-height: 20px;
     font-size: 14px;
     opacity: 0.65;
 }
 
 .footer {
     align-self: flex-end;
-    width: 100;
+    width: 100%;
     bottom: 0;
     z-index: -1;
     position: absolute;
