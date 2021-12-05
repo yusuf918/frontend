@@ -72,3 +72,49 @@ ul.linkGroup {
 ul.linkGroup.active {
     display: block;
 }
+
+label {
+    top: 0;
+    left: 0;
+    transition: 300ms all;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 33px;
+}
+
+.field {
+    position: relative;
+}
+
+input:valid+label {
+    font-size: 14px;
+    opacity: 0.65;
+    margin-top: 20px;
+}
+
+input:focus+label {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.65;
+}
+
+.footer {
+    align-self: flex-end;
+    width: 100;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    align-self: flex-end !important;
+}
+
+
+/* 
+label:last-child {
+    opacity: 1 !important;
+    margin-top: 12px !important;
+} */
+
+.errorPage img {
+    width: 326px;
+    height: 320px;
+}

@@ -15,12 +15,15 @@ $(".sidebarToggle").click(function() {
     if (!$(".sidebar").hasClass("active")) {
         $(".sidebar > ul").animate({ "width": "15rem" }, 150)
     } else {
-        console.log("ul kapat")
         $(".sidebar > ul").css("width", 0)
 
     }
     $(".sidebar").toggleClass("active")
 })
 $(".linkGroup li").click(function(event) {
-    event.stopPropagation()
-})
+        event.stopPropagation()
+    })
+    // tum sayfalar icin head çagırma
+$.get("../components/header.html", function(data, status) {
+    $("head").html(data)
+});
