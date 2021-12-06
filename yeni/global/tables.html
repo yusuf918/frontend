@@ -2,13 +2,230 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
 
 <body>
+    <header></header>
+
+    <main>
+        <aside class="sidebar">
+            <!-- sidebar -->
+            <!-- birçok sayfada var -->
+            <ul class="bg-dark text-white-50 position-relative pb-0">
+                <li class="pt-4 small mb-3">CORE</li>
+                <li><img src="./assets/img/speedometer2.svg" class="me-2" alt=""><a href="./dashboard.html">dashboard</a></li>
+                <li class="mt-4 mb-3">INTERFACE</li>
+                <li class="mb-3 layout"><img src="./assets/img/layout-split.svg" class="me-2" alt="">layouts
+
+                    <span class="float-end me-3">></span>
+                    <ul class="linkGroup">
+                        <li class="my-3">
+                            <a href="./static-navigation.html">static navigation</a>
+                        </li>
+                        <li><a href="./light-sidenav.html">light sidenav</a></li>
+                    </ul>
+
+                </li>
+                <li class="mb-4"><img src="./assets/img/book-fill.svg" class="me-2" alt="">pages
+
+                    <span class="float-end me-3">></span>
+
+                    <ul class="linkGroup">
+                        <li class="mt-3 linkGroup">authentication
+                            <span class="float-end me-3">></span>
+
+                            <ul class="linkGroup">
+                                <li class="my-3">
+                                    <a href="./authentication/login.html">login</a>
+                                </li>
+                                <li>
+                                    <a href="./authentication/register.html">register</a>
+                                </li>
+                                <li class="mt-3"><a href="./authentication/forgot-password.html">forgot password</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="linkGroup mt-3">error
+                            <span class="float-end me-3">></span>
+                            <ul class="linkGroup">
+                                <li class="my-3"><a href="./errors/401.html">401</a></li>
+                                <li><a href="./errors/404.html">404</a></li>
+                                <li class="my-3"><a href="./errors/500.html">500</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li class="mb-3 small">ADDONS</li>
+                <li class="mb-3"><img src="./assets/img/graph-up (2).svg" class="me-2" alt=""><a href="./charts.html">charts</a></li>
+                <li><img src="./assets/img/table.svg" class="me-2" alt=""><a href="./tables.html">tables</a></li>
+                <li class="position-absolute w-100 small py-3 px-0  " style="background-color:#343a40;bottom:56px">
+                    <div>logged in as:</div>
+                    <div>Start Bootstrap</div>
+
+                </li>
+            </ul>
+
+
+            <!-- bitti -->
+        </aside>
+
+        <section class="d-inline-block px-4 mt-4">
+            <h3 class="h1 fw-600">Tables</h3>
+            <div class="mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item " aria-current="page"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tables</li>
+                    </ol>
+                </nav>
+
+                <p class="p-3  border border-muted rounded-3">
+                    DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
+                    <a href="https://datatables.net">official DataTables documentation .</a>
+                </p>
+            </div>
+
+
+        </section>
+        <div>
+            <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+                <div class="dataTable-top">
+                    <div class="dataTable-dropdown"><label><select class="dataTable-selector"><option value="5">5</option><option value="10" selected="">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option></select> entries per page</label></div>
+                    <div class="dataTable-search"><input class="dataTable-input" placeholder="Search..." type="text"></div>
+                </div>
+                <div class="dataTable-container">
+                    <table id="myTable" class="dataTable-table">
+                        <thead>
+                            <tr>
+                                <th data-sortable="" style="width: 20.7154%;"><a href="#" class="dataTable-sorter">Name</a></th>
+                                <th data-sortable="" style="width: 25.3353%;" class="desc"><a href="#" class="dataTable-sorter">Position</a></th>
+                                <th data-sortable="" style="width: 16.3934%;"><a href="#" class="dataTable-sorter">Office</a></th>
+                                <th data-sortable="" style="width: 9.538%;"><a href="#" class="dataTable-sorter">Age</a></th>
+                                <th data-sortable="" style="width: 15.9463%;"><a href="#" class="dataTable-sorter">Start date</a></th>
+                                <th data-sortable="" style="width: 12.0715%;"><a href="#" class="dataTable-sorter">Salary</a></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Prescott Bartlett</td>
+                                <td>Technical Author</td>
+                                <td>London</td>
+                                <td>27</td>
+                                <td>2011/05/07</td>
+                                <td>$145,000</td>
+                            </tr>
+                            <tr>
+                                <td>Gavin Cortez</td>
+                                <td>Team Leader</td>
+                                <td>San Francisco</td>
+                                <td>22</td>
+                                <td>2008/10/26</td>
+                                <td>$235,500</td>
+                            </tr>
+                            <tr>
+                                <td>Gloria Little</td>
+                                <td>Systems Administrator</td>
+                                <td>New York</td>
+                                <td>59</td>
+                                <td>2009/04/10</td>
+                                <td>$237,500</td>
+                            </tr>
+                            <tr>
+                                <td>Lael Greer</td>
+                                <td>Systems Administrator</td>
+                                <td>London</td>
+                                <td>21</td>
+                                <td>2009/02/27</td>
+                                <td>$103,500</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Quinn Flynn</td>
+                                <td>Support Lead</td>
+                                <td>Edinburgh</td>
+                                <td>22</td>
+                                <td>2013/03/03</td>
+                                <td>$342,000</td>
+                            </tr>
+                            <tr>
+                                <td>Olivia Liang</td>
+                                <td>Support Engineer</td>
+                                <td>Singapore</td>
+                                <td>64</td>
+                                <td>2011/02/03</td>
+                                <td>$234,500</td>
+                            </tr>
+                            <tr>
+                                <td>Sakura Yamamoto</td>
+                                <td>Support Engineer</td>
+                                <td>Tokyo</td>
+                                <td>37</td>
+                                <td>2009/08/19</td>
+                                <td>$139,575</td>
+                            </tr>
+                            <tr>
+                                <td>Finn Camacho</td>
+                                <td>Support Engineer</td>
+                                <td>San Francisco</td>
+                                <td>47</td>
+                                <td>2009/07/07</td>
+                                <td>$87,500</td>
+                            </tr>
+                            <tr>
+                                <td>Sonya Frost</td>
+                                <td>Software Engineer</td>
+                                <td>Edinburgh</td>
+                                <td>23</td>
+                                <td>2008/12/13</td>
+                                <td>$103,600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dataTable-bottom">
+                    <div class="dataTable-info">Showing 1 to 10 of 57 entries</div>
+                    <nav class="dataTable-pagination">
+                        <ul class="dataTable-pagination-list">
+                            <li class="active"><a href="#" data-page="1">1</a></li>
+                            <li class=""><a href="#" data-page="2">2</a></li>
+                            <li class=""><a href="#" data-page="3">3</a></li>
+                            <li class=""><a href="#" data-page="4">4</a></li>
+                            <li class=""><a href="#" data-page="5">5</a></li>
+                            <li class=""><a href="#" data-page="6">6</a></li>
+                            <li class="pager"><a href="#" data-page="2">›</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer mt-auto"></div>
+    </main>
+
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/bootstrap.min.js "></script>
+    <script src="./assets/js/main.js "></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
 
 </body>
 

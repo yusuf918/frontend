@@ -2,7 +2,8 @@
 //     $(this).find("span").toggleClass("active")
 //     $(this).find("ul").toggleClass("active")
 // })
-$(".sidebar ul").addClass("list-unstyled ps-4")
+$(".sidebar ul").addClass("list-unstyled ")
+$(".sidebar li").addClass("ps-4 ")
 
 $(".float-end").click(function() {
     $(this).toggleClass("active")
@@ -11,15 +12,18 @@ $(".float-end").click(function() {
     $(this).parent().siblings().find("span").removeClass("active")
 
 })
-$(".sidebarToggle").click(function() {
+
+$(document).on("click", ".nav-link", function() {
     if (!$(".sidebar").hasClass("active")) {
         $(".sidebar > ul").animate({ "width": "15rem" }, 150)
     } else {
         $(".sidebar > ul").css("width", 0)
-
     }
     $(".sidebar").toggleClass("active")
-})
+});
+
+
+
 $(".linkGroup li").click(function(event) {
         event.stopPropagation()
     })
@@ -30,5 +34,14 @@ $.get("../components/head.html", function(data, status) {
 //  footer çagırma
 
 $.get("../components/footer.html", function(data, status) {
-    $("footer").html(data)
+    $(".footer").html(data)
+});
+//  header çagırma
+
+$.get("../components/header.html", function(data, status) {
+    $("header").html(data)
+});
+
+$(document).ready(function() {
+    $('#myTable').DataTable();
 });

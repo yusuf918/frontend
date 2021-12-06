@@ -11,11 +11,6 @@ span {
     transition: 300ms all;
 }
 
-
-/* ul {
-    transition: 1000ms all;
-} */
-
 .card-header.py-2rem {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -38,17 +33,16 @@ span.active {
     }
 }
 
-
-/* .sidebar .layout ul {
-    display: none;
+.sidebar {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100% - 56px);
 }
-
-.sidebar .layout ul.active {
-    display: block;
-} */
 
 .sidebar {
     display: none;
+    overflow-y: hidden;
 }
 
 .sidebar.active {
@@ -111,6 +105,10 @@ input:focus+label {
     z-index: -1;
     position: absolute;
     align-self: flex-end !important;
+}
+
+.fw-600 {
+    font-weight: 600;
 }
 
 
