@@ -73,7 +73,7 @@ ul.linkGroup.active {
     display: block;
 }
 
-label {
+.field label {
     top: 0;
     left: 0;
     transition: 300ms all;
@@ -86,13 +86,13 @@ label {
     position: relative;
 }
 
-input:valid+label {
+.field input:valid+label {
     font-size: 14px;
     opacity: 0.65;
     line-height: 20px;
 }
 
-input:focus+label {
+.field input:focus+label {
     line-height: 20px;
     font-size: 14px;
     opacity: 0.65;
@@ -111,12 +111,10 @@ input:focus+label {
     font-weight: 600;
 }
 
-
-/* 
 label:last-child {
     opacity: 1 !important;
     margin-top: 12px !important;
-} */
+}
 
 .errorPage img {
     width: 326px;

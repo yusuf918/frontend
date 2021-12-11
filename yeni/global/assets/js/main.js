@@ -1,7 +1,7 @@
-// $(".layout").click(function() {
-//     $(this).find("span").toggleClass("active")
-//     $(this).find("ul").toggleClass("active")
-// })
+$(".layout").click(function() {
+    $(this).find("span").toggleClass("active")
+    $(this).find("ul").toggleClass("active")
+})
 $(".sidebar ul").addClass("list-unstyled ")
 $(".sidebar li").addClass("ps-4 ")
 
