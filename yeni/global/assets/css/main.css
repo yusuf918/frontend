@@ -3,8 +3,8 @@
 }
 
 body {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 span {
@@ -105,10 +105,22 @@ ul.linkGroup.active {
     z-index: -1;
     position: absolute;
     align-self: flex-end !important;
+    left: 0;
 }
+
+
+/* 
+* {
+    outline: 1px solid red;
+} */
 
 .fw-600 {
     font-weight: 600;
+}
+
+.chart-section {
+    position: relative;
+    z-index: -1;
 }
 
 label:last-child {
@@ -119,4 +131,12 @@ label:last-child {
 .errorPage img {
     width: 326px;
     height: 320px;
+}
+
+#barChart,
+#pieChart {
+    max-width: 100%;
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
 }

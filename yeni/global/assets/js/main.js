@@ -1,4 +1,5 @@
 "use strict";
+$(".footer").height($(".footer").outerHeight())
 $(".layout").click(function() {
     $(this).find("span").toggleClass("active")
     $(this).find("ul").toggleClass("active")
@@ -52,23 +53,23 @@ $(document).ready(function() {
 
 
 
-// chart js
-let days = [];
+// area chart js
+let areaDays = [];
 for (var i = 1; i < 14; i++) {
-    if (i % 2) days.push(`Mar ${i}`);
-    else { days.push("") }
+    if (i % 2) areaDays.push(`Mar ${i}`);
+    else { areaDays.push("") }
 }
 
-let nums = [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451];
-const ctx = document.getElementById('myChart');
-let grafik = new Chart(ctx, {
+let areaNums = [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451];
+const chart = document.getElementById('areaChart');
+let grafik = new Chart(chart, {
     type: 'line',
     data: {
-        labels: days,
+        labels: areaDays,
         datasets: [{
             fill: 'origin',
             label: "none",
-            data: nums,
+            data: areaNums,
             backgroundColor: "rgba(54, 162, 235, 0.2)",
             // borderColor: "rgba(54, 162, 235, 1)",
             borderColor: "#0d6efd",
@@ -107,3 +108,92 @@ let grafik = new Chart(ctx, {
         }
     }
 });
+
+// bar chart
+let barMonths = ["january", "february", "march", "april", "may", "june"]
+let barNums = [4215, 5312, 6251, 7841, 9821, 14984]
+const barChart = document.getElementById("barChart")
+let bar = new Chart(barChart, {
+    type: 'bar',
+    data: {
+        labels: barMonths,
+        datasets: [{
+            // fill: 'origin',
+            label: "none",
+            data: barNums,
+            backgroundColor: "#0d6efd",
+            // borderColor: "rgba(54, 162, 235, 1)",
+            borderColor: "#0d6efd",
+            // borderWidth: 3
+
+        }],
+
+
+
+    },
+    options: {
+
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                max: 15000,
+                min: 0,
+                ticks: {
+                    stepSize: 5000
+                },
+
+            }
+        },
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
+    }
+});
+
+const pieChart = document.getElementById("pieChart")
+let pie = new Chart(pieChart, {
+        type: 'pie',
+        data: {
+            labels: [
+                'Blue',
+                'Red',
+                'Yellow',
+                "Green"
+            ],
+            datasets: [{
+                // label: 'My First Dataset',
+                data: [12, 15, 11, 8],
+                backgroundColor: [
+                        '#0d6efd',
+                        '#dc3545',
+                        '#ffc107',
+                        '#198754'
+                    ]
+                    // hoverOffset: 0
+            }],
+
+
+        },
+        chart: {
+            margin: [0, 0, 0, 0],
+            spacingTop: 0,
+            spacingBottom: 0,
+            spacingLeft: 0,
+            spacingRight: 0
+        },
+        plotOptions: {
+            pie: {
+                height: "100%",
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        }
+    })
+    // $("#pieChart").css("max-height", $("#barChart").height() + "px")
