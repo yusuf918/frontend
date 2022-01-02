@@ -1,0 +1,59 @@
+#index header {
+    background-color: #134361 !important;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-brand img {
+    width: 14rem;
+    height: 1.7rem;
+    object-fit: cover;
+}
+
+.navbar-toggler {
+    right: 1.5rem;
+}
+
+.iconbar {
+    height: 2px;
+    min-width: 22px;
+    background-color: white;
+}
+
+.iconbar:nth-child(2) {
+    margin: 4px 0;
+}
+
+@media screen and (max-width:767px) {
+    .navbar-toggler {
+        right: 1rem;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .navbar-nav {
+        margin-left: -10px;
+    }
+}
+
+.nav-link:hover {
+    background-color: red;
+}
+
+.nav-item>.nav-link {
+    padding: 1.25rem 0;
+}
+
+.nav-item .badge {
+    font-size: 16px;
+    color: white !important;
+    position: absolute;
+    top: 50%;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    background-color: #0f344c !important;
+}
