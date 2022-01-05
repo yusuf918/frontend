@@ -1,52 +1,73 @@
+/* header */
+
 #index header {
     background-color: #134361 !important;
 }
 
-.navbar-nav a {
+#index .navbar-nav a {
     color: white;
 }
 
-.navbar-brand img {
+#index .navbar-brand img {
     width: 14rem;
     height: 1.7rem;
     object-fit: cover;
 }
 
-.navbar-toggler {
+#index .navbar-toggler {
     right: 1.5rem;
 }
 
-.iconbar {
+#index .iconbar {
     height: 2px;
     min-width: 22px;
     background-color: white;
 }
 
-.iconbar:nth-child(2) {
+#index .iconbar:nth-child(2) {
     margin: 4px 0;
 }
 
 @media screen and (max-width:767px) {
-    .navbar-toggler {
+    #index .navbar-toggler {
         right: 1rem;
+    }
+    #index .nav-link {
+        padding: 10px 15px !important;
     }
 }
 
 @media screen and (min-width:767px) and (max-width:1024px) {
-    .navbar-nav {
+    #index .navbar-nav {
         margin-left: -10px;
     }
 }
 
-.nav-link:hover {
+@media screen and (min-width:1024px) {
+    #index .nav-item>.nav-link {
+        padding: 1.25rem 0;
+    }
+    #index .nav-item:last-child {
+        align-self: center;
+    }
+    #index .nav-item:last-child .nav-link {
+        border-radius: 40px;
+        height: 20px;
+        width: 90px;
+        text-align: center;
+        line-height: 0;
+    }
+}
+
+#index .nav-link {
+    font-size: 15px;
+}
+
+#index .nav-link:hover {
     background-color: red;
 }
 
-.nav-item>.nav-link {
-    padding: 1.25rem 0;
-}
-
-.nav-item .badge {
+#index .nav-item .badge {
     font-size: 16px;
     color: white !important;
     position: absolute;
@@ -54,6 +75,25 @@
     padding: 10px 20px;
 }
 
-.nav-link:hover {
+#index .nav-link:hover {
     background-color: #0f344c !important;
+}
+
+
+/* header */
+
+body#index {
+    background-color: #f8f9fa!important
+}
+
+#index main .rounded-pill {
+    min-width: 198.61px;
+    /* height: 41px; */
+    background-color: white;
+    color: #989898;
+    text-align: start;
+}
+
+#index main .input-group-text:first {
+    height: 45px;
 }
