@@ -1,5 +1,6 @@
 /* header */
 
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
 #index header {
     background-color: #134361 !important;
 }
@@ -34,6 +35,18 @@
     }
     #index .nav-link {
         padding: 10px 15px !important;
+    }
+    #index .card-text {
+        height: 85px;
+        max-height: 85px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    #index .card-text {
+        height: 45px;
+        max-height: 45px;
     }
 }
 
@@ -96,4 +109,28 @@ body#index {
 
 #index main .input-group-text:first {
     height: 45px;
+}
+
+.gx-2rem {
+    --bs-gutter-x: 2rem;
+}
+
+#index .text-extra-info {
+    color: #16425e;
+}
+
+#index .fs-17 {
+    font-size: 17px;
+}
+
+#index .card-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#index .card-text {
+    overflow-y: hidden;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #746b6b;
 }
