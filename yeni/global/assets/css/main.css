@@ -1,42 +1,43 @@
 /* header */
 
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
-#index header {
+@import "kampaHazirlik.css";
+header {
     background-color: #134361 !important;
 }
 
-#index .navbar-nav a {
+.navbar-nav a {
     color: white;
 }
 
-#index .navbar-brand img {
+.navbar-brand img {
     width: 14rem;
     height: 1.7rem;
     object-fit: cover;
 }
 
-#index .navbar-toggler {
+.navbar-toggler {
     right: 1.5rem;
 }
 
-#index .iconbar {
+.iconbar {
     height: 2px;
     min-width: 22px;
     background-color: white;
 }
 
-#index .iconbar:nth-child(2) {
+.iconbar:nth-child(2) {
     margin: 4px 0;
 }
 
 @media screen and (max-width:767px) {
-    #index .navbar-toggler {
+    .navbar-toggler {
         right: 1rem;
     }
-    #index .nav-link {
+    .nav-link {
         padding: 10px 15px !important;
     }
-    #index .card-text {
+    .card-text {
         height: 85px;
         max-height: 85px;
         margin-bottom: 70px;
@@ -56,19 +57,19 @@
 }
 
 @media screen and (min-width:767px) and (max-width:1024px) {
-    #index .navbar-nav {
+    .navbar-nav {
         margin-left: -10px;
     }
 }
 
 @media screen and (min-width:1024px) {
     #index .nav-item>.nav-link {
-        padding: 1.25rem 0;
+        padding: 1.25rem 1rem !important;
     }
-    #index .nav-item:last-child {
+    .nav-item:last-child {
         align-self: center;
     }
-    #index .nav-item:last-child .nav-link {
+    .nav-item:last-child .nav-link {
         border-radius: 40px;
         height: 20px;
         width: 90px;
@@ -77,15 +78,11 @@
     }
 }
 
-#index .nav-link {
+.nav-link {
     font-size: 15px;
 }
 
-#index .nav-link:hover {
-    background-color: red;
-}
-
-#index .nav-item .badge {
+.nav-item .badge {
     font-size: 16px;
     color: white !important;
     position: absolute;
@@ -93,8 +90,8 @@
     padding: 10px 20px;
 }
 
-#index .nav-link:hover {
-    background-color: #0f344c !important;
+.nav-link:hover {
+    background-color: #0f344c;
 }
 
 
@@ -140,14 +137,19 @@ body#index {
     color: #746b6b;
 }
 
-#index .card-text::after {
-    content: ".";
+#index .card-text span {
+    font-size: 8px;
 }
 
 #index footer {
     background-color: #134361;
     color: #bac1c7;
     padding: 39px 0 42px;
+}
+
+#index footer a {
+    text-decoration: none;
+    color: #bac1c7;
 }
 
 #index .height {
