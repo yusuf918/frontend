@@ -48,24 +48,55 @@ var cards = {
 }
 
 $.get("./partitions/cards.html", function(data) {
-    let inner;
+        let inner;
 
-    for (var i = 0; i < Object.keys(cards).length; i++) {
-        console.log(cards[i].resim)
-        $(".cardSection").append(data);
+        for (var i = 0; i < Object.keys(cards).length; i++) {
+            console.log(cards[i].resim)
+            $(".cardSection").append(data);
 
-        $(".cardSection .col-12:last-child .card-img-top").attr("src", cards[i].resim)
-        $(".cardSection .col-12:last-child .card-title").text(cards[i].acıklama)
-        $(".cardSection .col-12:last-child .card-text").text(cards[i].yazi)
-        $(".cardSection .col-12:last-child .card-footer img").attr("src", cards[i].egitmenFotografi)
-        $(".cardSection .col-12:last-child .card-footer .egitmen-adi").text(cards[i].egitmenAdi)
-        $(".cardSection .col-12:last-child .card-footer img").text(cards[i].ucret)
-        $(".cardSection .col-12:last-child .card").attr("data-link", cards[i].link)
+            $(".cardSection .col-12:last-child .card-img-top").attr("src", cards[i].resim)
+            $(".cardSection .col-12:last-child .card-title").text(cards[i].acıklama)
+            $(".cardSection .col-12:last-child .card-text").text(cards[i].yazi)
+            $(".cardSection .col-12:last-child .card-footer img").attr("src", cards[i].egitmenFotografi)
+            $(".cardSection .col-12:last-child .card-footer .egitmen-adi").text(cards[i].egitmenAdi)
+            $(".cardSection .col-12:last-child .card-footer img").text(cards[i].ucret)
+            $(".cardSection .col-12:last-child .card").attr("data-link", cards[i].link)
 
+        }
+
+
+    })
+    // resim yukkseklik ayarlama
+$("form input").keyup(function() {
+    let val = $(this).val().toString().toLowerCase()
+    let arr = []
+    for (let i = 0; i < Object.keys(cards).length; i++) {
+        if (!cards[i].acıklama.toLowerCase().includes(val))
+            arr.push(i)
     }
+    $(".card").each(function(i, _) {
+        if (arr.includes(i))
+            $(this).parent().addClass("d-none")
+        else {
+            $(this).parent().removeClass("d-none")
+        }
+    })
+    console.log(arr, val)
+})
 
 
-});
-var height = $(".card:first-child img").height() || 0;
-console.log(height)
-$(".card .card-img-top").height(`${height}px`)
+
+
+
+
+
+
+
+
+
+
+
+
+// footer tarih ekleme
+let tarih = new Date()
+$(".yıl").text(tarih.getFullYear())
