@@ -51,11 +51,12 @@ var cardHtml = "./partitions/cards.html";
 var headerHtml = "./partitions/header.html";
 var footerHtml = "./partitions/footer.html";
 var headHtml = "./partitions/head.html";
+var columnHtml = "./partitions/column.html";
 // get index
 $.get(cardHtml, function(data) {
     let inner;
 
-    for (var i = 0; i < Object.keys(cards).length; i++) {
+    for (let i = 0; i < Object.keys(cards).length; i++) {
         $(".cardSection").append(data);
 
         $(".cardSection .col-12:last-child .card-img-top").attr("src", cards[i].resim)
@@ -85,6 +86,23 @@ $.get(headHtml, function(data) {
 })
 
 // get kampa hazırlık
+var column = {
+    0: {
+        resim: "./assets/img/BG_artsy_workspace.jpg",
+        açıklama: "İki ekranda takip etmeye çalışın",
+        paragraf: "Bu ekranlardan birinde beni izlerken diğerinde kod yazıp, soru cevap platformumuzdan destek alabilirsiniz. Yardımcı ekran tablet, monitör veya evdeki HDMI destekli TV olabilir."
+    },
+    1: {
+        resim: "./assets/img/BG_coding.jpeg",
+        açıklama: "İkinci ekran yoksa",
+        paragraf: "Bu durumda bilgisayar ekranınızı ikiye bölebilirsiniz. Windows + Sol Yön tuşuyla mevcut ekranı sola, Windows + sağ yön tuşu ikilisiyle de mevcut diğer ekranı sağa atabilirsiniz. Öncesinde deneyiniz :)"
+    },
+    2: {
+        resim: "./assets/img/BG_coding.jpeg",
+        açıklama: "ne kurayım",
+        paragraf: 'Eğitimin ilk günü için bir şey kurmanız gerekmiyor. Online editör kullanacağız.ilinci gün itibariyle visual studio kullanacağız<a href="https: //www.repl.it/" class="text-decoration-none text-purple" target="_blank" rel="noopener noreferrer">Repl.it</a> sitesinden bir hesap açmanız yeterlidir<a href="https://www.youtube.com/watch?v=kOnAP3fT_Vs&t=187s" class="text-decoration-none text-purple" target="_blank" rel="noopener noreferrer">sizin için bir kurulum videosu hazırladım'
+    }
+}
 $.get(headHtml, data => $("#kampaHazirlik").before(data));
 $.get(headerHtml, function(data) {
     $("#kampaHazirlik").prepend(data)
@@ -92,11 +110,43 @@ $.get(headerHtml, function(data) {
     $("#kampaHazirlik .navbar .nav-link").addClass("mt-md-0")
     $("#kampaHazirlik .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
 });
+$.get(cardHtml, function(data) {
+    $("#kampaHazirlik .oneri .row").append(data);
+    $("#kampaHazirlik .oneri .card-img-top").attr("src", cards[3].resim)
+    $("#kampaHazirlik .oneri .card-title").text(cards[3].acıklama)
+    $("#kampaHazirlik .oneri .card-text").html(cards[3].yazi)
+    $("#kampaHazirlik .oneri .card-footer img").attr("src", cards[3].egitmenFotografi)
+    $("#kampaHazirlik .oneri .card-footer .egitmen-adi").text(cards[3].egitmenAdi)
+    $("#kampaHazirlik .oneri .card-footer .ucret").text(cards[3].ucret)
+    $("#kampaHazirlik .oneri .card").attr("data-link", cards[3].link)
+    $("#kampaHazirlik .oneri .card").parent().toggleClass("col-md-6 col-md-4")
+    $("#kampaHazirlik .oneri .card").addClass("rounded-0")
+    $("#kampaHazirlik .oneri .card").removeClass("border-primary")
+
+})
+$.get(columnHtml, function(data) {
+    let inner;
+    for (let i = 0; i < Object.keys(column).length; i++) {
+        $("#kampaHazirlik .blockColumn .row").append(data);
+        $("#kampaHazirlik .blockColumn .col-md:last-child img").attr("src", column[i].resim)
+        $("#kampaHazirlik .blockColumn .col-md:last-child .div-title").text(column[i].açıklama)
+        $("#kampaHazirlik .blockColumn .col-md:last-child p").html(column[i].paragraf)
+
+
+    }
+})
+$.get(footerHtml, function(data) {
+    $("#kampaHazirlik").append(data)
+    $("#kampaHazirlik footer").addClass("bg-extra-info")
+    $("#kampaHazirlik footer .fw-light").toggleClass("fw-light fw-400")
+    $("#kampaHazirlik footer .mt-5").toggleClass("mt-3 mt-5")
+    $("#kampaHazirlik footer .container").addClass("justify-content-between")
+    $("#kampaHazirlik footer .mx-auto").toggleClass("mx-auto ms-auto")
+})
 
 
 
-
-//card getirme inputa yazı yazzıldıgında
+//card getirme inputa yazı yazzıldıgında( index)
 $("#index form input").keyup(function() {
     let val = $(this).val().toString().toLowerCase()
     let arr = []

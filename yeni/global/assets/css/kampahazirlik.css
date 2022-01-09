@@ -1,3 +1,24 @@
+:root {
+    --extra-info: #134361;
+    --purple: #364144;
+}
+
+.bg-purple {
+    background-color: var(--purple)
+}
+
+.bg-extra-info {
+    background-color: var(--extra-info)
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-extra-info {
+    color: var(--extra-info)
+}
+
 #kampaHazirlik .nav-link {
     padding-top: 1.25rem !important;
     padding-bottom: 1.25rem !important;
@@ -8,6 +29,46 @@
         padding-left: 5.25rem !important;
         padding-right: 5.25rem !important;
     }
+    #kampaHazirlik .px-xl-11rem {
+        padding-left: 11rem !important;
+        padding-right: 11rem !important;
+    }
+}
+
+#kampaHazirlik .font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+#kampaHazirlik p.font-raleway {
+    color: #36414d !important;
+}
+
+#kampaHazirlik .fs-24 {
+    font-size: 24px;
+}
+
+#kampaHazirlik .fs-13px {
+    font-size: 13px;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+#kampaHazirlik .lh-150p {
+    line-height: 150%;
+}
+
+#kampaHazirlik .mw-590 {
+    max-width: 590px;
+}
+
+#kampaHazirlik .blockColumn .col-md {
+    max-width: 290px;
+}
+
+#kampaHazirlik .pb-4rem {
+    padding-bottom: 3rem;
 }
 
 
@@ -19,6 +80,34 @@
 } */
 
 #kampaHazirlik .nav-link:hover {
+    background-color: var(--extra-info);
+    text-decoration: underline;
+}
+
+#kampaHazirlik .mb-2rem {
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width:767px) {
+    #kampaHazirlik .h-84px {
+        min-height: 84px;
+    }
+}
+
+#kampaHazirlik footer {
     background-color: #134361;
+    color: white;
+    padding: 19px 0 22px;
+}
+
+#kampaHazirlik footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+#kampaHazirlik footer a:hover {
     text-decoration: underline;
 }

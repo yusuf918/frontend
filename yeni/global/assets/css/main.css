@@ -2,8 +2,12 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
 @import "kampaHazirlik.css";
+:root {
+    --extra-info: #134361;
+}
+
 header {
-    background-color: #134361 !important;
+    background-color: var(--extra-info) !important;
 }
 
 .navbar-nav a {
@@ -49,7 +53,7 @@ header {
         height: 45px;
         max-height: 45px;
     }
-    footer .container div:nth-child(2) {
+    #index footer .container div:nth-child(2) {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
