@@ -1,0 +1,97 @@
+#sorular {
+    background-color: #f5f5f8;
+}
+
+#sorular .nav-link {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+
+.my-33px {
+    margin-top: 33.6px;
+    margin-bottom: 33.6px;
+}
+
+.ps-20px {
+    padding-left: 20px;
+}
+
+#sorular .nav-link:hover {
+    background-color: var(--extra-info);
+    text-decoration: underline;
+}
+
+@media screen and (min-width:1300px) {
+    #sorular .px-xl-5rem {
+        padding-left: 5.25rem !important;
+        padding-right: 5.25rem !important;
+    }
+    #sorular .px-xl-11rem {
+        padding-left: 11rem !important;
+        padding-right: 11rem !important;
+    }
+}
+
+.soru {
+    color: #134361 !important;
+    font-size: 17px;
+}
+
+.soru::before {
+    content: '➤';
+    color: #030303 !important;
+}
+
+.cevap {
+    font-size: 16px;
+    color: #134361 !important;
+}
+
+.cevap a {
+    color: #ff2600;
+}
+
+#sorular footer {
+    background-color: #134361;
+    color: white;
+    padding: 19px 0 22px;
+}
+
+#sorular footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+#sorular footer a:hover {
+    text-decoration: underline;
+}
+
+.ms-5rem {
+    margin-left: 5.5rem;
+}
+
+.mw-270 {
+    max-width: 270px;
+}
+
+@media screen and (min-width:767px) {
+    .mw-md-100 {
+        max-width: 100%;
+    }
+}
+
+main li a {
+    color: #134361;
+    text-decoration: none;
+}
+
+main li a:before {
+    content: " .";
+    font-size: 30px;
+    top: -3px;
+    margin-right: 6px;
+    position: relative;
+}

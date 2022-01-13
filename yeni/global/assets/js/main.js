@@ -141,10 +141,32 @@ $.get(footerHtml, function(data) {
     $("#kampaHazirlik footer .fw-light").toggleClass("fw-light fw-400")
     $("#kampaHazirlik footer .mt-5").toggleClass("mt-3 mt-5")
     $("#kampaHazirlik footer .container").addClass("justify-content-between")
-    $("#kampaHazirlik footer .mx-auto").toggleClass("mx-auto ms-auto")
+    $("#kampaHazirlik footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
+    console.log("yc")
 })
 
+$("#sorular main a").attr("target", "_blank")
+$("#sorular main a").attr("rel", "noopener noreferrer")
+    //get sorular html
+$.get(headHtml, data => $("#sorular").before(data));
+$.get(headerHtml, function(data) {
+    $("#sorular").prepend(data)
+    $("#sorular .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
+    $("#sorular .navbar .nav-link").addClass("mt-md-0")
+    $("#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+});
 
+$.get(footerHtml, function(data) {
+    $("#sorular").append(data)
+    $("#sorular footer").addClass("bg-extra-info")
+    $("#sorular footer .fw-light").toggleClass("fw-light fw-400")
+    $("#sorular footer .mt-5").toggleClass("mt-3 mt-5")
+        // $("#sorular footer .mx-auto").toggleClass("mx-auto mx-md-auto ms-5rem")
+    $("#sorular footer .container").addClass("justify-content-between")
+    $("#sorular footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
+        // $("#sorular footer .mx-auto").toggleClass("mx-auto ms-auto")
+})
+$("#sorular .cevap a").addClass("text-decoration-none")
 
 //card getirme inputa yazı yazzıldıgında( index)
 $("#index form input").keyup(function() {
