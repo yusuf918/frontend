@@ -1,0 +1,44 @@
+:root {
+    --nantucked: "#b0b0b0";
+}
+
+#next {
+    min-height: 110vh;
+    position: relative;
+}
+
+.py-5rem {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#next main .container {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+#next .fs-12 {
+    font-size: 12px !important;
+}
+
+.border-nantucked {
+    border-color: var(--nantucked) !important;
+}
+
+.border-1px {
+    border-width: 1px !important;
+}
+
+#next footer,
+#sign_up footer {
+    background-color: #134361;
+    color: #bac1c7;
+    padding: 34px 0 32px;
+    font-size: 17px
+}
+
+#next footer div,
+#sign_up footer div {
+    font-weight: 400;
+}

@@ -1,0 +1,137 @@
+:root {
+    --squid-ink: #212338;
+}
+
+.mh-60 {
+    height: 60px !important;
+    max-height: 60px !important;
+}
+
+#kayit .fs-28 {
+    font-size: 28px !important;
+}
+
+#kayit .b-0 {
+    border-width: 0px;
+}
+
+@media screen and (min-width:1024px) {
+    #kayit .b-lg-1 {
+        border-width: 1px !important;
+    }
+}
+
+#kayit input#inlineCheckChecked {
+    width: 13px;
+    height: 13px;
+}
+
+#kayit .fs-14px {
+    font-size: 14px;
+}
+
+#kayit .fs-15px {
+    font-size: 15px;
+}
+
+#kayit .labelDark {
+    color: #222;
+}
+
+#kayit .forgot {
+    color: #134361;
+}
+
+.bg-purple {
+    background-color: #134361;
+}
+
+.text-purple {
+    color: #134361;
+}
+
+.text-squid-ink {
+    color: var(--squid-ink);
+}
+
+.bg-squid-ink {
+    background-color: var(--squid-ink);
+}
+
+.bg-purple:hover {
+    background-color: #0f344c !important;
+}
+
+#kayit .fw-600 {
+    font-weight: 600;
+}
+
+#kayit .border-nantucked {
+    border: 1px solid #b0b0b0
+}
+
+#kayit .text-irontucked {
+    color: #494949;
+}
+
+#kayit span.rounded-circle.bg-danger {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    line-height: 18px;
+}
+
+#kayit .rounded-circle img {
+    width: 20px;
+}
+
+#kayit footer {
+    background-color: #134361;
+    color: #bac1c7;
+    padding: 34px 0 32px;
+    font-size: 17px
+}
+
+#kayit footer div {
+    font-weight: 400;
+}
+
+#kayit span.yıl {
+    font-size: 15px;
+}
+
+#kayit .btn {
+    cursor: auto;
+}
+
+.border-irontucked {
+    border: 1px solid #494949;
+}
+
+#kayit input {
+    border: 0
+}
+
+#kayit input:valid {
+    border: 1px solid red !important;
+}
+
+#kayit .translate-y-110 {
+    transform: translateY(-110%)!important;
+}
+
+.recaptcha {
+    bottom: 14px;
+    right: 0;
+    width: 70px;
+    overflow: hidden;
+}
+
+.recaptcha div {
+    position: relative;
+    left: -74px;
+}
+
+.recaptcha:hover>div {
+    left: 150px;
+}

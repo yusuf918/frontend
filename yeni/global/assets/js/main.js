@@ -1,5 +1,6 @@
 // $("button").remove()
-
+let tarih = new Date()
+let yaz = console.log
 var length = $("button").length
 if (length < 1) {
     // navbar resmi ortalama    
@@ -142,7 +143,6 @@ $.get(footerHtml, function(data) {
     $("#kampaHazirlik footer .mt-5").toggleClass("mt-3 mt-5")
     $("#kampaHazirlik footer .container").addClass("justify-content-between")
     $("#kampaHazirlik footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
-    console.log("yc")
 })
 
 $("#sorular main a").attr("target", "_blank")
@@ -168,7 +168,144 @@ $.get(footerHtml, function(data) {
 })
 $("#sorular .cevap a").addClass("text-decoration-none")
 
-//card getirme inputa yazı yazzıldıgında( index)
+
+// get login 
+$(".kayit input").prop("required", true)
+$(".fa-stack").click(function() {
+    $(".fa-slash").toggleClass("d-none")
+    let typ = $(this).parent(".field").find("input").attr("type")
+    typ == "password" ? $(this).parent(".field").find("input").attr("type", "text") :
+        $(this).parent(".field").find("input").attr("type", "password")
+})
+$.get(headHtml, function(data) {
+    $("#kayit").before(data)
+
+});
+$.get(headerHtml, function(data) {
+    $("#kayit").prepend(data)
+        // $("#kayit .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
+        // $("#kayit .navbar .nav-link").addClass("mt-md-0")
+        // $("#kayit .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+    $("#kayit nav button").remove()
+    $("#kayit #navbarNav").remove()
+    $("#kayit nav .container-lg").addClass("justify-content-center")
+    $("#kayit header").addClass("mh-60")
+    $("#kayit .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
+
+});
+$.get(footerHtml, function(data) {
+    $("#kayit main").after(data)
+    $("#kayit footer .mt-5").remove()
+    $("#kayit footer .h5").removeClass("h5")
+    $("#kayit footer .container").addClass("justify-content-center")
+    $("#kayit .yıl").text(tarih.getFullYear())
+
+})
+
+//get passwd unttum
+$.get(headHtml, function(data) {
+    $("#unuttum").before(data)
+
+});
+$.get(headerHtml, function(data) {
+    $("#unuttum").prepend(data)
+        // $("#kayit .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
+        // $("#kayit .navbar .nav-link").addClass("mt-md-0")
+        // $("#kayit .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+    $("#unuttum nav button").remove()
+    $("#unuttum #navbarNav").remove()
+    $("#unuttum nav .container-lg").addClass("justify-content-center")
+    $("#unuttum header").addClass("mh-60")
+    $("#unuttum .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
+
+});
+$(function() {
+    $("#unuttum input ").focus()
+
+})
+$("#unuttum input ").focusout(function() {
+    let text = $(this).val().toString()
+    let message = "";
+    var et = text.split("").filter(x => x == "@");
+    if (text == "") message = "this field is required"
+
+    if (et.length == 1 && text.length < 3) message = "Please provide a valid email adress"
+    if (et.length < 1) message = "Please provide a valid email adress"
+    if (et.length > 1) message = "Please provide a valid email adress"
+    if (text.indexOf(et) == text.length - 1) message = "Please provide a valid email adress"
+
+    $(".message").text(message)
+    message == "" ? $(".message").css("display", "none") :
+        $(".message").css("display", "block")
+})
+
+$("#unuttum input").prop("required", true)
+$.get(footerHtml, function(data) {
+    $("#unuttum main").after(data)
+    $("#unuttum footer .mt-5").remove()
+    $("#unuttum footer .h5").removeClass("h5")
+    $("#unuttum footer .container").addClass("justify-content-center")
+    $("#unuttum .yıl").text(tarih.getFullYear())
+    $("#unuttum footer").addClass("position-fixed fixed-bottom")
+
+
+})
+
+//next
+$.get(headHtml, function(data) {
+    $("#next").before(data)
+
+});
+$.get(headerHtml, function(data) {
+    $("#next").prepend(data)
+
+    $("#next nav button").remove()
+    $("#next #navbarNav").remove()
+    $("#next nav .container-lg").addClass("justify-content-center")
+    $("#next header").addClass("mh-60")
+    $("#next .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
+
+});
+$.get(footerHtml, function(data) {
+    $("#next main").after(data)
+    $("#next footer .mt-5").remove()
+    $("#next footer .h5").removeClass("h5")
+    $("#next footer .container").addClass("justify-content-center")
+    $("#next .yıl").text(tarih.getFullYear())
+    $("#next footer").addClass("position-absolute bottom-0 w-100")
+
+})
+$(".recaptcha").hover(function() {
+    $(this).animate({ "width": "300px" }, 500)
+}, function() { $(this).css("width", "70px") })
+
+
+$.get(headHtml, function(data) {
+    $("#sign_up").before(data)
+
+});
+$.get(headerHtml, function(data) {
+    $("#sign_up").prepend(data)
+
+
+
+    $("#sign_up nav button").remove()
+    $("#sign_up #navbarNav").remove()
+    $("#sign_up nav .container-lg").addClass("justify-content-center")
+    $("#sign_up header").addClass("mh-60")
+    $("#sign_up .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
+
+});
+$.get(footerHtml, function(data) {
+        $("#sign_up main").after(data)
+        $("#sign_up footer .mt-5").remove()
+        $("#sign_up footer .h5").removeClass("h5")
+        $("#sign_up footer .container").addClass("justify-content-center")
+        $("#sign_up .yıl").text(tarih.getFullYear())
+        $("#sign_up footer").addClass("position-absolute bottom-0 w-100")
+
+    })
+    //card getirme inputa yazı yazzıldıgında( index)
 $("#index form input").keyup(function() {
     let val = $(this).val().toString().toLowerCase()
     let arr = []
@@ -204,5 +341,3 @@ $(document).on("click", "#index .card", function() {
 
 
 // footer tarih ekleme
-let tarih = new Date()
-$(".yıl").text(tarih.getFullYear())

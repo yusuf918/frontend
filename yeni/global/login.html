@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<body id="kayit">
+    <main>
+        <div class="container">
+            <div class="col-md-6 col-lg-4 mx-auto">
+                <div class="card b-0 b-lg-1">
+                    <div class="card-header border-bottom-0 bg-white py-4 text-center fw-bold fs-28 font-raleway">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <div class="field">
+                            <label for="formControlInput" class="form-label text-muted mb-0">Email</label>
+                            <input type="email" class="form-control" id="formControlInput"></div>
+                        <div class="field mt-4 position-relative">
+                            <label for="formControlInput" class="form-label text-muted mb-0">Password</label>
+                            <input type="password" class="form-control" id="formControlInput">
+                            <span class="float-end position-absolute end-0 translate-y-110 fa-stack">
+                                <i class="far fa-eye fa-stack-2x" style="width: 15px;"></i>
+                                <i class="fas fa-slash fa-stack-1x fa-5x" style="height: 16px;font-size:20px ;"></i>
 
-<body>
+                            </span>
+                        </div>
+                        <div class="field mt-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input rounded-1" type="checkbox" value="" id="inlineCheckChecked" checked="">
+                                <label class="form-check-label font-ariel fs-14px labelDark" for="inlineCheckChecked">Remember Me</label>
+                            </div>
+                            <a href="./forgot-password.html" class="float-end text-decoration-none fs-14px fw-400 forgot d-inline-block">Forgot Password</a>
 
+                        </div>
+                        <div class="d-grid mt-5">
+                            <button class="btn rounded-pill bg-purple py-3 fw-600 text-white text-center">Login</button>
+                            <div class="mt-3 text-center fs-15px"><span>Need An Account</span>
+                                <a href="https://sso.teachable.com/secure/499959/identity/sign_up" target="_blank" rel="noopener noreferrer" class="text-decoration-none fs-15px text-purple d-inline-block">Sign Up</a>
+
+                            </div>
+                        </div>
+                        <hr class=" bg-squid-ink">
+                        <div class="d-grid mt-4">
+                            <button class="btn rounded-pill border-nantucked py-3 fw-600  text-center">
+                            <span class="rounded-circle "><img src="./assets/img/teachable-circle-green-8747bce39a92fe2e2e76faed853d5195d1104b65ca3835ddecb78dfb18336953.svg" alt=""></span>    
+                            Login With Teachable</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-inline-block recaptcha position-fixed rounded-3">
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/popper.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
