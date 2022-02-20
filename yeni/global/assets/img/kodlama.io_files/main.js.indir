@@ -281,65 +281,32 @@ $(".recaptcha").hover(function() {
 
 
 $.get(headHtml, function(data) {
-    $("#sign-up").before(data)
+    $("#sign_up").before(data)
 
 });
 $.get(headerHtml, function(data) {
-    $("#sign-up").prepend(data)
+    $("#sign_up").prepend(data)
 
 
 
-    $("#sign-up nav button").remove()
-    $("#sign-up #navbarNav").remove()
-    $("#sign-up nav .container-lg").addClass("justify-content-center")
-    $("#sign-up header").addClass("mh-60")
-    $("#sign-up .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
+    $("#sign_up nav button").remove()
+    $("#sign_up #navbarNav").remove()
+    $("#sign_up nav .container-lg").addClass("justify-content-center")
+    $("#sign_up header").addClass("mh-60")
+    $("#sign_up .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
 
 });
 $.get(footerHtml, function(data) {
-    $("#sign-up main").after(data)
-    $("#sign-up footer .mt-5").remove()
-    $("#sign-up footer .h5").removeClass("h5")
-    $("#sign-up footer ").removeClass("mt-5")
-    $("#sign-up footer .container").addClass("justify-content-center")
-    $("#sign-up .yıl").text(tarih.getFullYear())
-    $("#sign-up footer").addClass("position-relative bottom-0 w-100")
+        $("#sign_up main").after(data)
+        $("#sign_up footer .mt-5").remove()
+        $("#sign_up footer .h5").removeClass("h5 ")
+        $("#sign_up footer ").removeClass("mt-5")
+        $("#sign_up footer .container").addClass("justify-content-center")
+        $("#sign_up .yıl").text(tarih.getFullYear())
+        $("#sign_up footer").addClass("position-relative bottom-0 w-100")
 
-})
-$("#sign-up a").addClass("text-decoration-none")
-$("#sign-up .card-footer a").addClass("text-brand-secondary")
-
-// term get
-$.get(headHtml, data => $("#terms").before(data));
-$.get(headerHtml, function(data) {
-    $("#terms").prepend(data)
-    $("#terms .navbar").toggleClass("navbar-expand-lg py-lg-0 navbar-expand-md")
-    $("#terms .navbar .container-fluid").toggleClass("px-md-4 px-md-3 py-lg-0 container-lg ")
-    $("#terms .navbar .nav-link").addClass("mt-md-0")
-    $("#terms .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
-});
-
-
-
-
-
-//card getirme inputa yazı yazzıldıgında( index)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    })
+    //card getirme inputa yazı yazzıldıgında( index)
 $("#index form input").keyup(function() {
     let val = $(this).val().toString().toLowerCase()
     let arr = []

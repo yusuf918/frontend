@@ -3,11 +3,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
 @import "kampaHazirlik.css";
 :root {
-    --brandsecondary: #134361;
+    --extra-info: #134361;
 }
 
 header {
-    background-color: var(--brandsecondary) !important;
+    background-color: var(--extra-info) !important;
 }
 
 .navbar-nav a {
@@ -41,7 +41,7 @@ header {
     .nav-link {
         padding: 10px 15px !important;
     }
-    #index .card-text {
+    .card-text {
         height: 85px;
         max-height: 85px;
         margin-bottom: 70px;
@@ -146,7 +146,7 @@ body#index {
 }
 
 #index footer {
-    background-color: var(--brandsecondary);
+    background-color: #134361;
     color: #bac1c7;
     padding: 39px 0 42px;
 }

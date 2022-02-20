@@ -1,0 +1,90 @@
+:root {
+    --brandsecondary: #134361;
+}
+
+@media screen and (max-width:767px) {
+    .navbar-toggler {
+        right: 1rem;
+    }
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+    #index .card-text {
+        height: 85px;
+        max-height: 85px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+    .navbar-nav {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #terms .nav-item>.nav-link {
+        padding: 1rem !important;
+    }
+    #terms .nav-item:last-child {
+        align-self: center;
+    }
+    #terms .nav-item:last-child .nav-link {
+        border-radius: 40px;
+        height: 20px;
+        width: 90px;
+        text-align: center;
+        line-height: 0;
+    }
+}
+
+
+/* header */
+
+header {
+    background-color: var(--brandsecondary) !important;
+}
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-brand img {
+    width: 14rem;
+    height: 1.7rem;
+    object-fit: cover;
+}
+
+.navbar-toggler {
+    right: 1.5rem;
+}
+
+.iconbar {
+    height: 2px;
+    min-width: 22px;
+    background-color: white;
+}
+
+.iconbar:nth-child(2) {
+    margin: 4px 0;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.nav-item .badge {
+    font-size: 16px;
+    color: white !important;
+    position: absolute;
+    top: 50%;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+header .container-fluid {
+    max-width: 960px;
+}
