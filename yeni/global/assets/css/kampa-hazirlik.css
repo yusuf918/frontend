@@ -1,22 +1,13 @@
 :root {
-    --extra-info: #134361;
-    --purple: #364144;
+    --bg-brand-secondary: #134361;
 }
 
-.bg-purple {
-    background-color: var(--purple)
+.bg-brand-secondary {
+    background-color: var(--bg-brand-secondary)
 }
 
-.bg-extra-info {
-    background-color: var(--extra-info)
-}
-
-.text-purple {
-    color: var(--purple);
-}
-
-.text-extra-info {
-    color: var(--extra-info)
+.text-brand-secondary {
+    color: var(--bg-brand-secondary)
 }
 
 #kampaHazirlik .nav-link {
@@ -71,16 +62,8 @@
     padding-bottom: 3rem;
 }
 
-
-/* 
-@media screen and (max-width:1400px) {
-    .d-flex {
-        justify-content: space-between !important;
-    }
-} */
-
 #kampaHazirlik .nav-link:hover {
-    background-color: var(--extra-info);
+    background-color: var(--bg-brand-secondary);
     text-decoration: underline;
 }
 
@@ -95,7 +78,7 @@
 }
 
 #kampaHazirlik footer {
-    background-color: #134361;
+    background-color: var(--bg-brand-secondary);
     color: white;
     padding: 19px 0 22px;
 }
@@ -110,4 +93,16 @@
 
 #kampaHazirlik footer a:hover {
     text-decoration: underline;
+}
+
+footer .img-fluid {
+    height: 15px;
+}
+
+.mt-33px {
+    margin-top: 33px;
+}
+
+.mw-960 {
+    max-width: 960px;
 }

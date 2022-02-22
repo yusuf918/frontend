@@ -48,11 +48,12 @@ var cards = {
     }
 }
 
-var cardHtml = "./partitions/cards.html";
-var headerHtml = "./partitions/header.html";
-var footerHtml = "./partitions/footer.html";
-var headHtml = "./partitions/head.html";
-var columnHtml = "./partitions/column.html";
+let cardHtml = "./partitions/cards.html";
+let headerHtml = "./partitions/header.html";
+let footerHtml = "./partitions/footer/footer.html";
+let footer2Html = "./partitions/footer/footer2.html";
+let headHtml = "./partitions/head.html";
+let columnHtml = "./partitions/column.html";
 // get index
 $.get(cardHtml, function(data) {
     let inner;
@@ -107,6 +108,7 @@ var column = {
 $.get(headHtml, data => $("#kampaHazirlik").before(data));
 $.get(headerHtml, function(data) {
     $("#kampaHazirlik").prepend(data)
+    $("#kampaHazirlik header nav").addClass("bg-brand-secondary")
     $("#kampaHazirlik .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
     $("#kampaHazirlik .navbar .nav-link").addClass("mt-md-0")
     $("#kampaHazirlik .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
@@ -136,13 +138,9 @@ $.get(columnHtml, function(data) {
 
     }
 })
-$.get(footerHtml, function(data) {
+$.get(footer2Html, function(data) {
     $("#kampaHazirlik").append(data)
-    $("#kampaHazirlik footer").addClass("bg-extra-info")
-    $("#kampaHazirlik footer .fw-light").toggleClass("fw-light fw-400")
-    $("#kampaHazirlik footer .mt-5").toggleClass("mt-3 mt-5")
-    $("#kampaHazirlik footer .container").addClass("justify-content-between")
-    $("#kampaHazirlik footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
+
 })
 
 $("#sorular main a").attr("target", "_blank")
@@ -156,15 +154,15 @@ $.get(headerHtml, function(data) {
     $("#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
 });
 
-$.get(footerHtml, function(data) {
+$.get(footer2Html, function(data) {
     $("#sorular").append(data)
-    $("#sorular footer").addClass("bg-extra-info")
-    $("#sorular footer .fw-light").toggleClass("fw-light fw-400")
-    $("#sorular footer .mt-5").toggleClass("mt-3 mt-5")
-        // $("#sorular footer .mx-auto").toggleClass("mx-auto mx-md-auto ms-5rem")
-    $("#sorular footer .container").addClass("justify-content-between")
-    $("#sorular footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
-        // $("#sorular footer .mx-auto").toggleClass("mx-auto ms-auto")
+        // $("#sorular footer").addClass("bg-extra-info")
+        // $("#sorular footer .fw-light").toggleClass("fw-light fw-400")
+        // $("#sorular footer .mt-5").toggleClass("mt-3 mt-5")
+        //     // $("#sorular footer .mx-auto").toggleClass("mx-auto mx-md-auto ms-5rem")
+        // $("#sorular footer .container").addClass("justify-content-between")
+        // $("#sorular footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
+        //     // $("#sorular footer .mx-auto").toggleClass("mx-auto ms-auto")
 })
 $("#sorular .cevap a").addClass("text-decoration-none")
 
@@ -318,7 +316,11 @@ $.get(headerHtml, function(data) {
     $("#terms .navbar .nav-link").addClass("mt-md-0")
     $("#terms .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
 });
+$("footer *").addClass("text-decoration-none text-white")
 
+
+// privacy get
+$.get(headHtml, data => $("#privacy").before(data));
 
 
 

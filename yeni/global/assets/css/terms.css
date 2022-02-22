@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 :root {
     --brandsecondary: #134361;
+    --brightgrey: #36414d;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 @media screen and (max-width:767px) {
@@ -41,7 +47,8 @@
 
 /* header */
 
-header {
+header,
+footer {
     background-color: var(--brandsecondary) !important;
 }
 
@@ -87,4 +94,48 @@ header {
 
 header .container-fluid {
     max-width: 960px;
+}
+
+
+/* header bitti */
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fs-40px {
+    font-size: 40px;
+}
+
+.fw-800 {
+    font-weight: 800 !important;
+}
+
+.pt-33px {
+    padding-top: 33px;
+}
+
+.mt-33px {
+    margin-top: 33px;
+}
+
+.text-bright-grey {
+    color: var(--brightgrey)
+}
+
+ul li::marker {
+    font-size: 10px;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+li span {
+    position: relative;
+    left: -5px;
+}
+
+.img-fluid {
+    height: 15px;
 }
