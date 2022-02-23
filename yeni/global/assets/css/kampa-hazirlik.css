@@ -10,9 +10,22 @@
     color: var(--bg-brand-secondary)
 }
 
+#kampaHazirlik header nav {
+    background-color: var(--bg-brand-secondary);
+}
+
 #kampaHazirlik .nav-link {
     padding-top: 1.25rem !important;
     padding-bottom: 1.25rem !important;
+}
+
+@media screen and (min-width:767px) {
+    #kampaHazirlik .navbar .nav-link {
+        margin-top: 0% !important;
+    }
+    #kampaHazirlik .navbar-nav {
+        margin-left: auto;
+    }
 }
 
 @media screen and (min-width:1300px) {

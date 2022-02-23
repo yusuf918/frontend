@@ -1,11 +1,39 @@
 <footer class="mt-5">
-    <div class="container d-md-flex flex-nowrap w-100 ">
+    <div class="container d-flex   align-items-center justify-content-between ">
         <div class="text-center fw-light h5">
             © Kodlama.io <span class="yıl"></span>
         </div>
-        <div class="mt-5 d-md-inline-block text-center mt-md-0 mx-auto" style="width:132px">
+        <div class="mt-5 d-inline-flex flex-column text-center mt-md-0 mx-auto">
             <a href="terms.html">Kullanımı Kosulları</a> <a href="privacy.html">Gizlilik Politikası</a>
+        </div>
+        <div class="mt-5 d-inline-flex  gap-2 text-center align-items-center mt-md-0">
+            <a href="terms.html">Teach Online With</a>
+            <img src="https://fedora.teachablecdn.com/assets/footer/teachable-logomark-white-31d2296978598bacace50e6d48a2e1223c20a9b074af424acdd465676f81560f.svg" alt="Teachable">
+
         </div>
 
     </div>
+    <style>
+        .container {
+            max-width: 970px !important;
+        }
+        
+        img {
+            height: 15px;
+        }
+        
+        .d-flex {
+            flex-direction: column;
+        }
+        
+        @media screen and (min-width:766px) {
+            .d-flex {
+                flex-direction: row !important;
+            }
+        }
+        /* .d-inline-flex {
+            margin-left: 50vw;
+            transform: translateX(50%);
+        } */
+    </style>
 </footer>

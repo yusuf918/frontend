@@ -1,5 +1,42 @@
 :root {
+    --bg_brand_secondary: #134361;
     --squid-ink: #212338;
+}
+
+.bg-brand-secondary {
+    background-color: var(--bg_brand_secondary) !important
+}
+
+#kayit header {
+    background-color: var(--bg_brand_secondary);
+}
+
+#kayit nav button {
+    display: none !important;
+}
+
+#kayit #navbarNav {
+    display: none !important;
+}
+
+#kayit nav .container-lg {
+    justify-content: center !important;
+}
+
+#kayit footer .mt-5 {
+    display: none !important;
+}
+
+#kayit footer .container {
+    justify-content: center !important;
+}
+
+header img {
+    height: 55px;
+}
+
+header a.navbar-brand {
+    padding: 0px !important;
 }
 
 .mh-60 {
@@ -39,15 +76,15 @@
 }
 
 #kayit .forgot {
-    color: #134361;
+    color: var(--bg_brand_secondary);
 }
 
 .bg-purple {
-    background-color: #134361;
+    background-color: var(--bg_brand_secondary);
 }
 
 .text-purple {
-    color: #134361;
+    color: var(--bg_brand_secondary);
 }
 
 .text-squid-ink {
@@ -86,7 +123,7 @@
 }
 
 #kayit footer {
-    background-color: #134361;
+    background-color: var(--bg_brand_secondary);
     color: #bac1c7;
     padding: 34px 0 32px;
     font-size: 17px
@@ -112,7 +149,7 @@
     border: 0
 }
 
-#kayit input:valid {
+#kayit input:not(:focus):valid {
     border: 1px solid red !important;
 }
 
@@ -120,18 +157,6 @@
     transform: translateY(-110%)!important;
 }
 
-.recaptcha {
-    bottom: 14px;
-    right: 0;
-    width: 70px;
-    overflow: hidden;
-}
-
-.recaptcha div {
-    position: relative;
-    left: -74px;
-}
-
-.recaptcha:hover>div {
-    left: 150px;
+footer .container {
+    justify-content: center!important;
 }

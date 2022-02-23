@@ -1,7 +1,7 @@
 // $("button").remove()
-let tarih = new Date()
-let yaz = console.log
-var length = $("button").length
+const tarih = new Date()
+const yaz = console.log
+const length = $("button").length
 if (length < 1) {
     // navbar resmi ortalama    
     $("nav img").parent().parent().addClass("w-100 justify-content-center")
@@ -9,7 +9,7 @@ if (length < 1) {
 // card içindeki resimlerin yuksekliğini ayarlama
 
 
-var cards = {
+let cards = {
     0: {
         resim: "./assets/img/JavaScript-Course-Title-Pic2.jpg",
         acıklama: "Yazılım geliştirici yetiştirme kampı (javascript)",
@@ -48,14 +48,16 @@ var cards = {
     }
 }
 
-let cardHtml = "./partitions/cards.html";
-let headerHtml = "./partitions/header.html";
-let footerHtml = "./partitions/footer/footer.html";
-let footer2Html = "./partitions/footer/footer2.html";
-let headHtml = "./partitions/head.html";
-let columnHtml = "./partitions/column.html";
+const card = "./partitions/cards.html";
+const recaptcha = "./partitions/recaptcha.html";
+const header = "./partitions/header.html";
+const header2 = "./partitions/header.html";
+const footer = "./partitions/footer/footer.html";
+const footer2 = "./partitions/footer/footer2.html";
+const head = "./partitions/head.html";
+const column = "./partitions/column.html";
 // get index
-$.get(cardHtml, function(data) {
+$.get(card, function(data) {
     let inner;
 
     for (let i = 0; i < Object.keys(cards).length; i++) {
@@ -77,18 +79,18 @@ $.get(cardHtml, function(data) {
 
 })
 
-$.get(headerHtml, function(data) {
+$.get(header, function(data) {
     $("#index").prepend(data)
 })
-$.get(footerHtml, function(data) {
+$.get(footer, function(data) {
     $("#index").append(data)
 })
-$.get(headHtml, function(data) {
+$.get(head, function(data) {
     $("#index").before(data)
 })
 
 // get kampa hazırlık
-var column = {
+let column = {
     0: {
         resim: "./assets/img/BG_artsy_workspace.jpg",
         açıklama: "İki ekranda takip etmeye çalışın",
@@ -105,15 +107,17 @@ var column = {
         paragraf: 'Eğitimin ilk günü için bir şey kurmanız gerekmiyor. Online editör kullanacağız.ilinci gün itibariyle visual studio kullanacağız<a href="https: //www.repl.it/" class="text-decoration-none text-purple" target="_blank" rel="noopener noreferrer">Repl.it</a> sitesinden bir hesap açmanız yeterlidir<a href="https://www.youtube.com/watch?v=kOnAP3fT_Vs&t=187s" class="text-decoration-none text-purple" target="_blank" rel="noopener noreferrer">sizin için bir kurulum videosu hazırladım'
     }
 }
-$.get(headHtml, data => $("#kampaHazirlik").before(data));
-$.get(headerHtml, function(data) {
+
+$.get(head, data => $("#kampaHazirlik").before(data));
+$.get(header, function(data) {
     $("#kampaHazirlik").prepend(data)
-    $("#kampaHazirlik header nav").addClass("bg-brand-secondary")
+        // $("#kampaHazirlik header nav").addClass("bg-brand-secondary")
     $("#kampaHazirlik .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-    $("#kampaHazirlik .navbar .nav-link").addClass("mt-md-0")
-    $("#kampaHazirlik .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+        // $("#kampaHazirlik .navbar .nav-link").addClass("mt-md-0")
+        // $("#kampaHazirlik .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
 });
-$.get(cardHtml, function(data) {
+
+$.get(card, function(data) {
     $("#kampaHazirlik .oneri .row").append(data);
     $("#kampaHazirlik .oneri .card-img-top").attr("src", cards[3].resim)
     $("#kampaHazirlik .oneri .card-title").text(cards[3].acıklama)
@@ -127,7 +131,7 @@ $.get(cardHtml, function(data) {
     $("#kampaHazirlik .oneri .card").removeClass("border-primary")
 
 })
-$.get(columnHtml, function(data) {
+$.get(column, function(data) {
     let inner;
     for (let i = 0; i < Object.keys(column).length; i++) {
         $("#kampaHazirlik .blockColumn .row").append(data);
@@ -138,78 +142,75 @@ $.get(columnHtml, function(data) {
 
     }
 })
-$.get(footer2Html, function(data) {
+$.get(footer2, function(data) {
     $("#kampaHazirlik").append(data)
 
 })
 
 $("#sorular main a").attr("target", "_blank")
 $("#sorular main a").attr("rel", "noopener noreferrer")
-    //get sorular html
-$.get(headHtml, data => $("#sorular").before(data));
-$.get(headerHtml, function(data) {
+
+//get sorular html
+$.get(head, data => $("#sorular").before(data));
+$.get(header, function(data) {
     $("#sorular").prepend(data)
+        // $("#sorular header").addClass("bg-brand-secondary")
     $("#sorular .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-    $("#sorular .navbar .nav-link").addClass("mt-md-0")
-    $("#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+        // $("#sorular .navbar .nav-link").addClass("mt-md-0")
+        // $("#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
 });
 
-$.get(footer2Html, function(data) {
+$.get(footer2, function(data) {
     $("#sorular").append(data)
-        // $("#sorular footer").addClass("bg-extra-info")
-        // $("#sorular footer .fw-light").toggleClass("fw-light fw-400")
-        // $("#sorular footer .mt-5").toggleClass("mt-3 mt-5")
-        //     // $("#sorular footer .mx-auto").toggleClass("mx-auto mx-md-auto ms-5rem")
-        // $("#sorular footer .container").addClass("justify-content-between")
-        // $("#sorular footer .mx-auto").toggleClass("mx-auto  ms-5rem ms-md-auto")
-        //     // $("#sorular footer .mx-auto").toggleClass("mx-auto ms-auto")
+
 })
 $("#sorular .cevap a").addClass("text-decoration-none")
 
 
 // get login 
 $(".kayit input").prop("required", true)
+
+
 $(".fa-stack").click(function() {
     $(".fa-slash").toggleClass("d-none")
     let typ = $(this).parent(".field").find("input").attr("type")
     typ == "password" ? $(this).parent(".field").find("input").attr("type", "text") :
         $(this).parent(".field").find("input").attr("type", "password")
 })
-$.get(headHtml, function(data) {
+
+$.get(head, function(data) {
     $("#kayit").before(data)
 
 });
-$.get(headerHtml, function(data) {
+
+$.get(header, function(data) {
     $("#kayit").prepend(data)
-        // $("#kayit .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-        // $("#kayit .navbar .nav-link").addClass("mt-md-0")
-        // $("#kayit .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
-    $("#kayit nav button").remove()
-    $("#kayit #navbarNav").remove()
-    $("#kayit nav .container-lg").addClass("justify-content-center")
+        // $("#kayit header").addClass("bg-brand-secondary")
+
+
+    // $("#kayit nav button").remove()
+    // $("#kayit #navbarNav").remove()
+    // $("#kayit nav .container-lg").addClass("justify-content-center")
     $("#kayit header").addClass("mh-60")
     $("#kayit .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
 
 });
-$.get(footerHtml, function(data) {
+$.get(footer, function(data) {
     $("#kayit main").after(data)
-    $("#kayit footer .mt-5").remove()
+        // $("#kayit footer .mt-5").remove()
     $("#kayit footer .h5").removeClass("h5")
-    $("#kayit footer .container").addClass("justify-content-center")
+        // $("#kayit footer .container").addClass("justify-content-center")
     $("#kayit .yıl").text(tarih.getFullYear())
 
 })
 
 //get passwd unttum
-$.get(headHtml, function(data) {
+$.get(head, function(data) {
     $("#unuttum").before(data)
 
 });
-$.get(headerHtml, function(data) {
+$.get(header, function(data) {
     $("#unuttum").prepend(data)
-        // $("#kayit .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-        // $("#kayit .navbar .nav-link").addClass("mt-md-0")
-        // $("#kayit .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
     $("#unuttum nav button").remove()
     $("#unuttum #navbarNav").remove()
     $("#unuttum nav .container-lg").addClass("justify-content-center")
@@ -224,7 +225,7 @@ $(function() {
 $("#unuttum input ").focusout(function() {
     let text = $(this).val().toString()
     let message = "";
-    var et = text.split("").filter(x => x == "@");
+    let et = text.split("").filter(x => x == "@");
     if (text == "") message = "this field is required"
 
     if (et.length == 1 && text.length < 3) message = "Please provide a valid email adress"
@@ -238,7 +239,7 @@ $("#unuttum input ").focusout(function() {
 })
 
 $("#unuttum input").prop("required", true)
-$.get(footerHtml, function(data) {
+$.get(footer, function(data) {
     $("#unuttum main").after(data)
     $("#unuttum footer .mt-5").remove()
     $("#unuttum footer .h5").removeClass("h5")
@@ -250,11 +251,11 @@ $.get(footerHtml, function(data) {
 })
 
 //next
-$.get(headHtml, function(data) {
+$.get(head, function(data) {
     $("#next").before(data)
 
 });
-$.get(headerHtml, function(data) {
+$.get(header, function(data) {
     $("#next").prepend(data)
 
     $("#next nav button").remove()
@@ -264,7 +265,7 @@ $.get(headerHtml, function(data) {
     $("#next .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
 
 });
-$.get(footerHtml, function(data) {
+$.get(footer, function(data) {
     $("#next main").after(data)
     $("#next footer .mt-5").remove()
     $("#next footer .h5").removeClass("h5")
@@ -273,16 +274,13 @@ $.get(footerHtml, function(data) {
     $("#next footer").addClass("position-absolute bottom-0 w-100")
 
 })
-$(".recaptcha").hover(function() {
-    $(this).animate({ "width": "300px" }, 500)
-}, function() { $(this).css("width", "70px") })
 
-
-$.get(headHtml, function(data) {
+// sign-up
+$.get(head, function(data) {
     $("#sign-up").before(data)
 
 });
-$.get(headerHtml, function(data) {
+$.get(header, function(data) {
     $("#sign-up").prepend(data)
 
 
@@ -294,7 +292,7 @@ $.get(headerHtml, function(data) {
     $("#sign-up .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
 
 });
-$.get(footerHtml, function(data) {
+$.get(footer, function(data) {
     $("#sign-up main").after(data)
     $("#sign-up footer .mt-5").remove()
     $("#sign-up footer .h5").removeClass("h5")
@@ -308,8 +306,8 @@ $("#sign-up a").addClass("text-decoration-none")
 $("#sign-up .card-footer a").addClass("text-brand-secondary")
 
 // term get
-$.get(headHtml, data => $("#terms").before(data));
-$.get(headerHtml, function(data) {
+$.get(head, data => $("#terms").before(data));
+$.get(header, function(data) {
     $("#terms").prepend(data)
     $("#terms .navbar").toggleClass("navbar-expand-lg py-lg-0 navbar-expand-md")
     $("#terms .navbar .container-fluid").toggleClass("px-md-4 px-md-3 py-lg-0 container-lg ")
@@ -320,18 +318,29 @@ $("footer *").addClass("text-decoration-none text-white")
 
 
 // privacy get
-$.get(headHtml, data => $("#privacy").before(data));
+$.get(head, data => $("#privacy").before(data));
 
 
 
 
 //card getirme inputa yazı yazzıldıgında( index)
 
+//recptcha get
+$.get(recaptcha, data => $("#kayit footer").before(data));
+$.get(recaptcha, data => $("#sign-up footer").before(data));
+
+// $(".recaptcha").hover(function() {
+//     $(this).animate({ "width": "300px" }, 500)
+// }, function() { $(this).css("width", "70px") })
 
 
+$(document).on("mouseover", ".recaptcha", function() {
+    $(this).animate({ "width": "300px" }, 500)
+});
+$(document).on("mouseleave", ".recaptcha", function() {
+    $(this).css("width", "70px")
 
-
-
+})
 
 
 

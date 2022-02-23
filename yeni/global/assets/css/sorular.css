@@ -1,5 +1,17 @@
+:root {
+    --bg_brand_secondary: #134361;
+}
+
+.bg-brand-secondary {
+    background-color: var(--bg_brand_secondary) !important
+}
+
 #sorular {
     background-color: #f5f5f8;
+}
+
+#sorular header {
+    background-color: var(--bg_brand_secondary) !important;
 }
 
 #sorular .nav-link {
@@ -19,6 +31,15 @@
 #sorular .nav-link:hover {
     background-color: var(--extra-info);
     text-decoration: underline;
+}
+
+@media screen and (min-width:767px) {
+    #sorular .navbar .nav-link {
+        margin-top: 0px !important;
+    }
+    #sorular .navbar-nav {
+        margin-left: auto !important;
+    }
 }
 
 @media screen and (min-width:1300px) {

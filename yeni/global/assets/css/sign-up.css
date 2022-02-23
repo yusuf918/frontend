@@ -9,6 +9,14 @@ header {
     background-color: var(--brandsecondary) !important;
 }
 
+header img {
+    height: 55px !important;
+}
+
+header .navbar-expand-lg {
+    padding: 0px !important;
+}
+
 #sign-up .pt-40px {
     padding-top: 40px;
 }
@@ -101,4 +109,8 @@ footer {
 
 footer div {
     font-weight: 400;
+}
+
+footer .container {
+    justify-content: center !important;
 }
