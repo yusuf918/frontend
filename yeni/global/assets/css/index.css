@@ -1,12 +1,14 @@
 /* header */
 
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);
-:root {
-    --brandsecondary: #134361;
+header {
+    background-color: var( --bg_brand_secondary) !important;
 }
 
-header {
-    background-color: var(--brandsecondary) !important;
+@media screen and (max-width:767px) {
+    header .d-flex.flex-nowrap {
+        justify-content: center !important;
+    }
 }
 
 .navbar-nav a {
@@ -145,7 +147,6 @@ body#index {
 }
 
 #index footer {
-    background-color: var(--brandsecondary);
     color: #bac1c7;
     padding: 39px 0 42px;
 }

@@ -32,4 +32,67 @@
             </div>
         </div>
     </nav>
+
+
+
+
+
+    <style>
+         :root {
+            --bg_brand_secondary: #134361
+        }
+        
+        header {
+            background-color: var(--bg_brand_secondary);
+        }
+        
+        #login nav button,
+        #forgot nav button,
+        #next nav button,
+        #sign-up nav button {
+            display: none !important;
+        }
+        
+        #login #navbarNav,
+        #forgot #navbarNav,
+        #next #navbarNav,
+        #sign-up #navbarNav {
+            display: none !important;
+        }
+        
+        #login nav .container-lg,
+        #forgot nav .container-lg,
+        #next nav .container-lg,
+        #sign-up nav .container-lg {
+            justify-content: center !important;
+        }
+        
+        #login header,
+        #forgot header,
+        #next header,
+        #sign-up header {
+            height: 60px !important;
+            max-height: 60px !important;
+        }
+        
+        @media screen and (min-width:1024px) {
+            #login .navbar,
+            #forgot .navbar,
+            #next .navbar,
+            #sign-up .navbar {
+                padding-top: 0.5rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+        }
+        
+        @media screen and (min-width:767px) {
+            #terms .navbar .nav-link,
+            #sorular .navbar .nav-link,
+            #kampaHazirlik .navbar .nav-link {
+                margin-top: 0% !important;
+                padding-top: 0%!important;
+                padding-bottom: 0%!important;
+            }
+        }
+    </style>
 </header>

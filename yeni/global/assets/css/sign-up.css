@@ -1,12 +1,7 @@
 :root {
-    --brandsecondary: #134361;
-    --squidink: #212338;
+    --squid_ink: #212338;
     --ash: #717171;
-    --nantucked: #b0b0b0;
-}
-
-header {
-    background-color: var(--brandsecondary) !important;
+    --nan_tucked: #b0b0b0;
 }
 
 header img {
@@ -22,7 +17,7 @@ header .navbar-expand-lg {
 }
 
 .bg-brand-secondary {
-    background-color: var(--brandsecondary) !important;
+    background-color: var( --bg_brand_secondary) !important;
 }
 
 #sign-up .card-footer p {
@@ -30,11 +25,11 @@ header .navbar-expand-lg {
 }
 
 .text-brand-secondary {
-    color: var(--brandsecondary) !important
+    color: var( --bg_brand_secondary) !important
 }
 
 .text-squid-ink {
-    color: var(--squidink) !important
+    color: var(--squid_ink) !important
 }
 
 .fw-600 {
@@ -93,7 +88,7 @@ header .navbar-expand-lg {
 }
 
 .border-nan-tucked {
-    border: 1px solid var(--nantucked) !important;
+    border: 1px solid var(--nan_tucked) !important;
 }
 
 .lh-13px {
@@ -101,7 +96,6 @@ header .navbar-expand-lg {
 }
 
 footer {
-    background-color: #134361;
     color: #bac1c7;
     padding: 34px 0 32px;
     font-size: 17px

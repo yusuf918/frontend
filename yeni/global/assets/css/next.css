@@ -1,5 +1,5 @@
 :root {
-    --nantucked: "#b0b0b0";
+    --nan_tucked: "#b0b0b0";
 }
 
 #next {
@@ -23,7 +23,7 @@
 }
 
 .border-nantucked {
-    border-color: var(--nantucked) !important;
+    border: 1px solid var(--nan_tucked) !important;
 }
 
 .border-1px {
@@ -32,7 +32,6 @@
 
 #next footer,
 #sign_up footer {
-    background-color: #134361;
     color: #bac1c7;
     padding: 34px 0 32px;
     font-size: 17px

@@ -1,17 +1,13 @@
-:root {
-    --bg-brand-secondary: #134361;
-}
-
 .bg-brand-secondary {
-    background-color: var(--bg-brand-secondary)
+    background-color: var( --bg_brand_secondary)
 }
 
 .text-brand-secondary {
-    color: var(--bg-brand-secondary)
+    color: var( --bg_brand_secondary)
 }
 
 #kampaHazirlik header nav {
-    background-color: var(--bg-brand-secondary);
+    background-color: var(--bg_brand_secondary);
 }
 
 #kampaHazirlik .nav-link {
@@ -20,9 +16,6 @@
 }
 
 @media screen and (min-width:767px) {
-    #kampaHazirlik .navbar .nav-link {
-        margin-top: 0% !important;
-    }
     #kampaHazirlik .navbar-nav {
         margin-left: auto;
     }
@@ -76,7 +69,7 @@
 }
 
 #kampaHazirlik .nav-link:hover {
-    background-color: var(--bg-brand-secondary);
+    background-color: var( --bg_brand_secondary);
     text-decoration: underline;
 }
 
@@ -91,7 +84,6 @@
 }
 
 #kampaHazirlik footer {
-    background-color: var(--bg-brand-secondary);
     color: white;
     padding: 19px 0 22px;
 }

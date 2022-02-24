@@ -1,7 +1,3 @@
-:root {
-    --bg_brand_secondary: #134361;
-}
-
 .bg-brand-secondary {
     background-color: var(--bg_brand_secondary) !important
 }
@@ -34,9 +30,6 @@
 }
 
 @media screen and (min-width:767px) {
-    #sorular .navbar .nav-link {
-        margin-top: 0px !important;
-    }
     #sorular .navbar-nav {
         margin-left: auto !important;
     }
@@ -54,7 +47,7 @@
 }
 
 .soru {
-    color: #134361 !important;
+    color: var( --bg_brand_secondary) !important;
     font-size: 17px;
 }
 
@@ -65,7 +58,7 @@
 
 .cevap {
     font-size: 16px;
-    color: #134361 !important;
+    color: var( --bg_brand_secondary) !important;
 }
 
 .cevap a {
@@ -73,7 +66,6 @@
 }
 
 #sorular footer {
-    background-color: #134361;
     color: white;
     padding: 19px 0 22px;
 }
@@ -105,7 +97,7 @@
 }
 
 main li a {
-    color: #134361;
+    color: var( --bg_brand_secondary);
     text-decoration: none;
 }
 

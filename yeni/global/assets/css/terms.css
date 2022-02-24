@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 :root {
-    --brandsecondary: #134361;
-    --brightgrey: #36414d;
+    --bright_grey: #36414d;
 }
 
 * {
@@ -46,11 +45,6 @@
 
 
 /* header */
-
-header,
-footer {
-    background-color: var(--brandsecondary) !important;
-}
 
 .navbar-nav a {
     color: white;
@@ -120,7 +114,7 @@ header .container-fluid {
 }
 
 .text-bright-grey {
-    color: var(--brightgrey)
+    color: var(--bright_grey)
 }
 
 ul li::marker {

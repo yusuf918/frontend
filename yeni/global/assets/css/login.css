@@ -1,34 +1,9 @@
 :root {
-    --bg_brand_secondary: #134361;
-    --squid-ink: #212338;
+    --squid_ink: #212338;
 }
 
 .bg-brand-secondary {
     background-color: var(--bg_brand_secondary) !important
-}
-
-#kayit header {
-    background-color: var(--bg_brand_secondary);
-}
-
-#kayit nav button {
-    display: none !important;
-}
-
-#kayit #navbarNav {
-    display: none !important;
-}
-
-#kayit nav .container-lg {
-    justify-content: center !important;
-}
-
-#kayit footer .mt-5 {
-    display: none !important;
-}
-
-#kayit footer .container {
-    justify-content: center !important;
 }
 
 header img {
@@ -44,21 +19,21 @@ header a.navbar-brand {
     max-height: 60px !important;
 }
 
-#kayit .fs-28 {
+#login .fs-28 {
     font-size: 28px !important;
 }
 
-#kayit .b-0 {
+#login .b-0 {
     border-width: 0px;
 }
 
 @media screen and (min-width:1024px) {
-    #kayit .b-lg-1 {
+    #login .b-lg-1 {
         border-width: 1px !important;
     }
 }
 
-#kayit input#inlineCheckChecked {
+#login input#inlineCheckChecked {
     width: 13px;
     height: 13px;
 }
@@ -67,15 +42,15 @@ header a.navbar-brand {
     font-size: 14px;
 }
 
-#kayit .fs-15px {
+#login .fs-15px {
     font-size: 15px;
 }
 
-#kayit .labelDark {
+#login .labelDark {
     color: #222;
 }
 
-#kayit .forgot {
+#login .forgot {
     color: var(--bg_brand_secondary);
 }
 
@@ -88,56 +63,55 @@ header a.navbar-brand {
 }
 
 .text-squid-ink {
-    color: var(--squid-ink);
+    color: var(--squid_ink);
 }
 
 .bg-squid-ink {
-    background-color: var(--squid-ink);
+    background-color: var(--squid_ink);
 }
 
 .bg-purple:hover {
     background-color: #0f344c !important;
 }
 
-#kayit .fw-600 {
+#login .fw-600 {
     font-weight: 600;
 }
 
-#kayit .border-nantucked {
+#login .border-nantucked {
     border: 1px solid #b0b0b0
 }
 
-#kayit .text-irontucked {
+#login .text-irontucked {
     color: #494949;
 }
 
-#kayit span.rounded-circle.bg-danger {
+#login span.rounded-circle.bg-danger {
     width: 20px;
     height: 20px;
     display: inline-block;
     line-height: 18px;
 }
 
-#kayit .rounded-circle img {
+#login .rounded-circle img {
     width: 20px;
 }
 
-#kayit footer {
-    background-color: var(--bg_brand_secondary);
+#login footer {
     color: #bac1c7;
     padding: 34px 0 32px;
     font-size: 17px
 }
 
-#kayit footer div {
+#login footer div {
     font-weight: 400;
 }
 
-#kayit span.yıl {
+#login span.yıl {
     font-size: 15px;
 }
 
-#kayit .btn {
+#login .btn {
     cursor: auto;
 }
 
@@ -145,15 +119,15 @@ header a.navbar-brand {
     border: 1px solid #494949;
 }
 
-#kayit input {
+#login input {
     border: 0
 }
 
-#kayit input:not(:focus):valid {
+#login input:not(:focus):valid {
     border: 1px solid red !important;
 }
 
-#kayit .translate-y-110 {
+#login .translate-y-110 {
     transform: translateY(-110%)!important;
 }
 

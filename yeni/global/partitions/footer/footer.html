@@ -14,26 +14,44 @@
 
     </div>
     <style>
-        .container {
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: var(--bg_brand_secondary);
+            position: relative !important;
+            margin-top: auto;
+        }
+        
+        footer .container {
             max-width: 970px !important;
         }
         
-        img {
+        footer img {
             height: 15px;
         }
         
-        .d-flex {
+        footer .d-flex {
             flex-direction: column;
         }
         
         @media screen and (min-width:766px) {
-            .d-flex {
+            footer .d-flex {
                 flex-direction: row !important;
             }
         }
-        /* .d-inline-flex {
-            margin-left: 50vw;
-            transform: translateX(50%);
-        } */
+        
+        #sign-up footer .mt-5,
+        #login footer .mt-5,
+        #forgot footer .mt-5,
+        #next footer .mt-5 {
+            display: none!important;
+        }
+        
+        #sign-up footer .container,
+        #login footer .container,
+        #forgot footer .container,
+        #next footer .container {
+            justify-content: center !important;
+        }
     </style>
 </footer>

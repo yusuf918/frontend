@@ -1,6 +1,7 @@
 // $("button").remove()
 const tarih = new Date()
 const yaz = console.log
+
 const length = $("button").length
 if (length < 1) {
     // navbar resmi ortalama    
@@ -55,8 +56,47 @@ const header2 = "./partitions/header.html";
 const footer = "./partitions/footer/footer.html";
 const footer2 = "./partitions/footer/footer2.html";
 const head = "./partitions/head.html";
-const column = "./partitions/column.html";
-// get index
+const Column = "./partitions/column.html";
+
+const pages = [
+    "#index",
+    "#sign-up",
+    "#login",
+    "#forgot",
+    "#next",
+    "#terms",
+    "#kampaHazirlik",
+    "#sorular",
+    "#privacy"
+]
+
+//get head
+$.get(head, function(data) {
+    pages.forEach(page => {
+        if ($(page).length != 0) {
+            $(page).prepend(data)
+            const css = `${page.slice(1,)}.css`
+            const cssTag = `<link rel="stylesheet" href="./assets/css/${css}">`
+
+            $("head").append(cssTag)
+
+        }
+
+    })
+});
+
+//get header
+$.get(header, function(data) {
+    pages.forEach(page => {
+        $(page).length != 0 ?
+            $(page).prepend(data) : false
+
+    })
+    $("#terms .navbar,#sorular .navbar,#kampaHazirlik .navbar").toggleClass("navbar-expand-lg navbar-expand-md")
+    $("#terms .navbar .container-fluid").toggleClass("px-md-4 px-md-3 py-lg-0 container-lg ")
+    $("#terms .navbar-nav,#kampaHazirlik .navbar-nav,#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
+});
+
 $.get(card, function(data) {
     let inner;
 
@@ -79,15 +119,28 @@ $.get(card, function(data) {
 
 })
 
-$.get(header, function(data) {
-    $("#index").prepend(data)
-})
+//get footer
+
 $.get(footer, function(data) {
-    $("#index").append(data)
+    pages.forEach(page => {
+        if ($(page).length != 0 && page != "#kampaHazirlik" && page != "#sorular") {
+            $(page).append(data)
+            $(`${page} .yıl`).text(tarih.getFullYear())
+
+        }
+
+
+    })
 })
-$.get(head, function(data) {
-    $("#index").before(data)
+
+//get footer sign-up and sorular
+$.get(footer2, function(data) {
+    $("#kampaHazirlik").append(data)
+    $("#sorular").append(data)
+
+
 })
+
 
 // get kampa hazırlık
 let column = {
@@ -108,14 +161,6 @@ let column = {
     }
 }
 
-$.get(head, data => $("#kampaHazirlik").before(data));
-$.get(header, function(data) {
-    $("#kampaHazirlik").prepend(data)
-        // $("#kampaHazirlik header nav").addClass("bg-brand-secondary")
-    $("#kampaHazirlik .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-        // $("#kampaHazirlik .navbar .nav-link").addClass("mt-md-0")
-        // $("#kampaHazirlik .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
-});
 
 $.get(card, function(data) {
     $("#kampaHazirlik .oneri .row").append(data);
@@ -131,7 +176,7 @@ $.get(card, function(data) {
     $("#kampaHazirlik .oneri .card").removeClass("border-primary")
 
 })
-$.get(column, function(data) {
+$.get(Column, function(data) {
     let inner;
     for (let i = 0; i < Object.keys(column).length; i++) {
         $("#kampaHazirlik .blockColumn .row").append(data);
@@ -142,33 +187,17 @@ $.get(column, function(data) {
 
     }
 })
-$.get(footer2, function(data) {
-    $("#kampaHazirlik").append(data)
-
-})
 
 $("#sorular main a").attr("target", "_blank")
 $("#sorular main a").attr("rel", "noopener noreferrer")
 
 //get sorular html
-$.get(head, data => $("#sorular").before(data));
-$.get(header, function(data) {
-    $("#sorular").prepend(data)
-        // $("#sorular header").addClass("bg-brand-secondary")
-    $("#sorular .navbar").toggleClass("navbar-expand-lg py-md-0 navbar-expand-md")
-        // $("#sorular .navbar .nav-link").addClass("mt-md-0")
-        // $("#sorular .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
-});
 
-$.get(footer2, function(data) {
-    $("#sorular").append(data)
-
-})
 $("#sorular .cevap a").addClass("text-decoration-none")
 
 
 // get login 
-$(".kayit input").prop("required", true)
+$(".login input").prop("required", true)
 
 
 $(".fa-stack").click(function() {
@@ -178,51 +207,14 @@ $(".fa-stack").click(function() {
         $(this).parent(".field").find("input").attr("type", "password")
 })
 
-$.get(head, function(data) {
-    $("#kayit").before(data)
 
-});
-
-$.get(header, function(data) {
-    $("#kayit").prepend(data)
-        // $("#kayit header").addClass("bg-brand-secondary")
-
-
-    // $("#kayit nav button").remove()
-    // $("#kayit #navbarNav").remove()
-    // $("#kayit nav .container-lg").addClass("justify-content-center")
-    $("#kayit header").addClass("mh-60")
-    $("#kayit .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
-
-});
-$.get(footer, function(data) {
-    $("#kayit main").after(data)
-        // $("#kayit footer .mt-5").remove()
-    $("#kayit footer .h5").removeClass("h5")
-        // $("#kayit footer .container").addClass("justify-content-center")
-    $("#kayit .yıl").text(tarih.getFullYear())
-
-})
 
 //get passwd unttum
-$.get(head, function(data) {
-    $("#unuttum").before(data)
-
-});
-$.get(header, function(data) {
-    $("#unuttum").prepend(data)
-    $("#unuttum nav button").remove()
-    $("#unuttum #navbarNav").remove()
-    $("#unuttum nav .container-lg").addClass("justify-content-center")
-    $("#unuttum header").addClass("mh-60")
-    $("#unuttum .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
-
-});
 $(function() {
-    $("#unuttum input ").focus()
+    $("#forgot input ").focus()
 
 })
-$("#unuttum input ").focusout(function() {
+$("#forgot input ").focusout(function() {
     let text = $(this).val().toString()
     let message = "";
     let et = text.split("").filter(x => x == "@");
@@ -238,100 +230,20 @@ $("#unuttum input ").focusout(function() {
         $(".message").css("display", "block")
 })
 
-$("#unuttum input").prop("required", true)
-$.get(footer, function(data) {
-    $("#unuttum main").after(data)
-    $("#unuttum footer .mt-5").remove()
-    $("#unuttum footer .h5").removeClass("h5")
-    $("#unuttum footer .container").addClass("justify-content-center")
-    $("#unuttum .yıl").text(tarih.getFullYear())
-    $("#unuttum footer").addClass("position-fixed fixed-bottom")
-
-
-})
-
-//next
-$.get(head, function(data) {
-    $("#next").before(data)
-
-});
-$.get(header, function(data) {
-    $("#next").prepend(data)
-
-    $("#next nav button").remove()
-    $("#next #navbarNav").remove()
-    $("#next nav .container-lg").addClass("justify-content-center")
-    $("#next header").addClass("mh-60")
-    $("#next .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
-
-});
-$.get(footer, function(data) {
-    $("#next main").after(data)
-    $("#next footer .mt-5").remove()
-    $("#next footer .h5").removeClass("h5")
-    $("#next footer .container").addClass("justify-content-center")
-    $("#next .yıl").text(tarih.getFullYear())
-    $("#next footer").addClass("position-absolute bottom-0 w-100")
-
-})
-
-// sign-up
-$.get(head, function(data) {
-    $("#sign-up").before(data)
-
-});
-$.get(header, function(data) {
-    $("#sign-up").prepend(data)
-
-
-
-    $("#sign-up nav button").remove()
-    $("#sign-up #navbarNav").remove()
-    $("#sign-up nav .container-lg").addClass("justify-content-center")
-    $("#sign-up header").addClass("mh-60")
-    $("#sign-up .navbar.py-lg-0").toggleClass("py-lg-0 py-lg-2")
-
-});
-$.get(footer, function(data) {
-    $("#sign-up main").after(data)
-    $("#sign-up footer .mt-5").remove()
-    $("#sign-up footer .h5").removeClass("h5")
-    $("#sign-up footer ").removeClass("mt-5")
-    $("#sign-up footer .container").addClass("justify-content-center")
-    $("#sign-up .yıl").text(tarih.getFullYear())
-    $("#sign-up footer").addClass("position-relative bottom-0 w-100")
-
-})
+$("#forgot input").prop("required", true)
 $("#sign-up a").addClass("text-decoration-none")
 $("#sign-up .card-footer a").addClass("text-brand-secondary")
 
-// term get
-$.get(head, data => $("#terms").before(data));
-$.get(header, function(data) {
-    $("#terms").prepend(data)
-    $("#terms .navbar").toggleClass("navbar-expand-lg py-lg-0 navbar-expand-md")
-    $("#terms .navbar .container-fluid").toggleClass("px-md-4 px-md-3 py-lg-0 container-lg ")
-    $("#terms .navbar .nav-link").addClass("mt-md-0")
-    $("#terms .navbar-nav").toggleClass("ms-lg-auto ms-md-auto")
-});
+
 $("footer *").addClass("text-decoration-none text-white")
 
 
-// privacy get
-$.get(head, data => $("#privacy").before(data));
 
-
-
-
-//card getirme inputa yazı yazzıldıgında( index)
 
 //recptcha get
-$.get(recaptcha, data => $("#kayit footer").before(data));
+$.get(recaptcha, data => $("#login footer").before(data));
 $.get(recaptcha, data => $("#sign-up footer").before(data));
 
-// $(".recaptcha").hover(function() {
-//     $(this).animate({ "width": "300px" }, 500)
-// }, function() { $(this).css("width", "70px") })
 
 
 $(document).on("mouseover", ".recaptcha", function() {
@@ -341,13 +253,6 @@ $(document).on("mouseleave", ".recaptcha", function() {
     $(this).css("width", "70px")
 
 })
-
-
-
-
-
-
-
 
 
 
@@ -372,17 +277,5 @@ $("#index form").submit(function() {
 $(document).on("click", "#index .card", function() {
     $(".trigger").attr("href", $(this).attr("data-link"))[0].click()
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 // footer tarih ekleme

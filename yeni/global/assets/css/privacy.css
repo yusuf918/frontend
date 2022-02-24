@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap');
 :root {
-    --brandsecondary: #134361;
-    --brandText: #3F3A3A;
-    --brandNavbarText: #FFFFFF;
-    --brightgrey: #36414d;
+    --brand_text: #3F3A3A;
+    --brand_navbar_text: #FFFFFF;
+    --bright_grey: #36414d;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: var(--brightgrey);
+    color: var(--bright_grey);
 }
 
 header {
-    background-color: var(--brandsecondary);
+    background-color: var( --bg_brand_secondary);
 }
 
 .w-20 {
@@ -82,7 +81,7 @@ ul.dropdown-menu {
 }
 
 header a {
-    color: var(--brandText) !important;
+    color: var(--brand_text) !important;
 }
 
 header a:hover {
@@ -90,15 +89,11 @@ header a:hover {
 }
 
 .nav-item a {
-    color: var(--brandNavbarText) !important;
+    color: var(--brand_navbar_text) !important;
 }
 
 .fw-800 {
     font-weight: 800;
-}
-
-footer {
-    background-color: var(--brandsecondary);
 }
 
 footer img.img-fluid {

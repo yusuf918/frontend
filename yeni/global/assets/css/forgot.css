@@ -1,10 +1,6 @@
 :root {
-    --red-herring: #c00;
-    --squid-ink: #212338;
-}
-
-#unuttum {
-    min-height: 100vh;
+    --red_herring: #c00;
+    --squid_ink: #212338;
 }
 
 .text-squid-ink {
@@ -17,27 +13,27 @@
 
 .message {
     display: none;
-    color: var(--red-herring)
+    color: var(--red_herring)
 }
 
-#unuttum input:focus {
+#forgot input:focus {
     border: 1px solid #ced4da;
 }
 
-#unuttum input:focus+div {
+#forgot input:focus+div {
     display: none !important;
 }
 
-#unuttum input:invalid {
+#forgot input:invalid {
     border: 1px solid red;
 }
 
-#unuttum input:invalid:not(:focus)+div {
+#forgot input:invalid:not(:focus)+div {
     display: block;
 }
 
 .text-red-herring {
-    color: var(--red-herring)
+    color: var(--red_herring)
 }
 
 .w-56 {
@@ -52,17 +48,16 @@
     font-size: 15px;
 }
 
-#unuttum a {
-    background-color: #134361!important;
+#forgot a {
+    background-color: var( --bg_brand_secondary)!important;
 }
 
-#unuttum footer {
-    background-color: #134361;
+#forgot footer {
     color: #bac1c7;
     padding: 34px 0 32px;
     font-size: 17px
 }
 
-#unuttum footer div {
+#forgot footer div {
     font-weight: 400;
 }
